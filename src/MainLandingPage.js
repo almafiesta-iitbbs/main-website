@@ -97,8 +97,8 @@ export default ({
   landingPages = components.landingPages,
   innerPages = components.innerPages,
   blocks = components.blocks,
-  heading = "Free Modern React Templates for every need.",
-  description = "Easily customizable modern React UI Templates and Components built using TailwindCSS which are also lightweight and simple to setup. All components are modular and fully responsive for great mobile experience as well as big desktop screens.  Brand Colors are also fully customizable. Free for personal as well as commercial use."
+  heading = "Alma Fiesta '22 Description ",
+  description = "A perfect world is all that we dream about, isn't it? A world where endless imaginations meet the bliss of reality, one where all the vices of humanity are nothing but mere inconceivable thoughts. Embarking on a similar journey, Alma Fiesta - the annual socio-cultural fest of IIT Bhubaneswar is here with its 13th edition that would take you close to the Utopia you dream of - a land where knowledge rules the mind and growth is fueled from within!  The social and cultural themes of this edition of Alma Fiesta reflect this same vision of ours that we hope to celebrate. Through the social theme - 'Divyangjan Sashaktikaran: Agyanta Hi Ek Matra Viklangta Hai' we aim to arm the physically challenged with knowledge as a tool for growth and prosperity. Whereas the cultural theme 'Utopian Rhapsody: An abyss of endless possibilities' seeks the boundaries of infinite possibilities in a perfect world that would be powered by our collective imaginations."
 }) => {
   /*
    * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
@@ -188,10 +188,9 @@ export default ({
             </ImageColumn>
           </HeroRow>
           <SectionContainer id="landingPageDemos">
-            <SectionHeading>Landing Pages</SectionHeading>
+            <SectionHeading>Star Nights Description</SectionHeading>
             <SectionDescription>
-              We have {noOfLandingPages} premade landing pages. Click on the "View Live Demo" button to see them in
-              action. Customizing or Creating your own custom landing page is really simple by using our UI components.
+            Being the beacon of the cultural heritage of the region, Alma is set to keep up its glorious tradition of 'Star Nights' where renowned stars from all over the world enchant the audiences with their breathtaking performances. Over the years many famous personalities have graced Alma Fiesta with their acts - including Anubhav Singh Bassi, Anuv Jain, DJ Tejas, Akasa Singh, Maddix, DJ Adrima to name a few. The intoxicating melodies, the uncontrollable laughter, the echoing words in the sea of flashlights - they all stay with you forever. Even admist the pandemic, Alma Star Nights '21 provided an enthralling event that left everyone mesmerised. Join us on Star Nights to experience what you had never before and make memories that will last a lifetime!
             </SectionDescription>
             <PreviewCards>
               {Object.entries(landingPages).map(([pageName, page], index) => (

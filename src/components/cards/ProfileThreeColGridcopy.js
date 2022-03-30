@@ -12,10 +12,6 @@ import { ReactComponent as MailIcon } from "images/final-main-page/icons8-mail.s
 import { ReactComponent as WhassIcon } from "images/final-main-page/icons8-whatsapp.svg";
 import { ReactComponent as PhoneIcon } from "images/final-main-page/icons8-phone.svg";
 
-import ujjwal from "images/final-main-page/img/ujjwal.jpg";
-import avipsa from "images/final-main-page/img/avipsaf.png";
-import chetan from "images/final-main-page/img/chetan.jpg";
-
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
@@ -51,11 +47,13 @@ const CardLinks = styled.div`
 `;
 
 export default ({
-  subheading = "",
-  description = "In case of any queries feel free to reach us",
+  heading = "Meet These Fine Folks.",
+  subheading = "Our Team",
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   cards = [
     {
-      imageSrc: ujjwal,
+      imageSrc:
+        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Coordinator",
       name: "Ujjwal Marothi",
       links: [
@@ -74,7 +72,8 @@ export default ({
       ],
     },
     {
-      imageSrc: avipsa,
+      imageSrc:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Cheif coordinator",
       name: "Avipsa Sahu",
       links: [
@@ -93,7 +92,8 @@ export default ({
       ],
     },
     {
-      imageSrc: chetan,
+      imageSrc:
+        "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Coordinator",
       name: "Chetan Meena",
       links: [
@@ -118,18 +118,10 @@ export default ({
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
-          {
-            <Heading>
-              Contact <span style={{ color: "#6415ff" }}>Us</span>{" "}
-            </Heading>
-          }
-          {description && (
-            <Description style={{ transform: "translate(0px,-20px)" }}>
-              {description}
-            </Description>
-          )}
+          {heading && <Heading>{heading}</Heading>}
+          {description && <Description>{description}</Description>}
         </HeadingContainer>
-        <Cards style={{ transform: "translate(0px,-40px)" }}>
+        <Cards>
           {cards.map((card, index) => (
             <Card key={index}>
               <CardImage imageSrc={card.imageSrc} />

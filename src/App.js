@@ -105,6 +105,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import FinalPage from "FinalPage.js";
+import TeamPage from "TeamPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -126,6 +127,9 @@ export default function App() {
         </Route>
         <Route path="/thank-you">
           <ThankYouPage />
+        </Route>
+        <Route path="/team-page">
+          <TeamPage />
         </Route>
         <Route path="/">
           <MainLandingPage />

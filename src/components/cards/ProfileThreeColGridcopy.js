@@ -86,7 +86,7 @@ export default ({
           icon: WhassIcon,
         },
         {
-          url: "https://github.com",
+          url: "tel:917008969719",
           icon: PhoneIcon,
         },
       ],
@@ -106,7 +106,7 @@ export default ({
           icon: WhassIcon,
         },
         {
-          url: "https://github.com",
+          url: "tel:917023178941",
           icon: PhoneIcon,
         },
       ],

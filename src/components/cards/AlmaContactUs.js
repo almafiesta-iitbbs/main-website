@@ -8,9 +8,6 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
-import { ReactComponent as MailIcon } from "images/final-main-page/icons8-mail.svg";
-import { ReactComponent as WhassIcon } from "images/final-main-page/icons8-whatsapp.svg";
-import { ReactComponent as PhoneIcon } from "images/final-main-page/icons8-phone.svg";
 
 import ujjwal from "images/final-main-page/img/ujjwal.jpg";
 import avipsa from "images/final-main-page/img/avipsaf.png";
@@ -38,16 +35,6 @@ const CardContent = styled.div`
   .name {
     ${tw`mt-1 text-xl font-medium text-gray-900`}
   9
-`;
-
-const CardLinks = styled.div`
-  ${tw`mt-6 flex`}
-  .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
-    .icon {
-      ${tw`fill-current w-6 h-6`}
-    }
-  }
 `;
 
 export default ({

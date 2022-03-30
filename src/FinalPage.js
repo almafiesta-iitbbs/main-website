@@ -8,6 +8,7 @@ import TwoColSingleFeatureWithStats2 from "components/features/AlmaTwoColSingleF
 import ContactUs from "components/cards/ProfileThreeColGrid";
 import FAQ from "components/faqs/SingleCol";
 import ThreeColSlider from "components/cards/AlmaThreeColSlider";
+import Footer from "components/footers/MiniCenteredFooter";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -20,6 +21,7 @@ export default () => {
       <ThreeColSlider />
       <ContactUs />
       <FAQ />
+      <Footer />
     </AnimationRevealPage>
   );
 };

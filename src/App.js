@@ -106,9 +106,9 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import FinalPage from "FinalPage.js";
 import TeamPage from "TeamPage.js";
+import Events from "Events.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Events from "Events";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -127,7 +127,7 @@ export default function App() {
           <FinalPage />
         </Route>
         <Route path="/events/:type">
-          <Events/>
+          <Events />
         </Route>
         <Route path="/thank-you">
           <ThankYouPage />

@@ -2,13 +2,13 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { Container as ContainerBase } from "components/misc/Layouts.js";
-import logo from "../../images/final/alma.png";
+import logo from "../../images/final/almalogo2.png";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as InstaIcon } from "../../images/final-main-page/icons8-instagram.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto py-5 lg:py-5`;
 
 const Row = tw.div`flex items-center justify-center flex-col px-8`;
 
@@ -23,14 +23,18 @@ const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
   ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
   svg {
-    ${tw`w-5 h-5`}
+    ${tw`w-8 h-8`}
   }
 `;
 
-const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`;
+const CopyrightText = tw.p`text-center mt-5 font-medium tracking-wide text-sm text-gray-600`;
 export default () => {
   return (
-    <Container>
+    <Container
+      style={{
+        background: "linear-gradient(to left,#444444,#6415ff,#444444)",
+      }}
+    >
       <Content>
         <Row>
           <LogoContainer>
@@ -55,7 +59,7 @@ export default () => {
               <YoutubeIcon />
             </SocialLink>
           </SocialLinksContainer>
-          <CopyrightText style={{ transform: "translate(0,50px)" }}>
+          <CopyrightText>
             &copy; Copyright 2022, Alma Fiesta All Rights Reserved.
           </CopyrightText>
         </Row>

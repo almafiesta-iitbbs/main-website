@@ -12,8 +12,6 @@ import Header, {
   DesktopNavLinks,
 } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
-import ab_logo from "../../images/final/ab_logo.png";
-import Background from "../../images/final/pic08.jpg";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -26,6 +24,7 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
@@ -66,60 +65,38 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Contact</NavLink>
-      <NavLink href="/#">Gallery</NavLink>
-      <NavLink href="/#">Wokshops @alienbrains</NavLink>
-      <NavLink href="/#">FAQs</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={tw`rounded-full`} href="/#">
-        Sign Up
-      </PrimaryLink>
+      <NavLink href="#">About</NavLink>
+      <NavLink href="#">Blog</NavLink>
+      <NavLink href="#">Locations</NavLink>
+      <NavLink href="#">Pricing</NavLink>
+    </NavLinks>,
+    <NavLinks key={2}>
+      <PrimaryLink href="/#">Hire Us</PrimaryLink>
     </NavLinks>,
   ];
 
   return (
-    <Container style={{ backgroundImage: `url(${Background})` }}>
+    <Container>
       <OpacityOverlay />
       <HeroContainer>
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            {/* <Notification>
+            <Notification>
               We have now launched operations in Europe.
-            </Notification> */}
+            </Notification>
             <Heading>
-              <img
-                src={ab_logo}
-                alt="logo"
-                style={{
-                  display: "inline-block",
-                  width: "3rem",
-                  height: "3rem",
-                  paddingRight: "2%",
-                  paddingTop: "2%",
-                }}
-              />
-              <span style={{ fontSize: "2rem", fontFamily: "Montserrat" }}>
-                Alien Brains
-              </span>
-              <span style={{ fontSize: "0.8rem", paddingLeft: "2%" }}>
-                presents
-              </span>
+              <span>Hire the best</span>
               <br />
-              <SlantedBackground style={{ marginTop: "5%" }}>
-                <span tw="text-primary-500">Alma Fiesta 2022</span>
-              </SlantedBackground>
+              <SlantedBackground>Marketing Team.</SlantedBackground>
             </Heading>
-            {/* <PrimaryAction>Read Customer Stories</PrimaryAction> */}
+            <PrimaryAction>Read Customer Stories</PrimaryAction>
           </LeftColumn>
           <RightColumn>
-            {/* <StyledResponsiveVideoEmbed
+            <StyledResponsiveVideoEmbed
               url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
               background="transparent"
-            /> */}
+            />
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

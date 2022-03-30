@@ -7,6 +7,7 @@ import Hero from "components/hero/BackgroundAsImage";
 import TwoColSingleFeatureWithStats2 from "components/features/AlmaTwoColSingleFeatureWithStats2";
 import ContactUs from "components/cards/ProfileThreeColGrid";
 import FAQ from "components/faqs/SingleCol";
+import ThreeColSlider from "components/cards/AlmaThreeColSlider";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -16,6 +17,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
       <TwoColSingleFeatureWithStats2 />
+      <ThreeColSlider />
       <ContactUs />
       <FAQ />
     </AnimationRevealPage>

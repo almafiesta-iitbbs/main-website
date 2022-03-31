@@ -66,13 +66,13 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/final-page/#about">About</NavLink>
+      <NavLink href="/#about">About</NavLink>
       <NavLink href="/gallery">Gallery</NavLink>
-      <NavLink href="/final-page/#events">Events</NavLink>
+      <NavLink href="/#events">Events</NavLink>
       <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
-      <NavLink href="/final-page/#faqs">FAQs</NavLink>
+      <NavLink href="/#faqs">FAQs</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
-      <NavLink href="/final-page/#contact">Contact</NavLink>
+      <NavLink href="/#contact">Contact</NavLink>
       {/* <NavLink href="/#" tw="lg:ml-12!">
         Register
       </NavLink> */}

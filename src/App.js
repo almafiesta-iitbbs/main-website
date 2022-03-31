@@ -117,15 +117,6 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/final-page">
-          <FinalPage />
-        </Route>
         <Route path="/events/:type">
           <Events />
         </Route>
@@ -136,7 +127,7 @@ export default function App() {
           <TeamPage />
         </Route>
         <Route path="/">
-          <MainLandingPage />
+          <FinalPage />
         </Route>
       </Switch>
     </Router>

@@ -11,10 +11,14 @@ import googleIconImageSrc from "images/google-icon.png";
 
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
 import GoogleLogin from "react-google-login";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
+import config from "./../config.js"
 
-import axios from "axios"
-const config = require("../config");
-const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
+const Container = tw(
+  ContainerBase
+)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
@@ -53,118 +57,132 @@ const SubmitButton = styled.button`
 `;
 const IllustrationContainer = tw.div`sm:rounded-r-lg flex-1 bg-purple-100 text-center hidden lg:flex justify-center`;
 const IllustrationImage = styled.div`
-  ${props => `background-image: url("${props.imageSrc}");`}
+  ${(props) => `background-image: url("${props.imageSrc}");`}
   ${tw`m-12 xl:m-16 w-full max-w-lg bg-contain bg-center bg-no-repeat`}
 `;
-console.log(config.CLIENT_ID);
-const handleLogins = async res => {
-  console.log("success",res.profileObj);
-  axios
-        .post(
-          "http://localhost:5000/api/v1/auth/login",
-          { tokenId: res.tokenId },
-          {
-            withCredentials: true,
-          }
-        ).then((response) => {
-          //console.log(response.data);
-          console.log(response.data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-  // store returned user somehow
-}
-const handleLoginf = async res => {
-  console.log("failure",res);
-  // store returned user somehow
-}
 
 export default ({
   logoLinkUrl = "#",
   illustrationImageSrc = illustration,
   headingText = "Sign Up for Alma Fiesta",
-  socialButtons = [
-    {
-      iconImageSrc: googleIconImageSrc,
-      text: "Sign Up With Google",
-      url: ""
-    }
-  ],
+
+  iconImageSrc = googleIconImageSrc,
+  text = "Sign Up With Google",
+
   submitButtonText = "Sign Up",
   SubmitButtonIcon = SignUpIcon,
   tosUrl = "#",
   privacyPolicyUrl = "#",
-  signInUrl = "#"
-}) => (
-  <AnimationRevealPage>
-    <Container>
-      <Content>
-        <MainContainer>
-          <LogoLink href={logoLinkUrl}>
-            <LogoImage src={logo} />
-          </LogoLink>
-          <MainContent>
-            <Heading>{headingText}</Heading>
-            <FormContainer>
-              <SocialButtonsContainer>
-              <GoogleLogin
-                  className="google-login"
-                  clientId={config.REACT_APP_CLIENT_ID}
-                  render={(renderProps) => (
-                    socialButtons.map((socialButton, index) => (
-                      <SocialButton key={index} onClick={renderProps.onClick} style={{cursor:"pointer"}}>
-                        <span className="iconContainer">
-                          <img src={socialButton.iconImageSrc} className="icon" alt="" />
-                        </span>
-                        <span className="text">{socialButton.text}</span>
-                      </SocialButton>
-                    ))
-                  )}
-                  isSignedIn={true}
-                  onSuccess={handleLogins}
-                  onFailure={handleLoginf}
-                  cookiePolicy={"single_host_origin"}
-                  icon={false}
-                  padding={100}
-                />
-               
-              </SocialButtonsContainer>
-              <DividerTextContainer>
-                <DividerText>Or Sign up with your e-mail</DividerText>
-              </DividerTextContainer>
-              <Form>
-                <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
-                <SubmitButton type="submit">
-                  <SubmitButtonIcon className="icon" />
-                  <span className="text">{submitButtonText}</span>
-                </SubmitButton>
-                <p tw="mt-6 text-xs text-gray-600 text-center">
-                  I agree to abide by treact's{" "}
-                  <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
-                    Terms of Service
-                  </a>{" "}
-                  and its{" "}
-                  <a href={privacyPolicyUrl} tw="border-b border-gray-500 border-dotted">
-                    Privacy Policy
-                  </a>
-                </p>
+  signInUrl = "#",
+}) => {
+  const history = useHistory();
 
-                <p tw="mt-8 text-sm text-gray-600 text-center">
-                  Already have an account?{" "}
-                  <a href={signInUrl} tw="border-b border-gray-500 border-dotted">
-                    Sign In
-                  </a>
-                </p>
-              </Form>
-            </FormContainer>
-          </MainContent>
-        </MainContainer>
-        <IllustrationContainer>
-          <IllustrationImage imageSrc={illustrationImageSrc} />
-        </IllustrationContainer>
-      </Content>
-    </Container>
-  </AnimationRevealPage>
-);
+  const onGoogleLoginSuccess = async (res) => {
+    console.log(res);
+    try {
+      const loginResponse = await axios.post(
+        "http://localhost:5000/api/v1/auth/login",
+        { tokenId: res.tokenId },
+        {
+          withCredentials: true,
+        }
+      );
+      if (loginResponse.status === 201) {
+        toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
+        history.push("/additional-info");
+      } else if (loginResponse.status === 200) {
+        toast(`Logged in Successfully`, { autoClose: 2000 });
+        history.push("/final-page");
+      }
+    } catch (e) {
+      toast.error("There was some error! Please try again later");
+    }
+  };
+
+  const onGoogleLoginFailure = async (res) => {
+    toast.error("There was some error! Please try again later");    
+    // store returned user somehow
+  };
+
+  return (
+    <AnimationRevealPage>
+      <Container>
+        <Content>
+          <MainContainer>
+            <LogoLink href={logoLinkUrl}>
+              <LogoImage src={logo} />
+            </LogoLink>
+            <MainContent>
+              <Heading>{headingText}</Heading>
+              <FormContainer>
+                <SocialButtonsContainer>
+                  <GoogleLogin
+                    className="google-login"
+                    clientId={config.REACT_APP_CLIENT_ID}
+                    render={(renderProps) => (
+                      <SocialButton
+                        onClick={renderProps.onClick}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span className="iconContainer">
+                          <img src={iconImageSrc} className="icon" alt="" />
+                        </span>
+                        <span className="text">{text}</span>
+                      </SocialButton>
+                    )}
+                    isSignedIn={false}
+                    onSuccess={onGoogleLoginSuccess}
+                    onFailure={onGoogleLoginFailure}
+                    cookiePolicy={"single_host_origin"}
+                    icon={false}
+                    padding={100}
+                  />
+                </SocialButtonsContainer>
+                <DividerTextContainer>
+                  <DividerText>Or Sign up with your e-mail</DividerText>
+                </DividerTextContainer>
+                <Form>
+                  <Input type="email" placeholder="Email" />
+                  <Input type="password" placeholder="Password" />
+                  <SubmitButton type="submit">
+                    <SubmitButtonIcon className="icon" />
+                    <span className="text">{submitButtonText}</span>
+                  </SubmitButton>
+                  <p tw="mt-6 text-xs text-gray-600 text-center">
+                    I agree to abide by treact's{" "}
+                    <a
+                      href={tosUrl}
+                      tw="border-b border-gray-500 border-dotted"
+                    >
+                      Terms of Service
+                    </a>{" "}
+                    and its{" "}
+                    <a
+                      href={privacyPolicyUrl}
+                      tw="border-b border-gray-500 border-dotted"
+                    >
+                      Privacy Policy
+                    </a>
+                  </p>
+
+                  <p tw="mt-8 text-sm text-gray-600 text-center">
+                    Already have an account?{" "}
+                    <a
+                      href={signInUrl}
+                      tw="border-b border-gray-500 border-dotted"
+                    >
+                      Sign In
+                    </a>
+                  </p>
+                </Form>
+              </FormContainer>
+            </MainContent>
+          </MainContainer>
+          <IllustrationContainer>
+            <IllustrationImage imageSrc={illustrationImageSrc} />
+          </IllustrationContainer>
+        </Content>
+      </Container>
+    </AnimationRevealPage>
+  );
+};

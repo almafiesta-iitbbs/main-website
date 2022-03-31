@@ -110,6 +110,8 @@ import Events from "Events.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Signup from "pages/AlmaSignup";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -139,10 +141,14 @@ export default function App() {
         <Route path="/signup">
           <Signup />
         </Route>
+        <Route path="/additional-info">
+          <FinalPage />
+        </Route>
         <Route path="/">
           <MainLandingPage />
         </Route>
       </Switch>
+      <ToastContainer />
     </Router>
   );
 }

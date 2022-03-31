@@ -12,7 +12,7 @@ import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/che
 // import imageSrc from "../../images/images1.jpg";
 // import imageSrcc from "../../images/images2.jpg";
 // TODO: Import Images and render them in the event cards
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
@@ -169,6 +169,24 @@ const PrimaryButton = tw(
         pricingText: "USD 99/Day",
         rating: 4.5,
       },
+      {
+        // imageSrc: `${imageSrcc}`,
+        title: "Food",
+        description:
+          "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+          locationText: "Arizona, RAK",
+          pricingText: "USD 99/Day",
+          rating: 4.5,
+        },
+        {
+          // imageSrc: `${imageSrcc}`,
+          title: "Filler",
+          description:
+            "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+            locationText: "Arizona, RAK",
+            pricingText: "USD 99/Day",
+            rating: 4.5,
+          },
     ];
 
     return (

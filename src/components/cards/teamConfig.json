@@ -1,0 +1,67 @@
+[
+  { "name": "Chief Coordinator", "members": ["AVIPSA ABEESWETA SAHU"] },
+  {
+    "name": "Digital Design and Decoration Team",
+    "members": [
+      "SOUMYAJIT MANNA",
+      "TANMAY KHOBE",
+      "SIDHARTHENEE NAYAK",
+      "SAMEER CHOUDHARY",
+      "RAHUL AGARWAL",
+      "AJINKYA RAUT"
+    ]
+  },
+  {
+    "name": "Events and Management Team",
+    "members": [
+      "PRATEEM PRAKASH SINGH",
+      "MOHIT SHARMA",
+      "PRERANA BISWAS",
+      "DEBADRITA DAS",
+      "KANAK SINGH",
+      "JEETIKA PATANGIA",
+      "PRAJWAL KUMAR SAHU",
+      "NISCHAL SONI",
+      "GAURAV SINGH",
+      "PRASHANT GAUSINGHA",
+      "JAYESH DHAWALE",
+      "CHETAN PRAKASH MEENA",
+      "KRISHNA MUNDRA"
+    ]
+  },
+  {
+    "name": "Publicity Team",
+    "members": [
+      "SATYAJEET MAURYA",
+      "BISHNU AMOLA",
+      "KESHAV MEENA",
+      "PRAMOD CHOUDHARY",
+      "PRAVEEN",
+      "NIRANJAN CHOUHAN",
+      "AYUSH AGNIHOTRI"
+    ]
+  },
+  {
+    "name": "Sponsorship Team",
+    "members": [
+      "SAMBHAV RAJ",
+      "BHOOMIKA R S",
+      "SUDHANSHU DARAKH",
+      "SRUSHTI KADAM",
+      "HARSHIT SAINI",
+      "UJJWAL MAROTHI",
+      "RAJEEV RATH"
+    ]
+  },
+  {
+    "name": "Web Development Team",
+    "members": [
+      "SUKRITI TRIPATHY",
+      "OMKAR GHAG",
+      "SAURABH KUMAR",
+      "SHRIRANG DESHMUKH",
+      "PARYUL SINGHAI",
+      "AMRIT DASH"
+    ]
+  }
+]

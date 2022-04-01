@@ -8,7 +8,7 @@ import AboutUs from "components/features/AlmaTwoColSingleFeatureWithStats2";
 import ContactUs from "components/cards/ProfileThreeColGrid";
 import FAQ from "components/faqs/SingleCol";
 import Events from "components/cards/AlmaThreeColSlider";
-import Footer from "components/footers/MiniCenteredFooter";
+import Footer from "components/footers/FiveColumnWithInputForm";
 
 export default () => {
   return (

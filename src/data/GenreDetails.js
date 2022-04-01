@@ -1,3 +1,10 @@
+import DancePhoto from "../images/final-main-page/events/dance.jpg";
+import FashionPhoto from "../images/final-main-page/events/fashion.jpeg";
+import FineArtsPhoto from "../images/final-main-page/events/fine_arts.jpg";
+import DramaticsPhoto from "../images/final-main-page/events/drams-4.jpg";
+import MusicPhoto from "../images/final-main-page/events/music-61.jpg";
+import LiteraturePhoto from "../images/final-main-page/events/mun-2.jpg";
+
 const dance = (
   <div>
     "Dancing is surely the most basic and relevant of all forms of expression.
@@ -116,22 +123,22 @@ const filler = (
 
 const genreDetails = [
   {
-    //=imageSrc: `${imageSrc}`,
+    imageSrc: MusicPhoto,
     title: "Music",
     description: music,
   },
   {
-    // imageSrc: `${imageSrcc}`,
+    imageSrc: DramaticsPhoto,
     title: "Dramatics",
     description: dramatics,
   },
   {
-    // imageSrc: `${imageSrc}`,
+    imageSrc: DancePhoto,
     title: "Dance",
     description: dance,
   },
   {
-    // imageSrc: `${imageSrcc}`,
+    imageSrc: LiteraturePhoto,
     title: "Literature",
     description: literature,
   },
@@ -141,7 +148,7 @@ const genreDetails = [
     description: photography,
   },
   {
-    // imageSrc: `${imageSrcc}`,
+    imageSrc: FineArtsPhoto,
     title: "Fine Arts",
     description: finearts,
   },
@@ -151,7 +158,7 @@ const genreDetails = [
     description: gaming,
   },
   {
-    // imageSrc: `${imageSrcc}`,
+    imageSrc: FashionPhoto,
     title: "Fashion",
     description: fashion,
   },

@@ -8,6 +8,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import config from "./../../config";
 import { AppContext } from "context/AppContext";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Header, {
   NavLink,
@@ -20,6 +21,7 @@ import Header, {
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
+import Login from "pages/Login";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -70,7 +72,9 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 export default () => {
   const history = useHistory();
-  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
+  const { isLoggedIn, setIsLoggedIn, setName, setEmail } =
+    useContext(AppContext);
+
   const onGoogleLoginSuccess = async (res) => {
     try {
       const loginResponse = await axios.post(
@@ -89,13 +93,19 @@ export default () => {
         setIsLoggedIn(true);
         history.push("/additional-info");
       } else if (loginResponse.status === 200) {
-        toast(`Logged in Successfully`, { autoClose: 2000 });
-        window.localStorage.setItem(
-          "jwt",
-          JSON.parse(loginResponse.config.data).tokenId
-        );
-        setIsLoggedIn(true);
-        history.push("/final-page");
+        if (loginResponse.data.user.isRegistrationComplete) {
+          setName(loginResponse.data.user.name);
+          setEmail(loginResponse.data.user.email);
+          setIsLoggedIn(true);
+          window.localStorage.setItem(
+            "jwt",
+            JSON.parse(loginResponse.config.data).tokenId
+          );
+          toast(`Logged in Successfully`, { autoClose: 2000 });
+          history.push("/final-page");
+        } else {
+          history.push("/additional-info");
+        }
       }
     } catch (e) {
       toast.error("There was some error! Please try again later");
@@ -139,8 +149,8 @@ export default () => {
         <PrimaryLink
           css={tw`rounded-full cursor-pointer`}
           onClick={() => {
-            toast("Logged out Successfully!")
-            window.localStorage.clear()
+            toast("Logged out Successfully!");
+            window.localStorage.clear();
             setIsLoggedIn(false);
           }}
         >

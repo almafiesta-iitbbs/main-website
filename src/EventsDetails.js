@@ -81,7 +81,7 @@ const EventsDetails = {
         title: "Topsy Turvy",
         subtitle: "Group dance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "It is a group dance competition, so find a group of your friends with whom you sync the best and dance your way out to glory.",
       url: "https://timerse.com",
     },
 
@@ -91,7 +91,7 @@ const EventsDetails = {
         title: "Rip Out",
         subtitle: "Solo Dance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "It is a Solo Dance Competition, open to all dance forms be it contemporary, hip hop, classical, Bollywood, or any other.",
       url: "https://timerse.com",
     },
 
@@ -101,7 +101,7 @@ const EventsDetails = {
         title: "Rab Ne Bana Di Jodi ",
         subtitle: "Duet Dance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        " It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
       url: "https://timerse.com",
     },
 
@@ -111,7 +111,7 @@ const EventsDetails = {
         title: "Getting regional",
         subtitle: "Regional Dance",
       description:
-        "Participants will have to dance on the regional dance forms Either it may represent thier own culture or they may select any of their choice",
+        "It is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
       url: "https://timerse.com",
     },
   ],
@@ -184,7 +184,7 @@ const EventsDetails = {
         title: "Pen Art",
         subtitle: "Pen art",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Express Art with Pens and Ink",
       url: "https://timerse.com",
     },
 
@@ -204,7 +204,7 @@ const EventsDetails = {
         title: "Origami Fashion",
         subtitle: "Paper Origami to decorate dress",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Make a dress more fashionable by means of paper origami.",
       url: "https://timerse.com",
     },
 
@@ -214,7 +214,7 @@ const EventsDetails = {
         title: "Virtual brush",
         subtitle: "Digital Art",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Pick up the virtual brushes and make digital art",
       url: "https://timerse.com",
     },
 
@@ -224,7 +224,7 @@ const EventsDetails = {
         title: "Monochrome",
         subtitle: "Single Colour Painting Event",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "The painting competition but with just 1 color",
       url: "https://timerse.com",
     },
 
@@ -320,7 +320,7 @@ const EventsDetails = {
         title: "The Vogue Spectra",
         subtitle: "Fashion Show",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://timerse.com",
     },
   ],

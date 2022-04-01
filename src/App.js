@@ -107,6 +107,7 @@ import ThankYouPage from "ThankYouPage.js";
 import FinalPage from "FinalPage.js";
 import TeamPage from "TeamPage.js";
 import Events from "Events.js";
+import AdditionalPage from "AdditionalPage.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -138,7 +139,7 @@ export default function App() {
           <TeamPage />
         </Route>
         <Route path="/additional-info">
-          <FinalPage />
+          <AdditionalPage />
         </Route>
         <Route path="/">
           <MainLandingPage />

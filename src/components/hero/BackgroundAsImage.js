@@ -139,6 +139,7 @@ export default () => {
         <PrimaryLink
           css={tw`rounded-full cursor-pointer`}
           onClick={() => {
+            toast("Logged out Successfully!")
             window.localStorage.clear()
             setIsLoggedIn(false);
           }}

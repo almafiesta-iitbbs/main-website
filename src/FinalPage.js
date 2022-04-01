@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -9,19 +9,22 @@ import ContactUs from "components/cards/ProfileThreeColGrid";
 import FAQ from "components/faqs/SingleCol";
 import ThreeColSlider from "components/cards/AlmaThreeColSlider";
 import Footer from "components/footers/MiniCenteredFooter";
+import {AppContext, AppContextProvider} from "context/AppContext";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
   const HighlightedText = tw.span`text-primary-500`;
 
   return (
-    <AnimationRevealPage>
-      <Hero roundedHeaderButton={true} />
-      <TwoColSingleFeatureWithStats2 />
-      <ThreeColSlider />
-      <ContactUs />
-      <FAQ />
-      <Footer />
-    </AnimationRevealPage>
+    <AppContextProvider>
+      <AnimationRevealPage>
+        <Hero roundedHeaderButton={true} />
+        <TwoColSingleFeatureWithStats2 />
+        <ThreeColSlider />
+        <ContactUs />
+        <FAQ />
+        <Footer />
+      </AnimationRevealPage>
+    </AppContextProvider>
   );
 };

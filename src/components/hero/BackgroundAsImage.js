@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import GoogleLogin from "react-google-login";
-import { BrowserRouter, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import config from "./../../config";
+import { AppContext } from "context/AppContext";
 
 import Header, {
   NavLink,
@@ -67,10 +68,10 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
     ${tw`rounded bg-black shadow-xl`}
   }
 `;
-
+console.log(cookies.remove("jwt", { path: "/" }));
 export default () => {
   const history = useHistory();
-
+  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
   const onGoogleLoginSuccess = async (res) => {
     try {
       const loginResponse = await axios.post(
@@ -82,9 +83,20 @@ export default () => {
       );
       if (loginResponse.status === 201) {
         toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
+        window.localStorage.setItem(
+          "jwt",
+          JSON.parse(loginResponse.config.data).tokenId
+        );
+        setIsLoggedIn(true);
         history.push("/additional-info");
       } else if (loginResponse.status === 200) {
         toast(`Logged in Successfully`, { autoClose: 2000 });
+        window.localStorage.setItem(
+          "jwt",
+          JSON.parse(loginResponse.config.data).tokenId
+        );
+
+        setIsLoggedIn(true);
         history.push("/final-page");
       }
     } catch (e) {
@@ -104,24 +116,36 @@ export default () => {
       <NavLink href="/#">Gallery</NavLink>
       <NavLink href="/#">Wokshops @alienbrains</NavLink>
       <NavLink href="/#">FAQs</NavLink>
-      <GoogleLogin
-        className="google-login"
-        clientId={config.REACT_APP_CLIENT_ID}
-        render={(renderProps) => (
-          <PrimaryLink
-            css={tw`rounded-full cursor-pointer`}
-            onClick={renderProps.onClick}
-          >
-            Log in
-          </PrimaryLink>
-        )}
-        isSignedIn={false}
-        onSuccess={onGoogleLoginSuccess}
-        onFailure={onGoogleLoginFailure}
-        cookiePolicy={"single_host_origin"}
-        icon={false}
-        padding={100}
-      />
+      {!isLoggedIn ? (
+        <GoogleLogin
+          className="google-login"
+          clientId={config.REACT_APP_CLIENT_ID}
+          render={(renderProps) => (
+            <PrimaryLink
+              css={tw`rounded-full cursor-pointer`}
+              onClick={renderProps.onClick}
+            >
+              Log in
+            </PrimaryLink>
+          )}
+          isSignedIn={false}
+          onSuccess={onGoogleLoginSuccess}
+          onFailure={onGoogleLoginFailure}
+          cookiePolicy={"single_host_origin"}
+          icon={false}
+          padding={100}
+        />
+      ) : (
+        <PrimaryLink
+          css={tw`rounded-full cursor-pointer`}
+          onClick={() => {
+            window.localStorage.clear()
+            setIsLoggedIn(false);
+          }}
+        >
+          Log out
+        </PrimaryLink>
+      )}
     </NavLinks>,
   ];
 

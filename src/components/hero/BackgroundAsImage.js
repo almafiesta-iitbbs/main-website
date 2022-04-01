@@ -2,6 +2,11 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import GoogleLogin from "react-google-login";
+import { BrowserRouter, useHistory } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
+import config from "./../../config";
 
 import Header, {
   NavLink,
@@ -64,6 +69,34 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
+  const history = useHistory();
+
+  const onGoogleLoginSuccess = async (res) => {
+    try {
+      const loginResponse = await axios.post(
+        "http://localhost:5000/api/v1/auth/login",
+        { tokenId: res.tokenId },
+        {
+          withCredentials: true,
+        }
+      );
+      if (loginResponse.status === 201) {
+        toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
+        history.push("/additional-info");
+      } else if (loginResponse.status === 200) {
+        toast(`Logged in Successfully`, { autoClose: 2000 });
+        history.push("/final-page");
+      }
+    } catch (e) {
+      toast.error("There was some error! Please try again later");
+    }
+  };
+
+  const onGoogleLoginFailure = async (res) => {
+    toast.error("There was some error! Please try again later");
+    // store returned user somehow
+  };
+
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="/#">About</NavLink>
@@ -71,12 +104,24 @@ export default () => {
       <NavLink href="/#">Gallery</NavLink>
       <NavLink href="/#">Wokshops @alienbrains</NavLink>
       <NavLink href="/#">FAQs</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={tw`rounded-full`} href="/signup">
-        Sign Up
-      </PrimaryLink>
+      <GoogleLogin
+        className="google-login"
+        clientId={config.REACT_APP_CLIENT_ID}
+        render={(renderProps) => (
+          <PrimaryLink
+            css={tw`rounded-full cursor-pointer`}
+            onClick={renderProps.onClick}
+          >
+            Log in
+          </PrimaryLink>
+        )}
+        isSignedIn={false}
+        onSuccess={onGoogleLoginSuccess}
+        onFailure={onGoogleLoginFailure}
+        cookiePolicy={"single_host_origin"}
+        icon={false}
+        padding={100}
+      />
     </NavLinks>,
   ];
 

@@ -14,7 +14,7 @@ import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/che
 // TODO: Import Images and render them in the event cards
 import { useHistory, Link } from "react-router-dom";
 
-import genreDetails from "GenreDetails";
+import genreDetails from "../../data/GenreDetails";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;

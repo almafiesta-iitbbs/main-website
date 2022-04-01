@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import { useParams } from "react-router-dom";
+import EventsDetails from "EventsDetails.js";
 
 const Container = tw.div`relative`;
 
@@ -43,7 +44,12 @@ const SvgDotPattern4 = tw(
 
 export default () => {
   const params = useParams();
-  const cards = [
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
+  let cards = [
     {
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
@@ -74,6 +80,43 @@ export default () => {
       url: "https://timerse.com",
     },
   ];
+
+  switch(params.type){
+
+    case "dramatics":
+      cards = EventsDetails.dramatics;
+      break;
+    case "music":
+      cards = EventsDetails.music;
+      break;
+    case "dance":
+      cards = EventsDetails.dance;
+      break;
+    case "literature":
+      cards = EventsDetails.literature;
+      break;
+    case "food":
+      cards = EventsDetails.food;
+      break;
+    case "esports":
+      cards = EventsDetails.esports;
+      break;
+    case "photography":
+      cards = EventsDetails.photography;
+      break;
+    case "fashion":
+      cards = EventsDetails.fashion;
+      break;
+    case "filler":
+      cards = EventsDetails.filler;
+      break;
+    default:
+      cards = EventsDetails.fineArts;
+      break;         
+  }
+
+  
+
 
   return (
     <Container>

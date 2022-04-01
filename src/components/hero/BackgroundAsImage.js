@@ -109,11 +109,13 @@ export default () => {
 
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Contact</NavLink>
-      <NavLink href="/#">Gallery</NavLink>
-      <NavLink href="/#">Wokshops @alienbrains</NavLink>
-      <NavLink href="/#">FAQs</NavLink>
+      <NavLink href="/final-page/#about">About</NavLink>
+      <NavLink href="/gallery">Gallery</NavLink>
+      <NavLink href="/final-page/#events">Events</NavLink>
+      <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
+      <NavLink href="/final-page/#faqs">FAQs</NavLink>
+      <NavLink href="/team-page">Our Team</NavLink>
+      <NavLink href="/final-page/#contact">Contact</NavLink>
       {!isLoggedIn ? (
         <GoogleLogin
           className="google-login"
@@ -181,7 +183,10 @@ export default () => {
               </SlantedBackground>
             </Heading>
             {/* <PrimaryAction>Read Customer Stories</PrimaryAction> */}
+            <br />
+            <br />
           </LeftColumn>
+
           <RightColumn>
             {/* <StyledResponsiveVideoEmbed
               url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"

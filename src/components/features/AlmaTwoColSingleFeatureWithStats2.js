@@ -96,6 +96,7 @@ export default ({
 
   return (
     <Container>
+      <a id="about" />
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss} style={{ top: "180px" }}>
           <StyledResponsiveVideoEmbed
@@ -103,30 +104,32 @@ export default ({
             tw="w-full"
             background="transparent"
           />
-          </ImageColumn>
+        </ImageColumn>
         {/* <LeftColumn> */}
 
         {/* </LeftColumn> */}
         {/* <RightColumn> */}
-          <TextColumn>
-            <TextContent>
-              {subheading && <Subheading style={{fontSize:"35px"}}>{subheading}</Subheading>}
-              <Heading>{heading}</Heading>
-              <Description style={{ textAlign: "justify", paddingRight:"10px" }}>
-                {description}
-              </Description>
-              <Statistics>
-                {statistics.map((statistic, index) => (
-                  <Statistic key={index}>
-                    <Value>
-                      <CountUp end={parseInt(statistic.value)} duration={2} />+
-                    </Value>
-                    <Key>{statistic.key}</Key>
-                  </Statistic>
-                ))}
-              </Statistics>
-            </TextContent>
-          </TextColumn>
+        <TextColumn>
+          <TextContent>
+            {subheading && (
+              <Subheading style={{ fontSize: "35px" }}>{subheading}</Subheading>
+            )}
+            <Heading>{heading}</Heading>
+            <Description style={{ textAlign: "justify", paddingRight: "10px" }}>
+              {description}
+            </Description>
+            <Statistics>
+              {statistics.map((statistic, index) => (
+                <Statistic key={index}>
+                  <Value>
+                    <CountUp end={parseInt(statistic.value)} duration={2} />+
+                  </Value>
+                  <Key>{statistic.key}</Key>
+                </Statistic>
+              ))}
+            </Statistics>
+          </TextContent>
+        </TextColumn>
         {/* </RightColumn> */}
       </TwoColumn>
     </Container>

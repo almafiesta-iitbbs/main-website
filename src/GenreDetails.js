@@ -12,19 +12,137 @@ const dance = (
     short video of your dance and send us your entries to win exciting prizes.
   </div>
 );
-
+const finearts = (
+  <>
+    "I found I could say things with color and shapes that I couldn't say any
+    other way - things I had no words for."
+    <br />
+    <b> - Georgia O'Keeffe</b>
+    <br />
+    Art is an expression of life itself, many experiences that cannot be
+    described in words are portrayed by art. There is no perfection, art is what
+    the eye perceives it to be.
+    <br />
+    Keeping this in mind, Alma Fiesta'22 with the theme of a utopia presents
+    fine art events from different mediums, calling every artist to express
+    themselves with their creativity and imagination.
+    <br />
+  </>
+);
+const photography = (
+  <>
+    Your utopia is your own envisioning of the perfect world and a camera aids
+    tell the story of your imagination out of reality. So take out your cameras
+    and steal some moments of your version of that perfection, since alma fiesta
+    is here with a variety of interesting
+    <br />
+    <b>photography and cinematography events like:</b>
+    <br />
+    <ul>
+      <ol>Photostory (online photojournalism)</ol>
+      <ol>Trailor making</ol>
+      <ol>Showreel (online short film making)</ol>
+      <ol>Photography contest</ol>
+      <ol>AD- making competition </ol>
+    </ul>
+  </>
+);
+const sports = (
+  <>
+    Assemble gamers! because Team Alma Fiesta brings to you exceptional events
+    where you can let out your precision and skills and leave the people be
+    astonished. Get ready to exhibit your gaming skills.
+    <b>Events we have gathered:</b>
+    <ul>
+      <ol>CSGO</ol>
+      <ol>CODM</ol>
+      <ol>Valorant</ol>
+      <ol>Rocket Leauge</ol>
+    </ul>
+    <br></br>
+    Let's see if you can shoot precisely to the top place! So what are you
+    waiting for!! Come n play! It's a call to the gamer in you!
+  </>
+);
+const fashion = (
+  <>
+    "What you wear is how you present yourself to the world, especially today
+    when human contacts are so quick. Fashion is instant language."
+    <br />
+    <b>-Miuccia Prada.</b>
+    <br />
+    Alma Fiesta brings you the opportunity to express yourself in this instant
+    language. Be it dress designing or ramp walking, “The Vogue Spectra” is a
+    competition covering it all. Participate in this competition and get a
+    chance to exhibit your fashion aesthetics to the world. For more information
+    and registration, visit our website-
+  </>
+);
+const lit = (
+  <>
+    Gear up your craze for fun-filled literature-based events. Let your inner
+    creativity out because Team Alma Fiesta brings to you exceptional events
+    where you can let out your talent and skills and leave the people be
+    astonished.
+    <br />
+    <b>Events we have gathered:</b>
+    <ul>
+      <ol>Gone in 60 seconds</ol>
+      <ol>Shipwrecked</ol>
+      <ol>Online MUN</ol>
+      <ol>Alt-End</ol>
+      <ol>Fantasy Quiz</ol>
+      <ol>Kavya Path</ol>
+    </ul>
+  </>
+);
+const music = (
+  <>
+    Any festival is incomplete without music. And when it comes to Alma fiesta,
+    music is its soul. So, here we bring the most exhilarating and electrifying
+    range of music competitions.
+    <br />
+    <b>The platter includes:</b>
+    <ul>
+      <ol>Dil Se</ol>
+      <ol>Twist the Lyrics</ol>
+      <ol>Rock On!</ol>
+    </ul>
+    Don't be shy, show your talents and get the opportunity to be a rockstar.
+    Because it's more than music to us!
+  </>
+);
+const drams = (
+  <>
+    <b>
+      "The world's a stage and each one of us an actor. Alma Fiesta's the
+      theatre that everyone is after"
+    </b>
+    <br />
+    What's life without emotions and drama? Nothing but a blank canvas void of
+    all the colours. Truly depicting the dream of a utopian world, Alma Fiesta
+    presents to you a fun set of events celebrating each hue to the human
+    emotion that fills our life with the vibrance that it needs.
+    <br />
+    <b>The event roster includes:</b>
+    <ul>
+      <ol>Pont des émotions</ol>
+      <ol>WordSmith</ol>
+      <ol>Spoof-O-Mania</ol>
+      <ol>Audio Play</ol>
+    </ul>
+  </>
+);
 const genreDetails = [
   {
     // imageSrc: `${imageSrc}`,
     title: "Music",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: music,
   },
   {
     // imageSrc: `${imageSrcc}`,
     title: "Dramatics",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: drams,
   },
   {
     // imageSrc: `${imageSrc}`,
@@ -36,45 +154,40 @@ const genreDetails = [
   {
     // imageSrc: `${imageSrcc}`,
     title: "Literature",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: lit,
   },
   {
     // imageSrc: `${imageSrcc}`,
     title: "Photography",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: photography,
   },
   {
     // imageSrc: `${imageSrcc}`,
     title: "Fine Arts",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: finearts,
   },
   {
     // imageSrc: `${imageSrcc}`,
     title: "ESports",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: sports,
   },
   {
     // imageSrc: `${imageSrcc}`,
     title: "Fashion",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+    description: fashion,
   },
-  {
-    // imageSrc: `${imageSrcc}`,
-    title: "Food",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    // imageSrc: `${imageSrcc}`,
-    title: "Filler",
-    description:
-      "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-  },
+  // {
+  //   // imageSrc: `${imageSrcc}`,
+  //   title: "Food",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+  // },
+  // {
+  //   // imageSrc: `${imageSrcc}`,
+  //   title: "Filler",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
+  // },
 ];
 
 export default genreDetails;

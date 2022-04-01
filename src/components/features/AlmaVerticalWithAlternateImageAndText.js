@@ -1,10 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import EventsDetails from "EventsDetails.js";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { AppContext } from "context/AppContext";
+
+const ActionButton = tw(
+  PrimaryButtonBase
+)`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
+const PrimaryButton = tw(ActionButton)``;
 
 const Container = tw.div`relative`;
 
@@ -44,75 +53,73 @@ const SvgDotPattern4 = tw(
 
 export default () => {
   const params = useParams();
+  const history = useHistory();
+
+  const { email } = useContext(AppContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  let cards = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      subtitle: "Paid",
-      title: "Loachella, NYC",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-  ];
+  let events = [];
 
   switch (params.type) {
     case "dramatics":
-      cards = EventsDetails.dramatics;
+      events = EventsDetails.dramatics;
       break;
     case "music":
-      cards = EventsDetails.music;
+      events = EventsDetails.music;
       break;
     case "dance":
-      cards = EventsDetails.dance;
+      events = EventsDetails.dance;
       break;
     case "literature":
-      cards = EventsDetails.literature;
+      events = EventsDetails.literature;
       break;
     case "food":
-      cards = EventsDetails.food;
+      events = EventsDetails.food;
       break;
     case "esports":
-      cards = EventsDetails.esports;
+      events = EventsDetails.esports;
       break;
     case "photography":
-      cards = EventsDetails.photography;
+      events = EventsDetails.photography;
       break;
     case "fashion":
-      cards = EventsDetails.fashion;
+      events = EventsDetails.fashion;
       break;
     case "filler":
-      cards = EventsDetails.filler;
+      events = EventsDetails.filler;
       break;
     default:
-      cards = EventsDetails.fineArts;
+      events = EventsDetails.fineArts;
       break;
   }
+
+  const registerForEvent = async (event) => {
+    if (String(email).split("@")[1] === "iitbbs.ac.in") {
+      try {
+        const registrationResponse = await axios.post(
+          `http://localhost:5000/api/v1/event/register/${event.id}`,
+          {},
+          {
+            withCredentials: true,
+          }
+        );
+        if (registrationResponse.status === 200) {
+          return toast(`Successfully registered for ${event.title}`, {
+            autoClose: 2000,
+          });
+        }
+      } catch (e) {
+        if (String(e.response.data.error.statusCode).startsWith("4")) {
+          return toast.error(e.response.data.message);
+        }
+      }
+    } else {
+      window.location.href = event.url; 
+    }
+  };
 
   return (
     <Container>
@@ -121,21 +128,29 @@ export default () => {
           <HeadingTitle style={{ textTransform: "capitalize" }}>
             {params.type} Events
           </HeadingTitle>
-          <HeadingDescription>
-          </HeadingDescription>
+          <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
 
         <Content>
-          {cards.map((card, i) => (
+          {events.map((event, i) => (
             <Card key={i} reversed={i % 2 === 1}>
-              <Image imageSrc={card.imageSrc} />
+              <Image imageSrc={event.imageSrc} />
               <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
-                <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
-                <Link href={card.url}>Event Rules</Link>
+                <Subtitle>{event.subtitle}</Subtitle>
+                <Title>{event.title}</Title>
+                <Description>{event.description}</Description>
+                <Link href={event.url}>Event Rules</Link>
                 <br />
-                <Link href={card.url}>See Event Details</Link>
+                <Link href={event.url}>See Event Details</Link>
+                <br />
+                <PrimaryButton
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    registerForEvent(event);
+                  }}
+                >
+                  Register
+                </PrimaryButton>
               </Details>
             </Card>
           ))}

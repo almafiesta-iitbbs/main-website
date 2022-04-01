@@ -16,7 +16,6 @@ export default () => {
   // const HighlightedText = tw.span`text-primary-500`;
 
   return (
-    <AppContextProvider>
       <AnimationRevealPage>
         <Hero roundedHeaderButton={true} />
         <AboutUs id="about" />
@@ -25,6 +24,5 @@ export default () => {
         <FAQ id="faqs" />
         <Footer />
       </AnimationRevealPage>
-    </AppContextProvider>
   );
 };

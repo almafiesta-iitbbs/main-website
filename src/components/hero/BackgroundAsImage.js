@@ -68,7 +68,6 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
     ${tw`rounded bg-black shadow-xl`}
   }
 `;
-console.log(cookies.remove("jwt", { path: "/" }));
 export default () => {
   const history = useHistory();
   const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
@@ -95,7 +94,6 @@ export default () => {
           "jwt",
           JSON.parse(loginResponse.config.data).tokenId
         );
-
         setIsLoggedIn(true);
         history.push("/final-page");
       }

@@ -1,4 +1,4 @@
-import React, { useState ,useContext  } from "react";
+import React, { useState, useContext } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container as ContainerBase } from "components/misc/Layouts";
 import tw from "twin.macro";
@@ -13,7 +13,9 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
 import axios from "axios";
 import { toast } from "react-toastify";
-const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
+const Container = tw(
+  ContainerBase
+)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
 const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
 const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
 const LogoLink = tw.a``;
@@ -52,78 +54,121 @@ const SubmitButton = styled.button`
 `;
 const IllustrationContainer = tw.div`sm:rounded-r-lg flex-1 bg-purple-100 text-center hidden lg:flex justify-center`;
 const IllustrationImage = styled.div`
-  ${props => `background-image: url("${props.imageSrc}");`}
+  ${(props) => `background-image: url("${props.imageSrc}");`}
   ${tw`m-12 xl:m-16 w-full max-w-lg bg-contain bg-center bg-no-repeat`}
 `;
 
-
 export default () => {
-    const logoLinkUrl = "#"
-    const illustrationImageSrc = illustration
-    const headingText = "Complete your registration"
-    const [Name, setName] = useState("")
-    const [Email, setEmail] = useState("")
-    const [PhoneNumber, setPhoneNumber] = useState("")
-    const [Institute, setInstitute] = useState("")
-    const [Year, setYear] = useState("")
-    const [Branch, setBranch] = useState("")
-    const [City, setCity] = useState("")
-    const submitButtonText = "Sign Up"
-    const SubmitButtonIcon = SignUpIcon
-    const history = useHistory();
-    const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
-    const tosUrl = "#"
-    const privacyPolicyUrl = "#"
-    const signInUrl = "#"
-    const onSubmitSuccess = async (e) => {
-        e.preventDefault();
-        try {
-            const FormResponse = await axios.post(
-                "http://localhost:5000/api/v1/auth/finish-registration",
-                { Name: Name, Email: Email, phone: PhoneNumber, institute:Institute, branch: Branch, year:Year, city: City },
-                {
-                    withCredentials: true,
-                }
-            );
-            if (FormResponse.status === 200) {
-                toast(`Registered Successfully`, { autoClose: 2000 });
-                setIsLoggedIn(true);
-                history.push("/final-page");
-              }
-          
-        } catch (e) {
-            toast.error("There was some error! Please try again later");
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [Institute, setInstitute] = useState("");
+  const [Year, setYear] = useState("");
+  const [Branch, setBranch] = useState("");
+  const [City, setCity] = useState("");
+  const submitButtonText = "Sign Up";
+  const SubmitButtonIcon = SignUpIcon;
+  const history = useHistory();
+  const { setIsLoggedIn, setEmail, setName } = useContext(AppContext);
+
+  const logoLinkUrl = "#";
+  const illustrationImageSrc = illustration;
+  const headingText = "Complete your registration";
+  const tosUrl = "#";
+  const privacyPolicyUrl = "#";
+  const signInUrl = "#";
+  const onSubmitSuccess = async (e) => {
+    e.preventDefault();
+    try {
+      const FormResponse = await axios.post(
+        "http://localhost:5000/api/v1/auth/finish-registration",
+        {
+          phone: PhoneNumber,
+          institute: Institute,
+          branch: Branch,
+          year: Year,
+          city: City,
+        },
+        {
+          withCredentials: true,
         }
-    };
-    return (
-        <AnimationRevealPage>
-            <Container>
-                <Content>
-                    <MainContainer style={{ marginTop: "-50px" }}>
-                        <MainContent>
-                            <Heading style={{ fontSize: "25px" }}>{headingText}</Heading>
-                            <FormContainer>
-                                <Form autoComplete="true">
-                                    <Input type="text" name="Name" placeholder="Name" value={Name} onChange={(e) => {setName(e.target.value)}}/>
-                                    <Input type="email" name="Email" placeholder="Email"value={Email} onChange={(e) => {setEmail(e.target.value)}} />
-                                    <Input type="text" name="PhoneNumber" placeholder="PhoneNumber" value={PhoneNumber} onChange={(e) => {setPhoneNumber(e.target.value)}}/>
-                                    <Input type="text" name="Institute" placeholder="Institute" value={Institute} onChange={(e) => {setInstitute(e.target.value)}}/>
-                                    <Input type="text" name="Branch" placeholder="Branch" value={Branch} onChange={(e) => {setBranch(e.target.value)}}/>
-                                    <Input type="text" name="Year" placeholder="Year" value={Year} onChange={(e) => {setYear(e.target.value)}}/>
-                                    <Input type="text" name="City" placeholder="City" value={City} onChange={(e) => {setCity(e.target.value)}} />
-                                    <SubmitButton onClick={(e) => onSubmitSuccess(e)}>
-                                        <SubmitButtonIcon className="icon" />
-                                        <span className="text">{submitButtonText}</span>
-                                    </SubmitButton>
-                                </Form>
-                            </FormContainer>
-                        </MainContent>
-                    </MainContainer>
-                    <IllustrationContainer>
-                        <IllustrationImage imageSrc={logo} />
-                    </IllustrationContainer>
-                </Content>
-            </Container>
-        </AnimationRevealPage>
-    );
-}
+      );
+      if (FormResponse.status === 200) {
+        toast(`Registered Successfully`, { autoClose: 2000 });
+        setEmail(FormResponse.data.updatedUser.email)
+        setName(FormResponse.data.updatedUser.name)
+        setIsLoggedIn(true);
+        history.push("/final-page");
+      }
+    } catch (e) {
+      toast.error("There was some error! Please try again later");
+    }
+  };
+  return (
+    <AnimationRevealPage>
+      <Container>
+        <Content>
+          <MainContainer style={{ marginTop: "-50px" }}>
+            <MainContent>
+              <Heading style={{ fontSize: "25px" }}>{headingText}</Heading>
+              <FormContainer>
+                <Form autoComplete="true">
+                  <Input
+                    type="text"
+                    name="PhoneNumber"
+                    placeholder="PhoneNumber"
+                    value={PhoneNumber}
+                    onChange={(e) => {
+                      setPhoneNumber(e.target.value);
+                    }}
+                  />
+                  <Input
+                    type="text"
+                    name="Institute"
+                    placeholder="Institute"
+                    value={Institute}
+                    onChange={(e) => {
+                      setInstitute(e.target.value);
+                    }}
+                  />
+                  <Input
+                    type="text"
+                    name="Branch"
+                    placeholder="Branch"
+                    value={Branch}
+                    onChange={(e) => {
+                      setBranch(e.target.value);
+                    }}
+                  />
+                  <Input
+                    type="text"
+                    name="Year"
+                    placeholder="Year"
+                    value={Year}
+                    onChange={(e) => {
+                      setYear(e.target.value);
+                    }}
+                  />
+                  <Input
+                    type="text"
+                    name="City"
+                    placeholder="City"
+                    value={City}
+                    onChange={(e) => {
+                      setCity(e.target.value);
+                    }}
+                  />
+                  <SubmitButton onClick={(e) => onSubmitSuccess(e)}>
+                    <SubmitButtonIcon className="icon" />
+                    <span className="text">{submitButtonText}</span>
+                  </SubmitButton>
+                </Form>
+              </FormContainer>
+            </MainContent>
+          </MainContainer>
+          <IllustrationContainer>
+            <IllustrationImage imageSrc={logo} />
+          </IllustrationContainer>
+        </Content>
+      </Container>
+    </AnimationRevealPage>
+  );
+};

@@ -9,12 +9,7 @@ import {
 } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 
-import ujjwal from "images/final-main-page/img/ujjwal.jpg";
-import avipsa from "images/final-main-page/img/avipsaf.png";
-import chetan from "images/final-main-page/img/chetan.jpg";
-
-import TeamDetails from "./teamConfig.json";
-// import TeamImages from "./teamImages";
+import TeamDetails from "../../teamConfig.json";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;

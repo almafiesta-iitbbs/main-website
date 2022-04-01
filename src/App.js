@@ -117,6 +117,15 @@ export default function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/components/:type/:subtype/:name">
+          <ComponentRenderer />
+        </Route>
+        <Route path="/components/:type/:name">
+          <ComponentRenderer />
+        </Route>
+        <Route path="/final-page">
+          <MainLandingPage />
+        </Route>
         <Route path="/events/:type">
           <Events />
         </Route>

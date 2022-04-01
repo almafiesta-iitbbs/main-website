@@ -9,7 +9,7 @@ import {
 } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 
-import TeamDetails from "../../teamConfig.json";
+import TeamDetails from "../../data/teamConfig.json";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;

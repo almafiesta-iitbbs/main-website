@@ -14,6 +14,8 @@ import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/che
 // TODO: Import Images and render them in the event cards
 import { useHistory, Link } from "react-router-dom";
 
+import genreDetails from "GenreDetails";
+
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 
@@ -56,7 +58,7 @@ const RatingsInfo = styled.div`
 `;
 const Rating = tw.span`ml-2 font-bold`;
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
+const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4 text-justify`;
 
 const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
@@ -95,103 +97,10 @@ export default () => {
     ],
   };
 
-  /* Change this according to your needs */
-  const cards = [
-    {
-      // imageSrc: `${imageSrc}`,
-      title: "Music",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
-      rating: "4.8",
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Dramatics",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Ibiza, Spain",
-      pricingText: "USD 50/Day",
-      rating: 4.9,
-    },
-    {
-      // imageSrc: `${imageSrc}`,
-      title: "Dance",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Palo Alto, CA",
-      pricingText: "USD 19/Day",
-      rating: "5.0",
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Literature",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Photography",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Fine Arts",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "ESports",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Fashion",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Food",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-    {
-      // imageSrc: `${imageSrcc}`,
-      title: "Filler",
-      description:
-        "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
-      rating: 4.5,
-    },
-  ];
+  const cards = genreDetails;
 
   return (
     <Container style={{ top: "-100px" }}>
-      <a id="events" />
       <Content>
         <HeadingWithControl>
           <Heading>Our Events</Heading>

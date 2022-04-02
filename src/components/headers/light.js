@@ -10,6 +10,8 @@ import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/final/almalogo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons"
+
 
 const Header = tw.header`
   flex justify-between items-center
@@ -27,10 +29,10 @@ export const NavLink = tw.a`
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `;
 
-export const PrimaryLink = tw(NavLink)`
+export const PrimaryLink = tw(PrimaryButtonBase)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
+  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline disabled:hidden
   border-b-0
 `;
 
@@ -99,7 +101,7 @@ export default ({
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      <span>Alma Fiesta</span>
+      <span style={{ fontFamily: "AlmaFont" }}>Alma Fiesta</span>
     </LogoLink>
   );
 
@@ -114,10 +116,12 @@ export default ({
       </DesktopNavLinks>
 
       <MobileNavLinksContainer
+        style={{ marginRight: "10px" }}
         css={collapseBreakpointCss.mobileNavLinksContainer}
       >
         {logoLink}
         <MobileNavLinks
+          style={{ position: "absolute" }}
           initial={{ x: "150%", display: "none" }}
           animate={animation}
           css={collapseBreakpointCss.mobileNavLinks}

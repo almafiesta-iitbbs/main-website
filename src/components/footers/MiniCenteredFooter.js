@@ -60,7 +60,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2022, Alma Fiesta All Rights Reserved.
+            &copy; Copyright 2022, Alma Fiesta | All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

@@ -114,7 +114,8 @@ export default ({
   ],
 }) => {
   return (
-    <Container>
+    <Container style={{ top: "-10rem" }}>
+      <a id="contact" />
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

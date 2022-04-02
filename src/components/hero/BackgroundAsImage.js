@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import GoogleLogin from "react-google-login";
+import { useHistory } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
+import config from "./../../config";
+import { AppContext } from "context/AppContext";
+import { REACT_APP_BASE_URL } from "./../../config";
 
 import Header, {
   NavLink,
@@ -11,9 +18,15 @@ import Header, {
   NavToggle,
   DesktopNavLinks,
 } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const StyledAnchor = styled(AnchorLink)`
+  ${tw`text-black text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 lg:text-white
+font-semibold tracking-wide transition duration-300
+pb-1 border-b-2 border-transparent hocus:border-primary-500 hocus:text-primary-500 lg:hocus:border-white lg:hocus:text-white`}
+`;
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -50,33 +63,109 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
-
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
-
-const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
-  padding-bottom: 56.25% !important;
-  padding-top: 0px !important;
-  ${tw`rounded`}
-  iframe {
-    ${tw`rounded bg-black shadow-xl`}
-  }
-`;
-
 export default () => {
+  const history = useHistory();
+  const { isLoggedIn, setIsLoggedIn, setName, setEmail } =
+    useContext(AppContext);
+
+  const onGoogleLoginSuccess = async (res) => {
+    try {
+      const loginResponse = await axios.post(
+        `${REACT_APP_BASE_URL}/api/v1/auth/login`,
+        { tokenId: res.tokenId },
+        {
+          withCredentials: true,
+        }
+      );
+      if (loginResponse.status === 201) {
+        toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
+        window.localStorage.setItem("jwt", loginResponse.data.jwt);
+        setIsLoggedIn(true);
+        history.push("/additional-info");
+      } else if (loginResponse.status === 200) {
+        window.localStorage.setItem("jwt", loginResponse.data.jwt);
+        if (loginResponse.data.user.isRegistrationComplete) {
+          setName(loginResponse.data.user.name);
+          setEmail(loginResponse.data.user.email);
+          setIsLoggedIn(true);
+          toast(`Logged in Successfully`, { autoClose: 2000 });
+        } else {
+          history.push("/additional-info");
+        }
+      }
+    } catch (e) {
+      if (String(e.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(e.response.data.message);
+      }
+      toast.error("There was some error! Please try again later");
+    }
+  };
+
+  const onGoogleLoginFailure = async (res) => {
+    toast.error("There was some error! Please try again later");
+  };
+
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Contact</NavLink>
-      <NavLink href="/#">Gallery</NavLink>
-      <NavLink href="/#">Wokshops @alienbrains</NavLink>
-      <NavLink href="/#">FAQs</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={tw`rounded-full`} href="/#">
-        Sign Up
-      </PrimaryLink>
+      <StyledAnchor href="#about">About</StyledAnchor>
+      <StyledAnchor href="#events">Events</StyledAnchor>
+      <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
+      <StyledAnchor href="#contact">Contact</StyledAnchor>
+      <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
+      <NavLink href="/team-page">Our Team</NavLink>
+      <StyledAnchor href="#faqs">FAQs</StyledAnchor>
+      {!isLoggedIn ? (
+        <GoogleLogin
+          className="google-login"
+          clientId={config.REACT_APP_CLIENT_ID}
+          render={(renderProps) => (
+            <PrimaryLink
+              css={tw`rounded-full cursor-pointer`}
+              onClick={renderProps.onClick}
+            >
+              Log in
+            </PrimaryLink>
+          )}
+          isSignedIn={false}
+          onSuccess={onGoogleLoginSuccess}
+          onFailure={onGoogleLoginFailure}
+          cookiePolicy={"single_host_origin"}
+          icon={false}
+          padding={100}
+        />
+      ) : (
+        <PrimaryLink
+          css={tw`rounded-full cursor-pointer`}
+          onClick={async () => {
+            window.localStorage.clear();
+            setIsLoggedIn(false);
+            try {
+              const loginResponse = await axios.post(
+                `${REACT_APP_BASE_URL}/api/v1/auth/logout`,
+                {},
+                {
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                    Authorization: `Bearer ${window.localStorage.getItem(
+                      "jwt"
+                    )}`,
+                  },
+                  withCredentials: true,
+                }
+              );
+              toast("Logged out Successfully!");
+            } catch (e) {
+              if (String(e.response.data.error.statusCode).startsWith("4")) {
+                return toast.error(e.response.data.message);
+              }
+              toast.error("There was some error! Please try again later");
+            }
+          }}
+        >
+          Log out
+        </PrimaryLink>
+      )}
     </NavLinks>,
   ];
 
@@ -87,9 +176,6 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            {/* <Notification>
-              We have now launched operations in Europe.
-            </Notification> */}
             <Heading>
               <img
                 src={ab_logo}
@@ -109,12 +195,17 @@ export default () => {
                 presents
               </span>
               <br />
-              <SlantedBackground style={{ marginTop: "5%" }}>
-                <span tw="text-primary-500">Alma Fiesta 2022</span>
-              </SlantedBackground>
+              {/* <SlantedBackground style={{ marginTop: "5%" }}> */}
+              <span tw="text-primary-100" style={{ fontFamily: "AlmaFont" }}>
+                Alma Fiesta 2022
+              </span>
+              {/* </SlantedBackground> */}
             </Heading>
             {/* <PrimaryAction>Read Customer Stories</PrimaryAction> */}
+            <br />
+            <br />
           </LeftColumn>
+
           <RightColumn>
             {/* <StyledResponsiveVideoEmbed
               url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"

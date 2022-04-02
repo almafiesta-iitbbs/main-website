@@ -4,7 +4,8 @@ import { Container as ContainerBase } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import logo from "images/final/almalogo.png";
+
+import logo from "images/final/Logo4.png";
 import { AppContext } from "context/AppContext";
 import { useHistory } from "react-router-dom";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
@@ -80,9 +81,9 @@ export default () => {
     }
   };
   return (
-    <AnimationRevealPage>
-      <Container>
-        <Content>
+    <AnimationRevealPage >
+      <Container >
+        <Content >
           <MainContainer style={{ marginTop: "-50px" }}>
             <MainContent>
               <Heading style={{ fontSize: "25px" }}>{headingText}</Heading>
@@ -142,7 +143,7 @@ export default () => {
             </MainContent>
           </MainContainer>
           <IllustrationContainer>
-            <IllustrationImage imageSrc={logo} />
+            <IllustrationImage  style={{width:"45%"}}imageSrc={logo} />
           </IllustrationContainer>
         </Content>
       </Container>

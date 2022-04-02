@@ -31,7 +31,15 @@ export default () => {
               src={LogoImage}
               style={{ height: "5rem", width: "6rem", paddingRight: "2%" }}
             />
-            <LogoText>Alma Fiesta</LogoText>
+            <LogoText
+              style={{
+                fontFamily: "MonotypeScriptW01-Bold",
+                paddingLeft: "1rem",
+                fontSize: "1.5rem",
+              }}
+            >
+              Alma Fiesta
+            </LogoText>
           </LogoContainer>
           <CopywrightNotice>
             &copy; 2022 Alma Fiesta | All Rights Reserved.

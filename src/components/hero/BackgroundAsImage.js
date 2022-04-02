@@ -102,7 +102,7 @@ export default () => {
             JSON.parse(loginResponse.config.data).tokenId
           );
           toast(`Logged in Successfully`, { autoClose: 2000 });
-          history.push("/final-page");
+          history.push("/");
         } else {
           history.push("/additional-info");
         }
@@ -125,7 +125,7 @@ export default () => {
       <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
       <NavLink href="/#faqs">FAQs</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
-      <NavLink href="/final-page/#contact">Contact</NavLink>
+      <NavLink href="/#contact">Contact</NavLink>
       {!isLoggedIn ? (
         <GoogleLogin
           className="google-login"

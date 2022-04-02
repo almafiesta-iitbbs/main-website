@@ -128,7 +128,7 @@ export default function App() {
           <Route path="/components/:type/:name">
             <ComponentRenderer />
           </Route>
-          <Route path="/final-page">
+          <Route path="/">
             <FinalPage />
           </Route>
           <Route path="/events/:type">
@@ -143,9 +143,9 @@ export default function App() {
           <Route path="/additional-info">
             <AdditionalPage />
           </Route>
-          <Route path="/">
+          {/* <Route path="/">
             <MainLandingPage />
-          </Route>
+          </Route> */}
         </Switch>
         <ToastContainer />
       </Router>

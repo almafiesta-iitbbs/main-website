@@ -93,10 +93,10 @@ export default () => {
       );
       if (FormResponse.status === 200) {
         toast(`Registered Successfully`, { autoClose: 2000 });
-        setEmail(FormResponse.data.updatedUser.email)
-        setName(FormResponse.data.updatedUser.name)
+        setEmail(FormResponse.data.updatedUser.email);
+        setName(FormResponse.data.updatedUser.name);
         setIsLoggedIn(true);
-        history.push("/final-page");
+        history.push("/");
       }
     } catch (e) {
       toast.error("There was some error! Please try again later");

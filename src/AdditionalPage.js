@@ -93,12 +93,15 @@ export default () => {
       );
       if (FormResponse.status === 200) {
         toast(`Registered Successfully`, { autoClose: 2000 });
-        setEmail(FormResponse.data.updatedUser.email)
-        setName(FormResponse.data.updatedUser.name)
+        setEmail(FormResponse.data.updatedUser.email);
+        setName(FormResponse.data.updatedUser.name);
         setIsLoggedIn(true);
         history.push("/final-page");
       }
     } catch (e) {
+      if (String(e.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(e.response.data.message);
+      }
       toast.error("There was some error! Please try again later");
     }
   };

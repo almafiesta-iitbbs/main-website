@@ -92,11 +92,12 @@ export default () => {
       events = EventsDetails.filler;
       break;
     default:
-      events = EventsDetails.fineArts;
+      events = null;
       break;
   }
 
   const registerForEvent = async (event) => {
+    if (!email) return toast("Please Login to Register for Events");
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
       try {
         const registrationResponse = await axios.post(
@@ -115,22 +116,23 @@ export default () => {
         if (String(e.response.data.error.statusCode).startsWith("4")) {
           return toast.error(e.response.data.message);
         }
+        toast.error("There was some error! Please try again later");
       }
     } else {
-      window.location.href = event.url; 
+      window.location.href = event.url;
     }
   };
 
-  return (
-    <Container>
+  return events === null ? <></> :
+      <Container>
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle style={{ textTransform: "capitalize" }}>
-            {params.type} Events
+          {params.type} Events
           </HeadingTitle>
           <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
-
+        
         <Content>
           {events.map((event, i) => (
             <Card key={i} reversed={i % 2 === 1}>
@@ -160,6 +162,5 @@ export default () => {
       <SvgDotPattern2 />
       <SvgDotPattern3 />
       <SvgDotPattern4 />
-    </Container>
-  );
+      </Container>
 };

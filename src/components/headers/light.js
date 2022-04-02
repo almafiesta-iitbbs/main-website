@@ -114,10 +114,12 @@ export default ({
       </DesktopNavLinks>
 
       <MobileNavLinksContainer
+        style={{ marginRight: "10px" }}
         css={collapseBreakpointCss.mobileNavLinksContainer}
       >
         {logoLink}
         <MobileNavLinks
+          style={{ position: "absolute" }}
           initial={{ x: "150%", display: "none" }}
           animate={animation}
           css={collapseBreakpointCss.mobileNavLinks}

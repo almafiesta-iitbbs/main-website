@@ -87,7 +87,6 @@ export default () => {
             JSON.parse(loginResponse.config.data).tokenId
           );
           toast(`Logged in Successfully`, { autoClose: 2000 });
-          history.push("/");
         } else {
           history.push("/additional-info");
         }

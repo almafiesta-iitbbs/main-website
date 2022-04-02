@@ -55,3 +55,9 @@ body::-webkit-scrollbar-thumb {
   }
 
 }
+@media only screen and (max-width: 768px) {
+  .Main1 {
+    flex-direction: column !important;
+  }
+
+}

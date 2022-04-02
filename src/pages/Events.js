@@ -7,7 +7,7 @@ import Footer from "components/footers/FiveColumnWithInputForm";
 export default function Events() {
   return (
     <AnimationRevealPage>
-      <Hero roundedHeaderButton={true} />
+      {/* <Hero roundedHeaderButton={true} /> */}
       <VerticalWithAlternateImageAndText />
       <Footer />
     </AnimationRevealPage>

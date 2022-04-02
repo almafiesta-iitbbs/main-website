@@ -80,7 +80,6 @@ export default () => {
       if (loginResponse.status === 201) {
         toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
         window.localStorage.setItem("jwt", loginResponse.data.jwt);
-        setIsLoggedIn(true);
         history.push("/additional-info");
       } else if (loginResponse.status === 200) {
         window.localStorage.setItem("jwt", loginResponse.data.jwt);
@@ -127,6 +126,7 @@ export default () => {
             </PrimaryLink>
           )}
           isSignedIn={false}
+          autoLoad={false}
           onSuccess={onGoogleLoginSuccess}
           onFailure={onGoogleLoginFailure}
           cookiePolicy={"single_host_origin"}

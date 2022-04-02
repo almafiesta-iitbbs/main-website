@@ -75,7 +75,7 @@ export default ({
     },
     {
       imageSrc: avipsa,
-      position: "Cheif coordinator",
+      position: "Chief coordinator",
       name: "Avipsa Sahu",
       links: [
         {

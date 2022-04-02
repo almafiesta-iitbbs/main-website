@@ -104,6 +104,7 @@ export default () => {
       });
     }
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
+      const token = window.localStorage.getItem("jwt");
       try {
         const registrationResponse = await axios.post(
           `${REACT_APP_BASE_URL}/api/v1/event/register/${event.id}`,
@@ -112,7 +113,7 @@ export default () => {
             headers: {
               "Content-Type": "application/json",
               Accept: "application/json",
-              Authorization: `Bearer ${window.localStorage.getItem("jwt")}`,
+              Authorization: `Bearer ${token}`,
             },
             withCredentials: true,
           }

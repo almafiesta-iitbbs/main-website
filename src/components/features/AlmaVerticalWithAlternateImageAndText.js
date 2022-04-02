@@ -9,7 +9,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { AppContext } from "context/AppContext";
-import {REACT_APP_BASE_URL} from "./../../config"
+import { REACT_APP_BASE_URL } from "./../../config";
 
 const ActionButton = tw(
   PrimaryButtonBase
@@ -109,6 +109,11 @@ export default () => {
           `${REACT_APP_BASE_URL}/api/v1/event/register/${event.id}`,
           {},
           {
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              Authorization: `Bearer ${window.localStorage.getItem("jwt")}`,
+            },
             withCredentials: true,
           }
         );
@@ -134,16 +139,18 @@ export default () => {
     }
   };
 
-  return events === null ? <></> :
-      <Container>
+  return events === null ? (
+    <></>
+  ) : (
+    <Container>
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle style={{ textTransform: "capitalize" }}>
-          {params.type} Events
+            {params.type} Events
           </HeadingTitle>
           <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
-        
+
         <Content>
           {events.map((event, i) => (
             <Card key={i} reversed={i % 2 === 1}>
@@ -173,5 +180,6 @@ export default () => {
       <SvgDotPattern2 />
       <SvgDotPattern3 />
       <SvgDotPattern4 />
-      </Container>
+    </Container>
+  );
 };

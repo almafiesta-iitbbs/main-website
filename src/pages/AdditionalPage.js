@@ -54,6 +54,7 @@ export default () => {
   const onSubmitSuccess = async (e) => {
     e.preventDefault();
     try {
+      const token = window.localStorage.getItem("jwt");
       const FormResponse = await axios.post(
         `${REACT_APP_BASE_URL}/api/v1/auth/finish-registration`,
         {
@@ -64,6 +65,11 @@ export default () => {
           city: City,
         },
         {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            Authorization: `Bearer ${token}`,
+          },
           withCredentials: true,
         }
       );
@@ -74,9 +80,9 @@ export default () => {
         setIsLoggedIn(true);
         history.push("/");
       }
-    } catch (e) {
-      if (String(e.response.data.error.statusCode).startsWith("4")) {
-        return toast.error(e.response.data.message);
+    } catch (err) {
+      if (err.response && String(err.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(err.response.data.message);
       }
       toast.error("There was some error! Please try again later");
     }

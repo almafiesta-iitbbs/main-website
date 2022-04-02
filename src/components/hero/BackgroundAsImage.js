@@ -20,6 +20,13 @@ import Header, {
 } from "../headers/light.js";
 import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const StyledAnchor = styled(AnchorLink)`
+  ${tw`text-white text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+font-semibold tracking-wide transition duration-300
+pb-1 border-b-2 border-transparent hover:border-white hocus:text-white`}
+`;
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -72,21 +79,15 @@ export default () => {
       );
       if (loginResponse.status === 201) {
         toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
-        window.localStorage.setItem(
-          "jwt",
-          JSON.parse(loginResponse.config.data).tokenId
-        );
+        window.localStorage.setItem("jwt", loginResponse.data.jwt);
         setIsLoggedIn(true);
         history.push("/additional-info");
       } else if (loginResponse.status === 200) {
+        window.localStorage.setItem("jwt", loginResponse.data.jwt);
         if (loginResponse.data.user.isRegistrationComplete) {
           setName(loginResponse.data.user.name);
           setEmail(loginResponse.data.user.email);
           setIsLoggedIn(true);
-          window.localStorage.setItem(
-            "jwt",
-            JSON.parse(loginResponse.config.data).tokenId
-          );
           toast(`Logged in Successfully`, { autoClose: 2000 });
         } else {
           history.push("/additional-info");
@@ -106,13 +107,13 @@ export default () => {
 
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#about">About</NavLink>
-      <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
-      <NavLink href="/#events">Events</NavLink>
+      <StyledAnchor href="#about">About</StyledAnchor>
+      <StyledAnchor href="#events">Events</StyledAnchor>
       <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
-      <NavLink href="/#faqs">FAQs</NavLink>
+      <StyledAnchor href="#contact">Contact</StyledAnchor>
+      <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
-      <NavLink href="/#contact">Contact</NavLink>
+      <StyledAnchor href="#faqs">FAQs</StyledAnchor>
       {!isLoggedIn ? (
         <GoogleLogin
           className="google-login"
@@ -143,6 +144,13 @@ export default () => {
                 `${REACT_APP_BASE_URL}/api/v1/auth/logout`,
                 {},
                 {
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                    Authorization: `Bearer ${window.localStorage.getItem(
+                      "jwt"
+                    )}`,
+                  },
                   withCredentials: true,
                 }
               );

@@ -53,6 +53,8 @@ export default () => {
   const [sliderRef, setSliderRef] = useState(null);
   const sliderSettings = {
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2500,
     slidesToShow: 3,
     responsive: [
       {

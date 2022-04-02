@@ -32,7 +32,7 @@ export const NavLink = tw.a`
 export const PrimaryLink = tw(PrimaryButtonBase)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
+  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline disabled:hidden
   border-b-0
 `;
 

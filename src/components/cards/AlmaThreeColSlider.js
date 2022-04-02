@@ -25,7 +25,7 @@ const ControlButton = styled(PrimaryButtonBase)`
 const PrevButton = tw(ControlButton)``;
 const NextButton = tw(ControlButton)``;
 const CardSlider = styled(Slider)`
-  ${tw`mt-16`}
+  ${tw`mt-16  overflow-x-hidden`}
   .slick-track {
     ${tw`flex`}
   }

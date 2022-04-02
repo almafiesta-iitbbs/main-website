@@ -11,6 +11,8 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
 import axios from "axios";
 import { toast } from "react-toastify";
+import {REACT_APP_BASE_URL} from "./../config"
+
 const Container = tw(
   ContainerBase
 )`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
@@ -53,8 +55,9 @@ export default () => {
   const onSubmitSuccess = async (e) => {
     e.preventDefault();
     try {
+      const token = window.localStorage.getItem("jwt");
       const FormResponse = await axios.post(
-        "https://almafiesta.herokuapp.com/api/v1/auth/finish-registration",
+        `${REACT_APP_BASE_URL}/api/v1/auth/finish-registration`,
         {
           phone: PhoneNumber,
           institute: Institute,
@@ -63,6 +66,11 @@ export default () => {
           city: City,
         },
         {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            Authorization: `Bearer ${token}`,
+          },
           withCredentials: true,
         }
       );
@@ -73,9 +81,9 @@ export default () => {
         setIsLoggedIn(true);
         history.push("/");
       }
-    } catch (e) {
-      if (String(e.response.data.error.statusCode).startsWith("4")) {
-        return toast.error(e.response.data.message);
+    } catch (err) {
+      if (err.response && String(err.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(err.response.data.message);
       }
       toast.error("There was some error! Please try again later");
     }

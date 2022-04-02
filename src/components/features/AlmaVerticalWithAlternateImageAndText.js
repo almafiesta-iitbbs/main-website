@@ -9,6 +9,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { AppContext } from "context/AppContext";
+import { REACT_APP_BASE_URL } from "./../../config";
 
 const ActionButton = tw(
   PrimaryButtonBase
@@ -105,9 +106,14 @@ export default () => {
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
       try {
         const registrationResponse = await axios.post(
-          `https://almafiesta.herokuapp.com/api/v1/event/register/${event.id}`,
+          `${REACT_APP_BASE_URL}/api/v1/event/register/${event.id}`,
           {},
           {
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              Authorization: `Bearer ${window.localStorage.getItem("jwt")}`,
+            },
             withCredentials: true,
           }
         );

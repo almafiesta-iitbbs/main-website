@@ -97,7 +97,11 @@ export default () => {
   }
 
   const registerForEvent = async (event) => {
-    if (!email) return toast("Please Login to Register for Events");
+    if (!email) {
+      return toast(`Please Login to continue registration!`, {
+        autoClose: 2000,
+      });
+    }
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
       try {
         const registrationResponse = await axios.post(
@@ -119,6 +123,12 @@ export default () => {
         toast.error("There was some error! Please try again later");
       }
     } else {
+      toast(
+        `Your being redirected to Razorpay page for payment, make sure you enter the same email you entered here during registration!`,
+        {
+          autoClose: 2000,
+        }
+      );
       window.location.href = event.url;
     }
   };

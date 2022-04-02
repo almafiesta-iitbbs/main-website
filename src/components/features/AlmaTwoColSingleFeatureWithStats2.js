@@ -98,7 +98,7 @@ export default ({
             <Description style={{ textAlign: "justify", paddingRight: "10px" }}>
               {description}
             </Description>
-            <Statistics style={{display: "flex", justifyContent: "center", flexDirection: "row"}}>
+            <Statistics  className="Main1" style={{display: "flex", justifyContent: "center", flexDirection: "row"}}>
               {statistics.map((statistic, index) => (
                 <Statistic key={index} style={{ textAlign: "center" }}>
                   <Value>

@@ -195,9 +195,11 @@ export default () => {
                 presents
               </span>
               <br />
-              <SlantedBackground style={{ marginTop: "5%" }}>
-                <span tw="text-primary-500">Alma Fiesta 2022</span>
-              </SlantedBackground>
+              {/* <SlantedBackground style={{ marginTop: "5%" }}> */}
+              <span tw="text-primary-100" style={{ fontFamily: "AlmaFont" }}>
+                Alma Fiesta 2022
+              </span>
+              {/* </SlantedBackground> */}
             </Heading>
             {/* <PrimaryAction>Read Customer Stories</PrimaryAction> */}
             <br />

@@ -15,3 +15,26 @@
     transform: scale(0);
     /* transform: translateY(-150%); */
 }
+
+@font-face {
+    font-family: 'AlmaFont';
+    src: local('ScriptMTBold'), url(./../fonts/ScriptMTBold.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+  .IconHandler:hover {
+    color: #6415ff !important;
+  }
+  body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #6415ff;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid white;  /* creates padding around scroll thumb */
+  }

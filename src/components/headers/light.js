@@ -101,7 +101,7 @@ export default ({
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      <span>Alma Fiesta</span>
+      <span style={{ fontFamily: "AlmaFont" }}>Alma Fiesta</span>
     </LogoLink>
   );
 

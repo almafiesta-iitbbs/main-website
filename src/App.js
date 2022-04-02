@@ -107,39 +107,49 @@ import ThankYouPage from "ThankYouPage.js";
 import FinalPage from "FinalPage.js";
 import TeamPage from "TeamPage.js";
 import Events from "Events.js";
+import AdditionalPage from "AdditionalPage.js";
+import { AppContextProvider } from "context/AppContext";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
 
   return (
-    <Router>
-      <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/final-page">
-          <MainLandingPage />
-        </Route>
-        <Route path="/events/:type">
-          <Events />
-        </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
-        </Route>
-        <Route path="/team-page">
-          <TeamPage />
-        </Route>
-        <Route path="/">
-          <FinalPage />
-        </Route>
-      </Switch>
-    </Router>
+    <AppContextProvider>
+      <Router>
+        <Switch>
+          <Route path="/components/:type/:subtype/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/components/:type/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/final-page">
+            <FinalPage />
+          </Route>
+          <Route path="/events/:type">
+            <Events />
+          </Route>
+          <Route path="/thank-you">
+            <ThankYouPage />
+          </Route>
+          <Route path="/team-page">
+            <TeamPage />
+          </Route>
+          <Route path="/additional-info">
+            <AdditionalPage />
+          </Route>
+          <Route path="/">
+            <MainLandingPage />
+          </Route>
+        </Switch>
+        <ToastContainer />
+      </Router>
+    </AppContextProvider>
   );
 }
 

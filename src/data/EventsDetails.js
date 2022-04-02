@@ -1,6 +1,7 @@
 const EventsDetails = {
   dramatics: [
     {
+      id: "dramatics-1",
       imageSrc:
         "https://images.unsplash.com/photo-1598386651046-5f5666fdc160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       title: "Pont des émotions",
@@ -11,6 +12,7 @@ const EventsDetails = {
     },
 
     {
+      id: "dramatics-2",
       imageSrc:
         "https://images.unsplash.com/photo-1538045698727-ac45d4365100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Word-Smith",
@@ -21,6 +23,7 @@ const EventsDetails = {
     },
 
     {
+      id: "dramatics-3",
       imageSrc:
         "https://images.unsplash.com/photo-1625690303837-654c9666d2d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Spoof-o-mania",
@@ -31,6 +34,7 @@ const EventsDetails = {
     },
 
     {
+      id: "dramatics-4",
       imageSrc:
         "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       title: "Audio Play",
@@ -43,6 +47,7 @@ const EventsDetails = {
 
   music: [
     {
+      id: "music-1",
       imageSrc:
         "https://images.unsplash.com/photo-1609102026434-c1d11202c0eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=282&q=80",
       title: "Dil Se",
@@ -53,6 +58,7 @@ const EventsDetails = {
     },
 
     {
+      id: "music-2",
       imageSrc:
         "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       title: "Twist the Lyrics",
@@ -63,6 +69,7 @@ const EventsDetails = {
     },
 
     {
+      id: "music-3",
       imageSrc:
         "https://images.unsplash.com/photo-1594214456448-9ca134a5d5d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rock On!",
@@ -75,6 +82,7 @@ const EventsDetails = {
 
   dance: [
     {
+      id: "dance-1",
       imageSrc:
         "https://images.unsplash.com/photo-1621976498727-9e5d56476276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Topsy Turvy",
@@ -85,6 +93,7 @@ const EventsDetails = {
     },
 
     {
+      id: "dance-2",
       imageSrc:
         "https://images.unsplash.com/photo-1546427660-eb346c344ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rip Out",
@@ -95,28 +104,31 @@ const EventsDetails = {
     },
 
     {
+      id: "dance-3",
       imageSrc:
         "https://images.unsplash.com/photo-1555027790-d35ce3bb3d5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=401&q=80",
       title: "Rab Ne Bana Di Jodi ",
       subtitle: "Duet Dance",
       description:
-        "It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
+        " It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
       url: "https://timerse.com",
     },
 
     {
+      id: "dance-4",
       imageSrc:
         "https://images.unsplash.com/photo-1547106500-9b566874481b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Getting regional",
       subtitle: "Regional Dance",
       description:
-        "PIt is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
+        "It is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
       url: "https://timerse.com",
     },
   ],
 
   literature: [
     {
+      id: "literature-1",
       imageSrc:
         "https://images.unsplash.com/photo-1552181903-a6af3a3d159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Gone in 60 seconds",
@@ -126,6 +138,7 @@ const EventsDetails = {
     },
 
     {
+      id: "literature-2",
       imageSrc:
         "https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       title: "Shipwrecked",
@@ -136,6 +149,7 @@ const EventsDetails = {
     },
 
     {
+      id: "literature-3",
       imageSrc:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Online MUN",
@@ -146,6 +160,7 @@ const EventsDetails = {
     },
 
     {
+      id: "literature-4",
       imageSrc:
         "https://images.unsplash.com/photo-1587135991058-8816b028691f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Alt-End ",
@@ -156,6 +171,7 @@ const EventsDetails = {
     },
 
     {
+      id: "literature-5",
       imageSrc:
         "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Fantasy Quiz",
@@ -165,6 +181,7 @@ const EventsDetails = {
     },
 
     {
+      id: "literature-6",
       imageSrc:
         "https://images.unsplash.com/photo-1629327896333-7ecec1515ae5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Kavya Path",
@@ -176,16 +193,17 @@ const EventsDetails = {
   ],
   fineArts: [
     {
+      id: "fine_arts-1",
       imageSrc:
         "https://images.unsplash.com/photo-1597754255094-6f952470f88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Pen Art",
       subtitle: "Pen art",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Express Art with Pens and Ink",
       url: "https://timerse.com",
     },
 
     {
+      id: "fine_arts-2",
       imageSrc:
         "https://images.unsplash.com/photo-1585923972216-f30dc61fd61c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Shades",
@@ -196,36 +214,37 @@ const EventsDetails = {
     },
 
     {
+      id: "fine_arts-3",
       imageSrc:
         "https://images.unsplash.com/photo-1597400473368-b2f08a070bde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80",
       title: "Origami Fashion",
       subtitle: "Paper Origami to decorate dress",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Make a dress more fashionable by means of paper origami.",
       url: "https://timerse.com",
     },
 
     {
+      id: "fine_arts-4",
       imageSrc:
         "https://images.unsplash.com/photo-1507361617237-221d9f2c84f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1235&q=80",
       title: "Virtual brush",
       subtitle: "Digital Art",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Pick up the virtual brushes and make digital art",
       url: "https://timerse.com",
     },
 
     {
+      id: "fine_arts-5",
       imageSrc:
         "https://images.unsplash.com/photo-1642091335544-7d26e1ecd9e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Monochrome",
       subtitle: "Single Colour Painting Event",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "The painting competition but with just 1 color",
       url: "https://timerse.com",
     },
 
     {
+      id: "fine_arts-6",
       imageSrc:
         "https://images.unsplash.com/photo-1579009120005-df2fd9baf7e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=463&q=80",
       title: "The Portraiture",
@@ -238,6 +257,7 @@ const EventsDetails = {
 
   esports: [
     {
+      id: "online_gaming-1",
       imageSrc:
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
@@ -248,6 +268,7 @@ const EventsDetails = {
     },
 
     {
+      id: "online_gaming-2",
       imageSrc:
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
@@ -258,6 +279,7 @@ const EventsDetails = {
     },
 
     {
+      id: "online_gaming-3",
       imageSrc:
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
@@ -268,6 +290,7 @@ const EventsDetails = {
     },
 
     {
+      id: "online_gaming-4",
       imageSrc:
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
@@ -280,6 +303,7 @@ const EventsDetails = {
 
   filler: [
     {
+      id: "filler-1",
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
       subtitle: "Ukarian",
@@ -290,6 +314,7 @@ const EventsDetails = {
     },
 
     {
+      id: "filler-2",
       imageSrc:
         "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       subtitle: "Free",
@@ -300,6 +325,7 @@ const EventsDetails = {
     },
 
     {
+      id: "filler-3",
       imageSrc:
         "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
       subtitle: "Exclusive",
@@ -312,18 +338,20 @@ const EventsDetails = {
 
   fashion: [
     {
+      id: "fashion-1",
       imageSrc:
         "https://images.unsplash.com/photo-1571924848943-25c2c95bbb4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "The Vogue Spectra",
       subtitle: "Fashion Show",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://timerse.com",
     },
   ],
 
   photography: [
     {
+      id: "photography-1",
       imageSrc:
         "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
       title: "PICTURESQUE",
@@ -334,6 +362,7 @@ const EventsDetails = {
     },
 
     {
+      id: "photography-2",
       imageSrc:
         "https://images.unsplash.com/photo-1510090896050-4005ac527060?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "PIXEL LENS",
@@ -344,6 +373,7 @@ const EventsDetails = {
     },
 
     {
+      id: "photography-3",
       imageSrc:
         "https://images.unsplash.com/photo-1599249681041-8692a1080a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "Short Film Making",
@@ -354,6 +384,7 @@ const EventsDetails = {
     },
 
     {
+      id: "photography-4",
       imageSrc:
         "https://images.unsplash.com/photo-1520719779766-3085136d7180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       title: "Trailer Making",
@@ -364,42 +395,11 @@ const EventsDetails = {
     },
 
     {
+      id: "photography-5",
       imageSrc:
         "https://images.unsplash.com/photo-1553096442-8fe2118fb927?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Advertise Making",
       subtitle: "Fashion Show",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-  ],
-
-  food: [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=481&q=80",
-      subtitle: "Food",
-      title: "Loachella, NYC",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
-    },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",

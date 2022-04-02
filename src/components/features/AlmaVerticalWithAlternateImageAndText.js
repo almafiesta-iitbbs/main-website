@@ -160,7 +160,7 @@ export default () => {
                 <Subtitle>{event.subtitle}</Subtitle>
                 <Title>{event.title}</Title>
                 <Description>{event.description}</Description>
-                <Link href={event.url}>Event Rules</Link>
+                <Link href={event.rulebook}>Event Rules</Link>
                 <br />
                 <Link href={event.url}>See Event Details</Link>
                 <br />

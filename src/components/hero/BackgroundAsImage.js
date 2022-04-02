@@ -108,13 +108,15 @@ export default () => {
         }
       }
     } catch (e) {
+      if (String(e.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(e.response.data.message);
+      }
       toast.error("There was some error! Please try again later");
     }
   };
 
   const onGoogleLoginFailure = async (res) => {
     toast.error("There was some error! Please try again later");
-    // store returned user somehow
   };
 
   const navLinks = [
@@ -148,11 +150,26 @@ export default () => {
       ) : (
         <PrimaryLink
           css={tw`rounded-full cursor-pointer`}
-          onClick={() => {
+          onClick={async () => {
             toast("Logged out Successfully!");
             window.localStorage.clear();
             setIsLoggedIn(false);
-          }}
+            try {
+
+              const loginResponse = await axios.post(
+                "http://localhost:5000/api/v1/auth/logout",
+                {},
+                {
+                  withCredentials: true,
+                }
+                );
+              } catch(e) {
+                if (String(e.response.data.error.statusCode).startsWith("4")) {
+                  return toast.error(e.response.data.message);
+                }
+                toast.error("There was some error! Please try again later");
+              }
+              }} 
         >
           Log out
         </PrimaryLink>

@@ -99,6 +99,9 @@ export default () => {
         history.push("/");
       }
     } catch (e) {
+      if (String(e.response.data.error.statusCode).startsWith("4")) {
+        return toast.error(e.response.data.message);
+      }
       toast.error("There was some error! Please try again later");
     }
   };

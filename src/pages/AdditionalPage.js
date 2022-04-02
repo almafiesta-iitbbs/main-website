@@ -10,6 +10,8 @@ import { useHistory } from "react-router-dom";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus.svg";
 import axios from "axios";
 import { toast } from "react-toastify";
+import {REACT_APP_BASE_URL} from "./../config"
+
 const Container = tw(
   ContainerBase
 )`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;
@@ -53,7 +55,7 @@ export default () => {
     e.preventDefault();
     try {
       const FormResponse = await axios.post(
-        "http://localhost:5000/api/v1/auth/finish-registration",
+        `${REACT_APP_BASE_URL}/api/v1/auth/finish-registration`,
         {
           phone: PhoneNumber,
           institute: Institute,

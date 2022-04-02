@@ -8,6 +8,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import config from "./../../config";
 import { AppContext } from "context/AppContext";
+import { REACT_APP_BASE_URL } from "./../../config";
 
 import Header, {
   NavLink,
@@ -63,7 +64,7 @@ export default () => {
   const onGoogleLoginSuccess = async (res) => {
     try {
       const loginResponse = await axios.post(
-        "http://localhost:5000/api/v1/auth/login",
+        `${REACT_APP_BASE_URL}/api/v1/auth/login`,
         { tokenId: res.tokenId },
         {
           withCredentials: true,
@@ -135,17 +136,17 @@ export default () => {
         <PrimaryLink
           css={tw`rounded-full cursor-pointer`}
           onClick={async () => {
-            toast("Logged out Successfully!");
             window.localStorage.clear();
             setIsLoggedIn(false);
             try {
               const loginResponse = await axios.post(
-                "http://localhost:5000/api/v1/auth/logout",
+                `${REACT_APP_BASE_URL}/api/v1/auth/logout`,
                 {},
                 {
                   withCredentials: true,
                 }
               );
+              toast("Logged out Successfully!");
             } catch (e) {
               if (String(e.response.data.error.statusCode).startsWith("4")) {
                 return toast.error(e.response.data.message);

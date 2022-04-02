@@ -9,7 +9,7 @@ const EventsDetails = {
       description:
         "Mimic your favourite actor for 2-3 min not necessarily doing there dialogue but you have to match there body language and voice tone",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: "",
+      rulebook: "https://drive.google.com/file/d/1VAamMtUxb2joNvFWfPiB2DjlOHVdx0K2/view?usp=sharing",
     },
 
     {
@@ -21,7 +21,7 @@ const EventsDetails = {
       description:
         "This will be basically script writing competition i.e. writing script for play.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1sD1XrkxcLaz6Ynk-C8TpZNq3KvXQTJqo/view?usp=sharing"
     },
 
     {
@@ -33,7 +33,7 @@ const EventsDetails = {
       description:
         "Make a funny remake of an existing movie scene) this may include change in dialogue or even the story of that scene.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1JFTqJlMJbfx5SrbtAOFgm0wWccV_jzym/view?usp=sharing"
     },
 
     {
@@ -45,7 +45,7 @@ const EventsDetails = {
       description:
         "This is basically playing charecters through narrating dialogues only.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1e7yP8JtdYQB3a0ebxfPTWNMqv1dBDH5d/view?usp=sharing"
     },
   ],
 
@@ -59,7 +59,7 @@ const EventsDetails = {
       description:
         "In this competition the participants will be allowed to sing for 3-4min.The songs can be from any genre or language.",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1m1OLmQtF1iMNOvtY4wq6tj26WBF-inNp/view?usp=sharing"
     },
 
     {
@@ -71,7 +71,7 @@ const EventsDetails = {
       description:
         "The participants will be given a song and will be asked to chnge the lyrics according to a plot given.",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1sYDCMj8ydSnKLA0w4uzhc1K--fOWndOe/view?usp=sharing"
     },
 
     {
@@ -83,7 +83,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1JlmqnU4JENFOLcTvZRievcujl1CY6_lZ/view?usp=sharing"
     },
   ],
 
@@ -97,7 +97,7 @@ const EventsDetails = {
       description:
         "It is a group dance competition, so find a group of your friends with whom you sync the best and dance your way out to glory.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1pJdID5X8qT0-rtFcjzfjpiXKz55Q-HhB/view?usp=sharing"
     },
 
     {
@@ -109,7 +109,7 @@ const EventsDetails = {
       description:
         "It is a Solo Dance Competition, open to all dance forms be it contemporary, hip hop, classical, Bollywood, or any other.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/12hk2N3soOlJdABa5opPs6D2NqNEOHI65/view?usp=sharing"
     },
 
     {
@@ -121,7 +121,7 @@ const EventsDetails = {
       description:
         " It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/15xlZCs4XEWCUOSa_dJISWd3h4IEz-l9B/view?usp=sharing"
     },
 
     {
@@ -133,7 +133,7 @@ const EventsDetails = {
       description:
         "It is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1syZvfnla19Czy9np9SempRt5BbbpVEw6/view?usp=sharing"
     },
   ],
 
@@ -147,7 +147,7 @@ const EventsDetails = {
       description:
         "This would be a competition similar to Extempore.",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1Fe2q-BBvngTY93Ev1vmri9Cp1CVw3HGW/view?usp=sharing"
     },
 
     {
@@ -159,7 +159,7 @@ const EventsDetails = {
       description:
         "Participants will be assigned characters on the spot and they will have to defend (in an interesting manner) why they deserve to survive.",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1OLviMnh3m1wGDb_ld3iuqDN_Tpmvq6yn/view?usp=sharing"
     },
 
     {
@@ -171,7 +171,7 @@ const EventsDetails = {
       description:
         "National Level Online MUN having single committee will be organized. ",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing"
     },
 
     {
@@ -183,7 +183,7 @@ const EventsDetails = {
       description:
         "An alternative ending has to be written based on theme. It can be online competition with plagiarism check. ",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1p9oeORpd_IyZsGEhPPPvGVFleK7XZtxy/view?usp=sharing"
     },
 
     {
@@ -195,7 +195,7 @@ const EventsDetails = {
       description:
         "A quiz on fantasy themes ",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1hAVcshifPt2GInedisYZd--3tio4kkym/view?usp=sharing"
     },
 
     {
@@ -207,7 +207,7 @@ const EventsDetails = {
       description:
         "National Level Online MUN having single committee will be organized. ",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1EbySX1fF9WI6ZHfHOmr3u8WeSbnW3a8Q/view?usp=sharing"
     },
   ],
   fineArts: [
@@ -220,7 +220,7 @@ const EventsDetails = {
       description:
         "Express Art with Pens and Ink",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1XMWvP1Zbfv7aiQFyUzoqfbh6et8mvfRl/view?usp=sharing"
     },
 
     {
@@ -232,7 +232,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1GwMcHA5QcowZ7qay2n3J6eESmL8_ZRxR/view?usp=sharing"
     },
 
     {
@@ -244,7 +244,7 @@ const EventsDetails = {
       description:
         "Make a dress more fashionable by means of paper origami.",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1BeH7UVj-0GZl8c6Mp6PrRG-U8jl7kim5/view?usp=sharing"
     },
 
     {
@@ -256,7 +256,7 @@ const EventsDetails = {
       description:
         "Pick up the virtual brushes and make digital art",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1Yo8MDUSHXYIv-CFWZ7T2P6hcd0p6XOxH/view?usp=sharing"
     },
 
     {
@@ -268,7 +268,7 @@ const EventsDetails = {
       description:
         "The painting competition but with just 1 color",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1sWSh8vEs2qgMZb2y2t6ZsAK3Iifrk0l8/view?usp=sharing"
     },
 
     {
@@ -280,7 +280,7 @@ const EventsDetails = {
       description:
         "Portrait making contest in which the portrait can be made using sketching, painting or mixed art",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1sSpFjbb1hUpvqwHtk23lUhQ5dOgLjiku/view?usp=sharing"
     },
   ],
 
@@ -294,7 +294,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing"
     },
 
     {
@@ -306,7 +306,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing"
     },
 
     {
@@ -318,7 +318,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing"
     },
 
     {
@@ -330,7 +330,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing"
     },
   ],
 
@@ -382,7 +382,7 @@ const EventsDetails = {
       description:
         "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://rzp.io/l/dbd9PzNgY",
-      rulebook: ""
+      rulebook: "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing"
     },
   ],
 
@@ -396,7 +396,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
+      rulebook: "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing"
     },
 
     {
@@ -408,7 +408,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
+      rulebook: "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing"
     },
 
     {

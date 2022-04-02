@@ -63,15 +63,16 @@ export default ({
   const defaultStatistics = [
     {
       key: "Footfall",
-      value: "20000+",
-    },
-    {
-      key: "Events",
-      value: "100+",
+      value: "20",
+      unit: "k",
     },
     {
       key: "Participating Institutions",
-      value: "80+",
+      value: "80",
+    },
+    {
+      key: "Events",
+      value: "100",
     },
   ];
 
@@ -97,11 +98,12 @@ export default ({
             <Description style={{ textAlign: "justify", paddingRight: "10px" }}>
               {description}
             </Description>
-            <Statistics >
+            <Statistics style={{display: "flex", justifyContent: "center", flexDirection: "row"}}>
               {statistics.map((statistic, index) => (
-                <Statistic  key={index} style={{textAlign:"center"}}>
+                <Statistic key={index} style={{ textAlign: "center" }}>
                   <Value>
-                    <CountUp end={parseInt(statistic.value)} duration={2} />+
+                    <CountUp end={parseInt(statistic.value)} duration={2} />
+                    {statistic.unit}+
                   </Value>
                   <Key>{statistic.key}</Key>
                 </Statistic>

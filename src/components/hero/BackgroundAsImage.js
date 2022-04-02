@@ -8,7 +8,6 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import config from "./../../config";
 import { AppContext } from "context/AppContext";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Header, {
   NavLink,
@@ -18,7 +17,6 @@ import Header, {
   NavToggle,
   DesktopNavLinks,
 } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
 
@@ -57,18 +55,6 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
-
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
-
-const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
-  padding-bottom: 56.25% !important;
-  padding-top: 0px !important;
-  ${tw`rounded`}
-  iframe {
-    ${tw`rounded bg-black shadow-xl`}
-  }
-`;
 export default () => {
   const history = useHistory();
   const { isLoggedIn, setIsLoggedIn, setName, setEmail } =
@@ -154,21 +140,20 @@ export default () => {
             window.localStorage.clear();
             setIsLoggedIn(false);
             try {
-
               const loginResponse = await axios.post(
                 "http://localhost:5000/api/v1/auth/logout",
                 {},
                 {
                   withCredentials: true,
                 }
-                );
-              } catch(e) {
-                if (String(e.response.data.error.statusCode).startsWith("4")) {
-                  return toast.error(e.response.data.message);
-                }
-                toast.error("There was some error! Please try again later");
+              );
+            } catch (e) {
+              if (String(e.response.data.error.statusCode).startsWith("4")) {
+                return toast.error(e.response.data.message);
               }
-              }} 
+              toast.error("There was some error! Please try again later");
+            }
+          }}
         >
           Log out
         </PrimaryLink>
@@ -183,9 +168,6 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            {/* <Notification>
-              We have now launched operations in Europe.
-            </Notification> */}
             <Heading>
               <img
                 src={ab_logo}

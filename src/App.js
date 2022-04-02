@@ -3,10 +3,10 @@ import "styles/globalStyles.css";
 import React from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import FinalPage from "FinalPage.js";
-import TeamPage from "TeamPage.js";
-import Events from "Events.js";
-import AdditionalPage from "AdditionalPage.js";
+import FinalPage from "pages/FinalPage.js";
+import TeamPage from "pages/TeamPage.js";
+import Events from "pages/Events.js";
+import AdditionalPage from "pages/AdditionalPage.js";
 
 import { AppContextProvider } from "context/AppContext";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

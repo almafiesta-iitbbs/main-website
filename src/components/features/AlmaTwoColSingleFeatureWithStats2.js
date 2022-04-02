@@ -6,19 +6,14 @@ import {
   SectionHeading,
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/stats-illustration.svg";
-import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import CountUp from "react-countup";
 import ResponsiveVideoEmbed from "../../helpers/AlmaResponsiveVideoEmbed.js";
-import TwoColumnWithVideo from "components/hero/TwoColumnWithVideo.js";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-10 md:py-20`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
-const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-4 flex-shrink-0 text-center lg:text-left`;
-const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
 
 const TextColumn = styled(Column)((props) => [
   tw`md:w-7/12 mt-16 md:mt-0`,
@@ -27,10 +22,6 @@ const TextColumn = styled(Column)((props) => [
     : tw`md:ml-12 lg:ml-16 md:order-last`,
 ]);
 
-const Image = styled.div((props) => [
-  `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-contain bg-no-repeat bg-center h-full`,
-]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
@@ -43,14 +34,6 @@ const Statistics = tw.div`flex flex-col items-center sm:block text-center md:tex
 const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
 const Key = tw.div`font-medium text-primary-700`;
-
-const PrimaryButton = tw(
-  PrimaryButtonBase
-)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
-
-const DecoratorBlob = styled(SvgDotPattern)((props) => [
-  tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`,
-]);
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -105,10 +88,6 @@ export default ({
             background="transparent"
           />
         </ImageColumn>
-        {/* <LeftColumn> */}
-
-        {/* </LeftColumn> */}
-        {/* <RightColumn> */}
         <TextColumn>
           <TextContent>
             {subheading && (
@@ -130,7 +109,6 @@ export default ({
             </Statistics>
           </TextContent>
         </TextColumn>
-        {/* </RightColumn> */}
       </TwoColumn>
     </Container>
   );

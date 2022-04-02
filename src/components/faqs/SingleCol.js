@@ -8,7 +8,7 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { Container } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";

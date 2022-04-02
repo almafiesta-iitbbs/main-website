@@ -97,9 +97,9 @@ export default ({
             <Description style={{ textAlign: "justify", paddingRight: "10px" }}>
               {description}
             </Description>
-            <Statistics>
+            <Statistics >
               {statistics.map((statistic, index) => (
-                <Statistic key={index}>
+                <Statistic  key={index} style={{textAlign:"center"}}>
                   <Value>
                     <CountUp end={parseInt(statistic.value)} duration={2} />+
                   </Value>

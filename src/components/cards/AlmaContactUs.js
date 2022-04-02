@@ -50,7 +50,6 @@ function titleCase(str) {
 
 export default ({
   heading = "Our Team",
-  subheading = "Web Development Team",
   description = "",
   teams = TeamDetails,
 }) => {
@@ -72,7 +71,6 @@ export default ({
             </Subheading>
             <Cards>
               {team.members.map((card, index) => {
-                const fname = card.split(" ")[0];
                 return (
                   <Card key={index}>
                     <CardImage imageSrc={`/team/${card}.jpg`} />

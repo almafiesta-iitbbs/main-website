@@ -21,7 +21,6 @@ import Header, {
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
-import Login from "pages/Login";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}

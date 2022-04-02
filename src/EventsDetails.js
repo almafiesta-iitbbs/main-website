@@ -8,7 +8,8 @@ const EventsDetails = {
         subtitle: "Mimicry and monologue",
       description:
         "Mimic your favourite actor for 2-3 min not necessarily doing there dialogue but you have to match there body language and voice tone",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/E0nMlIAJ",
+      rulebook: "",
     },
 
     {
@@ -18,7 +19,8 @@ const EventsDetails = {
         subtitle: "Play/Script writing competition",
       description:
         "This will be basically script writing competition i.e. writing script for play.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/E0nMlIAJ",
+      rulebook: ""
     },
 
     {
@@ -28,7 +30,8 @@ const EventsDetails = {
         subtitle: "Spoof making competition",
       description:
         "Make a funny remake of an existing movie scene) this may include change in dialogue or even the story of that scene.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/E0nMlIAJ",
+      rulebook: ""
     },
 
     {
@@ -38,7 +41,8 @@ const EventsDetails = {
         subtitle: "Record a play in audio format",
       description:
         "This is basically playing charecters through narrating dialogues only.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/E0nMlIAJ",
+      rulebook: ""
     },
   ],
 
@@ -50,7 +54,8 @@ const EventsDetails = {
         subtitle: "Solo Singing",
       description:
         "In this competition the participants will be allowed to sing for 3-4min.The songs can be from any genre or language.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/4ssjkNCUYx",
+      rulebook: ""
     },
 
     {
@@ -60,7 +65,8 @@ const EventsDetails = {
         subtitle: "Parody Singing",
       description:
         "The participants will be given a song and will be asked to chnge the lyrics according to a plot given.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/4ssjkNCUYx",
+      rulebook: ""
     },
 
     {
@@ -70,7 +76,8 @@ const EventsDetails = {
         subtitle: "Solo Instrumental",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/4ssjkNCUYx",
+      rulebook: ""
     },
   ],
 
@@ -82,7 +89,8 @@ const EventsDetails = {
         subtitle: "Group dance",
       description:
         "It is a group dance competition, so find a group of your friends with whom you sync the best and dance your way out to glory.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/odVsZPc3n",
+      rulebook: ""
     },
 
     {
@@ -92,7 +100,8 @@ const EventsDetails = {
         subtitle: "Solo Dance",
       description:
         "It is a Solo Dance Competition, open to all dance forms be it contemporary, hip hop, classical, Bollywood, or any other.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/odVsZPc3n",
+      rulebook: ""
     },
 
     {
@@ -102,7 +111,8 @@ const EventsDetails = {
         subtitle: "Duet Dance",
       description:
         " It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/odVsZPc3n",
+      rulebook: ""
     },
 
     {
@@ -112,7 +122,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "It is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/odVsZPc3n",
+      rulebook: ""
     },
   ],
 
@@ -124,7 +135,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "This would be a competition similar to Extempore.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
 
     {
@@ -134,7 +146,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "Participants will be assigned characters on the spot and they will have to defend (in an interesting manner) why they deserve to survive.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
 
     {
@@ -144,7 +157,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "National Level Online MUN having single committee will be organized. ",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
 
     {
@@ -154,7 +168,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "An alternative ending has to be written based on theme. It can be online competition with plagiarism check. ",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
 
     {
@@ -164,7 +179,8 @@ const EventsDetails = {
         subtitle: "Regional Dance",
       description:
         "A quiz on fantasy themes ",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
 
     {
@@ -174,7 +190,8 @@ const EventsDetails = {
         subtitle: "Hindi Poem recitation ",
       description:
         "National Level Online MUN having single committee will be organized. ",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook: ""
     },
   ],
   fineArts : [
@@ -185,7 +202,8 @@ const EventsDetails = {
         subtitle: "Pen art",
       description:
         "Express Art with Pens and Ink",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
 
     {
@@ -195,7 +213,8 @@ const EventsDetails = {
         subtitle: "Pencil Sketching",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
 
     {
@@ -205,7 +224,8 @@ const EventsDetails = {
         subtitle: "Paper Origami to decorate dress",
       description:
         "Make a dress more fashionable by means of paper origami.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
 
     {
@@ -215,7 +235,8 @@ const EventsDetails = {
         subtitle: "Digital Art",
       description:
         "Pick up the virtual brushes and make digital art",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
 
     {
@@ -225,7 +246,8 @@ const EventsDetails = {
         subtitle: "Single Colour Painting Event",
       description:
         "The painting competition but with just 1 color",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
 
     {
@@ -235,7 +257,8 @@ const EventsDetails = {
         subtitle: "General art - Portrait making",
       description:
         "Portrait making contest in which the portrait can be made using sketching, painting or mixed art",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/OxhiElSP0",
+      rulebook: ""
     },
   ],
 
@@ -247,7 +270,8 @@ const EventsDetails = {
         subtitle: "General art - Portrait making",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/yZFTMI5Ql",
+      rulebook: ""
     },
 
     {
@@ -257,7 +281,8 @@ const EventsDetails = {
         subtitle: "General art - Portrait making",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/yZFTMI5Ql",
+      rulebook: ""
     },
 
     {
@@ -267,7 +292,8 @@ const EventsDetails = {
         subtitle: "General art - Portrait making",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/yZFTMI5Ql",
+      rulebook: ""
     },
 
     {
@@ -277,7 +303,8 @@ const EventsDetails = {
         subtitle: "General art - Portrait making",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/yZFTMI5Ql",
+      rulebook: ""
     },
   ],
 
@@ -290,6 +317,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
 
     {
@@ -300,6 +328,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
 
     {
@@ -310,6 +339,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
   ],
 
@@ -321,7 +351,8 @@ const EventsDetails = {
         subtitle: "Fashion Show",
       description:
         "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/dbd9PzNgY",
+      rulebook: ""
     },
   ],
 
@@ -333,7 +364,8 @@ const EventsDetails = {
         subtitle: "Online Photo Journalism ",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/DHqbWi5sMn",
+      rulebook: ""
     },
 
     {
@@ -343,7 +375,8 @@ const EventsDetails = {
         subtitle: "Photography Contest ",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/DHqbWi5sMn",
+      rulebook: ""
     },
 
     {
@@ -353,7 +386,8 @@ const EventsDetails = {
         subtitle: "Fashion Show",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/DHqbWi5sMn",
+      rulebook: ""
     },
 
     {
@@ -363,7 +397,8 @@ const EventsDetails = {
         subtitle: "Fashion Show",
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/DHqbWi5sMn",
+      rulebook: ""
     },
 
     {
@@ -373,7 +408,8 @@ const EventsDetails = {
         subtitle: "Fashion Show",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+      url: "https://rzp.io/l/DHqbWi5sMn",
+      rulebook: ""
     },
   ],
 
@@ -386,6 +422,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
 
     {
@@ -396,6 +433,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
 
     {
@@ -406,6 +444,7 @@ const EventsDetails = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://timerse.com",
+      rulebook: ""
     },
   ]
 

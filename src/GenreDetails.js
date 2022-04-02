@@ -116,7 +116,6 @@ const filler = (
 
 const genreDetails = [
   {
-    //=imageSrc: `${imageSrc}`,
     title: "Music",
     description: music,
   },

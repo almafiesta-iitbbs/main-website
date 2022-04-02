@@ -15,3 +15,10 @@
     transform: scale(0);
     /* transform: translateY(-150%); */
 }
+
+@font-face {
+    font-family: 'AlmaFont';
+    src: local('ScriptMTBold'), url(./../fonts/ScriptMTBold.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }

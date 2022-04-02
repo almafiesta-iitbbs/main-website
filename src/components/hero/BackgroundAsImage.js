@@ -63,7 +63,7 @@ export default () => {
   const onGoogleLoginSuccess = async (res) => {
     try {
       const loginResponse = await axios.post(
-        "http://localhost:5000/api/v1/auth/login",
+        "https://almafiesta.herokuapp.com/api/v1/auth/login",
         { tokenId: res.tokenId },
         {
           withCredentials: true,
@@ -141,7 +141,7 @@ export default () => {
             setIsLoggedIn(false);
             try {
               const loginResponse = await axios.post(
-                "http://localhost:5000/api/v1/auth/logout",
+                "https://almafiesta.herokuapp.com/api/v1/auth/logout",
                 {},
                 {
                   withCredentials: true,
@@ -188,10 +188,7 @@ export default () => {
               </span>
               <br />
               {/* <SlantedBackground style={{ marginTop: "5%" }}> */}
-              <span
-                tw="text-primary-100"
-                style={{ fontFamily: "MonotypeScriptW01-Bold" }}
-              >
+              <span tw="text-primary-100" style={{ fontFamily: "AlmaFont" }}>
                 Alma Fiesta 2022
               </span>
               {/* </SlantedBackground> */}

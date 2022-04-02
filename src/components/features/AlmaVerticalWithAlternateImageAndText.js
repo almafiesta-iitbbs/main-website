@@ -105,7 +105,7 @@ export default () => {
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
       try {
         const registrationResponse = await axios.post(
-          `http://localhost:5000/api/v1/event/register/${event.id}`,
+          `https://almafiesta.herokuapp.com/api/v1/event/register/${event.id}`,
           {},
           {
             withCredentials: true,
@@ -133,16 +133,18 @@ export default () => {
     }
   };
 
-  return events === null ? <></> :
-      <Container>
+  return events === null ? (
+    <></>
+  ) : (
+    <Container>
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle style={{ textTransform: "capitalize" }}>
-          {params.type} Events
+            {params.type} Events
           </HeadingTitle>
           <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
-        
+
         <Content>
           {events.map((event, i) => (
             <Card key={i} reversed={i % 2 === 1}>
@@ -172,5 +174,6 @@ export default () => {
       <SvgDotPattern2 />
       <SvgDotPattern3 />
       <SvgDotPattern4 />
-      </Container>
+    </Container>
+  );
 };

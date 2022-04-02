@@ -53,7 +53,7 @@ export default () => {
     e.preventDefault();
     try {
       const FormResponse = await axios.post(
-        "http://localhost:5000/api/v1/auth/finish-registration",
+        "https://almafiesta.herokuapp.com/api/v1/auth/finish-registration",
         {
           phone: PhoneNumber,
           institute: Institute,

@@ -46,9 +46,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 
 export default ({
   subheading = "About",
-  heading = (
-    <span style={{ fontFamily: "MonotypeScriptW01-Bold" }}>Alma Fiesta</span>
-  ),
+  heading = <span style={{ fontFamily: "AlmaFont" }}>Alma Fiesta</span>,
   description = "A perfect world is all that we dream about, isn't it? A world where endless imaginations meet the bliss of reality, one where all the vices of humanity are nothing but mere inconceivable thoughts. Embarking on a similar journey, Alma Fiesta - the annual socio-cultural fest of IIT Bhubaneswar is here with its 13th edition that would take you close to the Utopia you dream of - a land where knowledge rules the mind and growth is fueled from within! The social and cultural themes of this edition of Alma Fiesta reflect this same vision of ours that we hope to celebrate. Through the social theme - 'Divyangjan Sashaktikaran: Agyanta Hi Ek Matra Viklangta Hai' we aim to arm the physically challenged with knowledge as a tool for growth and prosperity. Whereas the cultural theme 'Utopian Rhapsody: An abyss of endless possibilities' seeks the boundaries of infinite possibilities in a perfect world that would be powered by our collective imaginations.",
   watchVideoYoutubeUrl = "https://www.youtube.com/embed/GNXWLXqqxvw",
   imageSrc = StatsIllustrationSrc,

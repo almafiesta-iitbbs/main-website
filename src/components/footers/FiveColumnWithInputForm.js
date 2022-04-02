@@ -33,7 +33,7 @@ export default () => {
             />
             <LogoText
               style={{
-                fontFamily: "MonotypeScriptW01-Bold",
+                fontFamily: "AlmaFont",
                 paddingLeft: "1rem",
                 fontSize: "1.5rem",
               }}

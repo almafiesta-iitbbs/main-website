@@ -82,7 +82,7 @@ export default ({
     <Container>
       <a id="about" />
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
-        <ImageColumn css={imageContainerCss} style={{ top: "180px" }}>
+        <ImageColumn  className="Main2" css={imageContainerCss}>
           <StyledResponsiveVideoEmbed
             url={watchVideoYoutubeUrl}
             tw="w-full"

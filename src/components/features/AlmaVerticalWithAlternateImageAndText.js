@@ -92,6 +92,9 @@ export default () => {
     case "fine_arts":
       events = EventsDetails.fineArts;
       break;
+    case "offline":
+      events = EventsDetails.offline;
+      break;
     default:
       events = null;
       break;
@@ -104,9 +107,12 @@ export default () => {
       });
     }
     if (!email) {
-      return toast(`There was an error while registration. Please try logging in again`, {
-        autoClose: 2000,
-      });
+      return toast(
+        `There was an error while registration. Please try logging in again`,
+        {
+          autoClose: 2000,
+        }
+      );
     }
     if (String(email).split("@")[1] === "iitbbs.ac.in") {
       const token = window.localStorage.getItem("jwt");
@@ -165,18 +171,22 @@ export default () => {
                 <Subtitle>{event.subtitle}</Subtitle>
                 <Title>{event.title}</Title>
                 <Description>{event.description}</Description>
-                <Link href={event.rulebook}>Event Rules</Link>
+                {event.rulebook !== "" && (
+                  <Link href={event.rulebook}>Event Rules</Link>
+                )}
                 <br />
                 {/* <Link href={event.url}>See Event Details</Link> */}
                 <br />
-                <PrimaryButton
-                  style={{ cursor: "pointer" }}
-                  onClick={() => {
-                    registerForEvent(event);
-                  }}
-                >
-                  Register
-                </PrimaryButton>
+                {params.type !== "offline" && (
+                  <PrimaryButton
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      registerForEvent(event);
+                    }}
+                  >
+                    Register
+                  </PrimaryButton>
+                )}
               </Details>
             </Card>
           ))}

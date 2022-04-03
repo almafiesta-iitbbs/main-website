@@ -295,7 +295,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
       subtitle: "",
-      description: "Does your heart race on the thoughts of planting a spike in an open area or do you dream of an enemy operator gun aiming at you? Come, TELEPORT to some exciting maps around the map to ACE your agent skills! Here comes the PARTY! ",
+      description:
+        "Does your heart race on the thoughts of planting a spike in an open area or do you dream of an enemy operator gun aiming at you? Come, TELEPORT to some exciting maps around the map to ACE your agent skills! Here comes the PARTY! ",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing",
@@ -307,7 +308,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
       subtitle: "",
-      description: "The enemy is just as afraid as you are, maybe even more. They simply got lucky this time. Afraid not, as we bring you plenty of live action from the field as you get ready for a thrilling BGMI tournament.",
+      description:
+        "The enemy is just as afraid as you are, maybe even more. They simply got lucky this time. Afraid not, as we bring you plenty of live action from the field as you get ready for a thrilling BGMI tournament.",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing",
@@ -319,7 +321,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
       subtitle: "",
-      description: "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons! Come experience the ultimate action for CODM as we bring to you a crazy tournament that awaits you!",
+      description:
+        "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons! Come experience the ultimate action for CODM as we bring to you a crazy tournament that awaits you!",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing",
@@ -331,7 +334,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
       subtitle: "",
-      description: "What would be an ideal world if not for cars flying and flipping on a field to score a goal! Exciting, right? Fasten your seatbelts and register now for a crazy round of online gaming that would take you to the edge of thrill.",
+      description:
+        "What would be an ideal world if not for cars flying and flipping on a field to score a goal! Exciting, right? Fasten your seatbelts and register now for a crazy round of online gaming that would take you to the edge of thrill.",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing",
@@ -345,8 +349,9 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Food fest",
       subtitle: "",
-      description: "Food forms an important part of any culture. Be it the people of our nation, or beyond. The most important part of any culture is the food they serve. So, in this iteration of IIT Bhubaneswar's Socio-Cultural fest Alma Fiesta, we bring upon - food fest! This time, be ready to eat the most delicious and mouth-watering dishes, served hot and fresh by the students of IIT Bhubaneswar. Be ready to dive in the diversity of food offered by our own batchmates! ",
-      url: "https://timerse.com",
+      description:
+        "Food forms an important part of any culture. Be it the people of our nation, or beyond. The most important part of any culture is the food they serve. So, in this iteration of IIT Bhubaneswar's Socio-Cultural fest Alma Fiesta, we bring upon - food fest! This time, be ready to eat the most delicious and mouth-watering dishes, served hot and fresh by the students of IIT Bhubaneswar. Be ready to dive in the diversity of food offered by our own batchmates! ",
+      url: "",
       rulebook: "",
     },
 
@@ -354,10 +359,10 @@ const EventsDetails = {
       id: "offline-2",
       imageSrc:
         "https://images.unsplash.com/photo-1604153741124-8e0eb40964ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        title: "Kite flying",
-        subtitle: "",
+      title: "Kite flying",
+      subtitle: "",
       description: "",
-      url: "https://timerse.com",
+      url: "",
       rulebook: "",
     },
 
@@ -365,10 +370,11 @@ const EventsDetails = {
       id: "offline-3",
       imageSrc:
         "https://images.unsplash.com/photo-1581143761812-6d1474cdb9d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        title: "Escape Room",
-        subtitle: "",
-      description: "A team of 4-6 memeber have to escape the room having 4 quadrants in a specified time by solving the puzzles and riddles based on the story line of the room",
-      url: "https://timerse.com",
+      title: "Escape Room",
+      subtitle: "",
+      description:
+        "A team of 4-6 memeber have to escape the room having 4 quadrants in a specified time by solving the puzzles and riddles based on the story line of the room",
+      url: "",
       rulebook: "",
     },
 
@@ -376,21 +382,24 @@ const EventsDetails = {
       id: "offline-4",
       imageSrc:
         "https://images.unsplash.com/photo-1523902388291-aa8dc19426b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        title: "Face Painting",
-        subtitle: "Loachella, NYC",
-      description: "To express his creativity, the canvas was never a limitation for an artist. Face painting is a way to show that there are no limits to creativity and imagination by using the face as a canvas. This Alma fiesta brings presents you with a face painting competition with lots of fun and color.",
-      url: "https://timerse.com",
-      rulebook: "https://docs.google.com/document/d/1rqRBoNl7p-s_xjuAYMFhVcju6bhMEDVZERwIEdMXzeA/edit",
+      title: "Face Painting",
+      subtitle: "",
+      description:
+        "To express his creativity, the canvas was never a limitation for an artist. Face painting is a way to show that there are no limits to creativity and imagination by using the face as a canvas. This Alma fiesta brings presents you with a face painting competition with lots of fun and color.",
+      url: "",
+      rulebook: ""
+      // rulebook: "https://docs.google.com/document/d/1rqRBoNl7p-s_xjuAYMFhVcju6bhMEDVZERwIEdMXzeA/edit",
     },
 
     {
       id: "offline-5",
       imageSrc:
         "https://images.unsplash.com/photo-1554881070-74595ca2b74c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        title: "Fashion Show",
-        subtitle: "",
-      description: "Discovering one’s identity is a continuous evolution, an attempt to strike a balance between self-exploration and finding one’s place within a community. One of the most exciting times in just about every college student’s life is participating in a grand fashion show. Team Alma brings you a highly anticipated set of fashion events that allow students to create a complete collection and send it down the runway.",
-      url: "https://timerse.com",
+      title: "Fashion Show",
+      subtitle: "",
+      description:
+        "Discovering one’s identity is a continuous evolution, an attempt to strike a balance between self-exploration and finding one’s place within a community. One of the most exciting times in just about every college student’s life is participating in a grand fashion show. Team Alma brings you a highly anticipated set of fashion events that allow students to create a complete collection and send it down the runway.",
+      url: "",
       rulebook: "",
     },
   ],
@@ -405,8 +414,8 @@ const EventsDetails = {
       description:
         "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://rzp.io/l/dbd9PzNgY",
-      rulebook:
-        "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing",
+      rulebook: "",
+      // "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing",
     },
   ],
 
@@ -420,8 +429,8 @@ const EventsDetails = {
       description:
         "Picturesque is a Photography Journalism competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook:
-        "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
     },
 
     {
@@ -433,8 +442,8 @@ const EventsDetails = {
       description:
         "Pixel Lens is a Photography competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook:
-        "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+      rulebook: ""
+        // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
     },
 
     {
@@ -446,7 +455,8 @@ const EventsDetails = {
       description:
         "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: ""
+        // "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -458,7 +468,8 @@ const EventsDetails = {
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: ""
+        // "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -470,7 +481,8 @@ const EventsDetails = {
       description:
         "Ad making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. Basic editing, including colour enhancement, the use of filters, and cropping is acceptable, provided any such editing does not affect the authenticity and/or genuineness. ",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: ""
+        // "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
   ],
 };

@@ -6,6 +6,7 @@ import MusicPhoto from "../images/final-main-page/events/music-61.jpg";
 import LiteraturePhoto from "../images/final-main-page/events/mun-2.jpg";
 import ESportsPhoto from "../images/final-main-page/events/egames.jpg";
 import PhotographyPhoto from "../images/final-main-page/events/photography.jpg";
+import OfflinePhoto from "../images/final-main-page/events/offline.jpg";
 
 const dance = (
   <div>
@@ -143,6 +144,22 @@ const dramatics = (
   </>
 );
 
+const offline = (
+  <>
+    Along with the wide range of the online events, This year, we are also
+    organizing offline events exclusively for IIT Bhubaneswar students.
+    <br />
+    <b>The event roster includes:</b>
+    <ul>
+      <ol>Food Fest</ol>
+      <ol>Kite Flying</ol>
+      <ol>Escape Room</ol>
+      <ol>Fashion Show</ol>
+      <ol>Face Painting</ol>
+    </ul>
+  </>
+);
+
 const genreDetails = [
   {
     imageSrc: MusicPhoto,
@@ -189,11 +206,11 @@ const genreDetails = [
   //   title: "Food",
   //   description: food,
   // },
-  // {
-  //   // imageSrc: `${imageSrcc}`,
-  //   title: "Filler",
-  //   description: filler,
-  // },
+  {
+    imageSrc: OfflinePhoto,
+    title: "Offline",
+    description: offline,
+  },
 ];
 
 export default genreDetails;

@@ -67,7 +67,7 @@ const gaming = (
       <ol>BGMI</ol>
       <ol>CODM</ol>
       <ol>Valorant</ol>
-      <ol>Rocket Leauge</ol>
+      <ol>Rocket League</ol>
     </ul>
     <br></br>
     Let's see if you can shoot precisely to the top place! So what are you

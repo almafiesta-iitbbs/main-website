@@ -86,7 +86,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1594214456448-9ca134a5d5d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rock On!",
       subtitle: "Solo Instrumental",
-      description: "",
+      description:
+        "It is a solo instrumental competition.The musicians can play any instrument of their choice for 3-4 minutes.They will be judged based on their beat sense, rhythm and their music skills.",
       url: "https://rzp.io/l/4ssjkNCUYx",
       rulebook:
         "https://drive.google.com/file/d/1JlmqnU4JENFOLcTvZRievcujl1CY6_lZ/view?usp=sharing",
@@ -337,36 +338,47 @@ const EventsDetails = {
     },
   ],
 
-  filler: [
+  offline: [
     {
-      id: "filler-1",
+      id: "offline-1",
       imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      subtitle: "Ukarian",
-      title: "Loachella, NYC",
+        "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Food fest",
+      subtitle: "",
+      description: "Food forms an important part of any culture. Be it the people of our nation, or beyond. The most important part of any culture is the food they serve. So, in this iteration of IIT Bhubaneswar's Socio-Cultural fest Alma Fiesta, we bring upon - food fest! This time, be ready to eat the most delicious and mouth-watering dishes, served hot and fresh by the students of IIT Bhubaneswar. Be ready to dive in the diversity of food offered by our own batchmates! ",
+      url: "https://timerse.com",
+      rulebook: "",
+    },
+
+    {
+      id: "offline-2",
+      imageSrc:
+        "https://images.unsplash.com/photo-1604153741124-8e0eb40964ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        title: "Kite flying",
+        subtitle: "",
       description: "",
       url: "https://timerse.com",
       rulebook: "",
     },
 
     {
-      id: "filler-2",
+      id: "offline-3",
       imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
-      description: "",
+        "https://images.unsplash.com/photo-1581143761812-6d1474cdb9d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        title: "Escape Room",
+        subtitle: "",
+      description: "A team of 4-6 memeber have to escape the room having 4 quadrants in a specified time by solving the puzzles and riddles based on the story line of the room",
       url: "https://timerse.com",
       rulebook: "",
     },
 
     {
-      id: "filler-3",
+      id: "offline-4",
       imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
-      description: "",
+        "https://images.unsplash.com/photo-1523902388291-aa8dc19426b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        title: "Face Painting",
+        subtitle: "Loachella, NYC",
+      description: "To express his creativity, the canvas was never a limitation for an artist. Face painting is a way to show that there are no limits to creativity and imagination by using the face as a canvas. This Alma fiesta brings presents you with a face painting competition with lots of fun and color.",
       url: "https://timerse.com",
       rulebook: "",
     },
@@ -423,7 +435,7 @@ const EventsDetails = {
       description:
         "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
+      rulebook: "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -431,11 +443,11 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1520719779766-3085136d7180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       title: "Trailer Making",
-      subtitle: "Fashion Show",
+      subtitle: "",
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
+      rulebook: "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -443,11 +455,11 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1553096442-8fe2118fb927?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Advertise Making",
-      subtitle: "Fashion Show",
+      subtitle: "",
       description:
         "Ad making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. Basic editing, including colour enhancement, the use of filters, and cropping is acceptable, provided any such editing does not affect the authenticity and/or genuineness. ",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
+      rulebook: "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
   ],
 };

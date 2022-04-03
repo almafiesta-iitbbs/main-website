@@ -290,9 +290,9 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook: "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing"
     },
@@ -302,9 +302,9 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook: "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing"
     },
@@ -314,9 +314,9 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook: "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing"
     },
@@ -326,9 +326,9 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook: "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing"
     },
@@ -416,7 +416,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1599249681041-8692a1080a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "Short Film Making",
-      subtitle: "Fashion Show",
+      subtitle: "Cinematography",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: "https://rzp.io/l/DHqbWi5sMn",

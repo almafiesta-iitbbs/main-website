@@ -45,7 +45,7 @@ const photography = (
     and steal some moments of your version of that perfection, since alma fiesta
     is here with a variety of interesting
     <br />
-    <b>photography and cinematography events like:</b>
+    <b>Photography and Cinematography events like:</b>
     <br />
     <ul>
       <ol>Photostory (online photojournalism)</ol>
@@ -61,9 +61,10 @@ const gaming = (
     Assemble gamers! because Team Alma Fiesta brings to you exceptional events
     where you can let out your precision and skills and leave the people be
     astonished. Get ready to exhibit your gaming skills.
+    <br />
     <b>Events we have gathered:</b>
     <ul>
-      <ol>CSGO</ol>
+      <ol>BGMI</ol>
       <ol>CODM</ol>
       <ol>Valorant</ol>
       <ol>Rocket Leauge</ol>

@@ -295,7 +295,7 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
       subtitle: "",
-      description: "",
+      description: "Does your heart race on the thoughts of planting a spike in an open area or do you dream of an enemy operator gun aiming at you? Come, TELEPORT to some exciting maps around the map to ACE your agent skills! Here comes the PARTY! ",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing",
@@ -307,7 +307,7 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
       subtitle: "",
-      description: "",
+      description: "The enemy is just as afraid as you are, maybe even more. They simply got lucky this time. Afraid not, as we bring you plenty of live action from the field as you get ready for a thrilling BGMI tournament.",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing",
@@ -319,7 +319,7 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
       subtitle: "",
-      description: "",
+      description: "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons! Come experience the ultimate action for CODM as we bring to you a crazy tournament that awaits you!",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing",
@@ -331,7 +331,7 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
       subtitle: "",
-      description: "",
+      description: "What would be an ideal world if not for cars flying and flipping on a field to score a goal! Exciting, right? Fasten your seatbelts and register now for a crazy round of online gaming that would take you to the edge of thrill.",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
         "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing",

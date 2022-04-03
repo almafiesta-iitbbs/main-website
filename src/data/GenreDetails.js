@@ -100,7 +100,6 @@ const literature = (
       <ol>Shipwrecked</ol>
       <ol>Online MUN</ol>
       <ol>Alt-End</ol>
-      <ol>Fantasy Quiz</ol>
       <ol>Kavya Path</ol>
     </ul>
   </>

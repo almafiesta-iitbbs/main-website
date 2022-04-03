@@ -12,6 +12,7 @@ import { AppContextProvider } from "context/AppContext";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Workshops from "pages/Workshops";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -29,6 +30,9 @@ export default function App() {
           </Route>
           <Route path="/additional-info">
             <AdditionalPage />
+          </Route>
+          <Route path="/workshops">
+            <Workshops />
           </Route>
           <Route path="/">
             <FinalPage />

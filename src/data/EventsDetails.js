@@ -9,7 +9,8 @@ const EventsDetails = {
       description:
         "Mimic your favourite actor for 2-3 min not necessarily doing there dialogue but you have to match there body language and voice tone",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: "https://drive.google.com/file/d/1VAamMtUxb2joNvFWfPiB2DjlOHVdx0K2/view?usp=sharing",
+      rulebook:
+        "https://drive.google.com/file/d/1VAamMtUxb2joNvFWfPiB2DjlOHVdx0K2/view?usp=sharing",
     },
 
     {
@@ -21,7 +22,8 @@ const EventsDetails = {
       description:
         "This will be basically script writing competition i.e. writing script for play.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: "https://drive.google.com/file/d/1sD1XrkxcLaz6Ynk-C8TpZNq3KvXQTJqo/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1sD1XrkxcLaz6Ynk-C8TpZNq3KvXQTJqo/view?usp=sharing",
     },
 
     {
@@ -33,7 +35,8 @@ const EventsDetails = {
       description:
         "Make a funny remake of an existing movie scene) this may include change in dialogue or even the story of that scene.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: "https://drive.google.com/file/d/1JFTqJlMJbfx5SrbtAOFgm0wWccV_jzym/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1JFTqJlMJbfx5SrbtAOFgm0wWccV_jzym/view?usp=sharing",
     },
 
     {
@@ -45,7 +48,8 @@ const EventsDetails = {
       description:
         "This is basically playing charecters through narrating dialogues only.",
       url: "https://rzp.io/l/E0nMlIAJ",
-      rulebook: "https://drive.google.com/file/d/1e7yP8JtdYQB3a0ebxfPTWNMqv1dBDH5d/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1e7yP8JtdYQB3a0ebxfPTWNMqv1dBDH5d/view?usp=sharing",
     },
   ],
 
@@ -59,7 +63,8 @@ const EventsDetails = {
       description:
         "In this competition the participants will be allowed to sing for 3-4min.The songs can be from any genre or language.",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: "https://drive.google.com/file/d/1m1OLmQtF1iMNOvtY4wq6tj26WBF-inNp/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1m1OLmQtF1iMNOvtY4wq6tj26WBF-inNp/view?usp=sharing",
     },
 
     {
@@ -71,7 +76,8 @@ const EventsDetails = {
       description:
         "The participants will be given a song and will be asked to chnge the lyrics according to a plot given.",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: "https://drive.google.com/file/d/1sYDCMj8ydSnKLA0w4uzhc1K--fOWndOe/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1sYDCMj8ydSnKLA0w4uzhc1K--fOWndOe/view?usp=sharing",
     },
 
     {
@@ -80,10 +86,10 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1594214456448-9ca134a5d5d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rock On!",
       subtitle: "Solo Instrumental",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/4ssjkNCUYx",
-      rulebook: "https://drive.google.com/file/d/1JlmqnU4JENFOLcTvZRievcujl1CY6_lZ/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1JlmqnU4JENFOLcTvZRievcujl1CY6_lZ/view?usp=sharing",
     },
   ],
 
@@ -97,7 +103,8 @@ const EventsDetails = {
       description:
         "It is a group dance competition, so find a group of your friends with whom you sync the best and dance your way out to glory.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: "https://drive.google.com/file/d/1pJdID5X8qT0-rtFcjzfjpiXKz55Q-HhB/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1pJdID5X8qT0-rtFcjzfjpiXKz55Q-HhB/view?usp=sharing",
     },
 
     {
@@ -109,7 +116,8 @@ const EventsDetails = {
       description:
         "It is a Solo Dance Competition, open to all dance forms be it contemporary, hip hop, classical, Bollywood, or any other.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: "https://drive.google.com/file/d/12hk2N3soOlJdABa5opPs6D2NqNEOHI65/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/12hk2N3soOlJdABa5opPs6D2NqNEOHI65/view?usp=sharing",
     },
 
     {
@@ -121,7 +129,8 @@ const EventsDetails = {
       description:
         " It is a duet dance competition where participants have to double up with a partner and dance to the tunes of music.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: "https://drive.google.com/file/d/15xlZCs4XEWCUOSa_dJISWd3h4IEz-l9B/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/15xlZCs4XEWCUOSa_dJISWd3h4IEz-l9B/view?usp=sharing",
     },
 
     {
@@ -133,81 +142,74 @@ const EventsDetails = {
       description:
         "It is a Regional dance competition where the participants are expected to dance in any regional dance form exhibiting the rich diversity in our Indian culture.",
       url: "https://rzp.io/l/odVsZPc3n",
-      rulebook: "https://drive.google.com/file/d/1syZvfnla19Czy9np9SempRt5BbbpVEw6/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1syZvfnla19Czy9np9SempRt5BbbpVEw6/view?usp=sharing",
     },
   ],
 
   literature: [
     {
-      id: "literature-1",
+      id: "literary-1",
       imageSrc:
         "https://images.unsplash.com/photo-1552181903-a6af3a3d159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        title: "Gone in 60 seconds",
-        subtitle: "Regional Dance",
-      description:
-        "This would be a competition similar to Extempore.",
+      title: "Gone in 60 seconds",
+      subtitle: "Extempore",
+      description: "This would be a competition similar to Extempore.",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/1Fe2q-BBvngTY93Ev1vmri9Cp1CVw3HGW/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1Fe2q-BBvngTY93Ev1vmri9Cp1CVw3HGW/view?usp=sharing",
     },
 
     {
-      id: "literature-2",
+      id: "literary-2",
       imageSrc:
         "https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
       title: "Shipwrecked",
-      subtitle: "Regional Dance",
+      subtitle: "",
       description:
         "Participants will be assigned characters on the spot and they will have to defend (in an interesting manner) why they deserve to survive.",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/1OLviMnh3m1wGDb_ld3iuqDN_Tpmvq6yn/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1OLviMnh3m1wGDb_ld3iuqDN_Tpmvq6yn/view?usp=sharing",
     },
 
-    {
-      id: "literature-3",
-      imageSrc:
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      title: "Online MUN",
-      subtitle: "Regional Dance",
-      description:
-        "National Level Online MUN having single committee will be organized. ",
-      url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing"
-    },
+    // {
+    //   id: "literary-3",
+    //   imageSrc:
+    //     "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    //   title: "Online MUN",
+    //   subtitle: "",
+    //   description:
+    //     "National Level Online MUN having single committee will be organized. ",
+    //   url: "https://rzp.io/l/FyXtUKoaGn",
+    //   rulebook:
+    //     "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
+    // },
 
     {
-      id: "literature-4",
+      id: "literary-4",
       imageSrc:
         "https://images.unsplash.com/photo-1587135991058-8816b028691f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Alt-End ",
-      subtitle: "Regional Dance",
+      subtitle: "",
       description:
-        "An alternative ending has to be written based on theme. It can be online competition with plagiarism check. ",
+        "An alternative ending has to be written based on theme. It will be online competition with plagiarism check. ",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/1p9oeORpd_IyZsGEhPPPvGVFleK7XZtxy/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1p9oeORpd_IyZsGEhPPPvGVFleK7XZtxy/view?usp=sharing",
     },
 
     {
-      id: "literature-5",
-      imageSrc:
-        "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        title: "Fantasy Quiz",
-        subtitle: "Regional Dance",
-      description:
-        "A quiz on fantasy themes ",
-      url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/1hAVcshifPt2GInedisYZd--3tio4kkym/view?usp=sharing"
-    },
-
-    {
-      id: "literature-6",
+      id: "literary-6",
       imageSrc:
         "https://images.unsplash.com/photo-1629327896333-7ecec1515ae5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Kavya Path",
       subtitle: "Hindi Poem recitation ",
       description:
-        "National Level Online MUN having single committee will be organized. ",
+        "Participants will have to submit video recording of themselves reciting their own hindi poems",
       url: "https://rzp.io/l/FyXtUKoaGn",
-      rulebook: "https://drive.google.com/file/d/1EbySX1fF9WI6ZHfHOmr3u8WeSbnW3a8Q/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1EbySX1fF9WI6ZHfHOmr3u8WeSbnW3a8Q/view?usp=sharing",
     },
   ],
   fineArts: [
@@ -215,12 +217,12 @@ const EventsDetails = {
       id: "fine_arts-1",
       imageSrc:
         "https://images.unsplash.com/photo-1597754255094-6f952470f88a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        title: "Pen Art",
-        subtitle: "Pen art",
-      description:
-        "Express Art with Pens and Ink",
+      title: "Pen Art",
+      subtitle: "Pen art",
+      description: "Express Art with Pens and Ink",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1XMWvP1Zbfv7aiQFyUzoqfbh6et8mvfRl/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1XMWvP1Zbfv7aiQFyUzoqfbh6et8mvfRl/view?usp=sharing",
     },
 
     {
@@ -229,46 +231,46 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1585923972216-f30dc61fd61c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Shades",
       subtitle: "Pencil Sketching",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1GwMcHA5QcowZ7qay2n3J6eESmL8_ZRxR/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1GwMcHA5QcowZ7qay2n3J6eESmL8_ZRxR/view?usp=sharing",
     },
 
     {
       id: "fine_arts-3",
       imageSrc:
         "https://images.unsplash.com/photo-1597400473368-b2f08a070bde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80",
-        title: "Origami Fashion",
-        subtitle: "Paper Origami to decorate dress",
-      description:
-        "Make a dress more fashionable by means of paper origami.",
+      title: "Origami Fashion",
+      subtitle: "Paper Origami to decorate dress",
+      description: "Make a dress more fashionable by means of paper origami.",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1BeH7UVj-0GZl8c6Mp6PrRG-U8jl7kim5/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1BeH7UVj-0GZl8c6Mp6PrRG-U8jl7kim5/view?usp=sharing",
     },
 
     {
       id: "fine_arts-4",
       imageSrc:
         "https://images.unsplash.com/photo-1507361617237-221d9f2c84f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1235&q=80",
-        title: "Virtual brush",
-        subtitle: "Digital Art",
-      description:
-        "Pick up the virtual brushes and make digital art",
+      title: "Virtual brush",
+      subtitle: "Digital Art",
+      description: "Pick up the virtual brushes and make digital art",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1Yo8MDUSHXYIv-CFWZ7T2P6hcd0p6XOxH/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1Yo8MDUSHXYIv-CFWZ7T2P6hcd0p6XOxH/view?usp=sharing",
     },
 
     {
       id: "fine_arts-5",
       imageSrc:
         "https://images.unsplash.com/photo-1642091335544-7d26e1ecd9e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        title: "Monochrome",
-        subtitle: "Single Colour Painting Event",
-      description:
-        "The painting competition but with just 1 color",
+      title: "Monochrome",
+      subtitle: "Single Colour Painting Event",
+      description: "The painting competition but with just 1 color",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1sWSh8vEs2qgMZb2y2t6ZsAK3Iifrk0l8/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1sWSh8vEs2qgMZb2y2t6ZsAK3Iifrk0l8/view?usp=sharing",
     },
 
     {
@@ -280,7 +282,8 @@ const EventsDetails = {
       description:
         "Portrait making contest in which the portrait can be made using sketching, painting or mixed art",
       url: "https://rzp.io/l/OxhiElSP0",
-      rulebook: "https://drive.google.com/file/d/1sSpFjbb1hUpvqwHtk23lUhQ5dOgLjiku/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1sSpFjbb1hUpvqwHtk23lUhQ5dOgLjiku/view?usp=sharing",
     },
   ],
 
@@ -291,10 +294,10 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
       subtitle: "General art - Portrait making",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1rQFLCHjkJOiHlDHA2Lc0LcWl1YGZBk5H/view?usp=sharing",
     },
 
     {
@@ -303,10 +306,10 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
       subtitle: "General art - Portrait making",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1uW0xgYw6kY1ix5FqAt-H5DWaUBb47hjy/view?usp=sharing",
     },
 
     {
@@ -315,10 +318,10 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
       subtitle: "General art - Portrait making",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1LRE1JT2DFdKq2933p8pO6xDAauVE4rgE/view?usp=sharing",
     },
 
     {
@@ -327,10 +330,10 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
       subtitle: "General art - Portrait making",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
-      rulebook: "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1-uugExFn8jGvPJ--rvcHbj0mupOUcq8y/view?usp=sharing",
     },
   ],
 
@@ -341,10 +344,9 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
       subtitle: "Ukarian",
       title: "Loachella, NYC",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://timerse.com",
-      rulebook: ""
+      rulebook: "",
     },
 
     {
@@ -353,10 +355,9 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       subtitle: "Free",
       title: "Rock In Rio, Upstate",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://timerse.com",
-      rulebook: ""
+      rulebook: "",
     },
 
     {
@@ -365,10 +366,9 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
       subtitle: "Exclusive",
       title: "Lollapalooza, Manhattan",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "",
       url: "https://timerse.com",
-      rulebook: ""
+      rulebook: "",
     },
   ],
 
@@ -382,7 +382,8 @@ const EventsDetails = {
       description:
         "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://rzp.io/l/dbd9PzNgY",
-      rulebook: "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing"
+      rulebook:
+        "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing",
     },
   ],
 
@@ -394,9 +395,10 @@ const EventsDetails = {
       title: "PICTURESQUE",
       subtitle: "Online Photo Journalism ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Picturesque is a Photography Journalism competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing"
+      rulebook:
+        "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
     },
 
     {
@@ -406,9 +408,10 @@ const EventsDetails = {
       title: "PIXEL LENS",
       subtitle: "Photography Contest ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Pixel Lens is a Photography competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing"
+      rulebook:
+        "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
     },
 
     {
@@ -418,9 +421,9 @@ const EventsDetails = {
       title: "Short Film Making",
       subtitle: "Fashion Show",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
+      rulebook: "",
     },
 
     {
@@ -432,7 +435,7 @@ const EventsDetails = {
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
+      rulebook: "",
     },
 
     {
@@ -442,9 +445,9 @@ const EventsDetails = {
       title: "Advertise Making",
       subtitle: "Fashion Show",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Ad making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. Basic editing, including colour enhancement, the use of filters, and cropping is acceptable, provided any such editing does not affect the authenticity and/or genuineness. ",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
+      rulebook: "",
     },
   ],
 };

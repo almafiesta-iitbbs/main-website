@@ -22,7 +22,7 @@ import ab_logo from "../../images/final/ab_logo.png";
 import Background from "../../images/final/pic08.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const StyledAnchor = styled(NavLink)`
+const StyledAnchor = styled(AnchorLink)`
   ${tw`text-black text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 lg:text-white
 font-semibold tracking-wide transition duration-300
 pb-1 border-b-2 border-transparent hocus:border-primary-500 hocus:text-primary-500 lg:hocus:border-white lg:hocus:text-white`}
@@ -111,13 +111,13 @@ export default () => {
 
   const navLinks = [
     <NavLinks key={1}>
-      <StyledAnchor href="/#about">About</StyledAnchor>
-      <StyledAnchor href="/#events">Events</StyledAnchor>
+      <StyledAnchor href="#about">About</StyledAnchor>
+      <StyledAnchor href="#events">Events</StyledAnchor>
       <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
-      <StyledAnchor href="/#contact">Contact</StyledAnchor>
+      <StyledAnchor href="#contact">Contact</StyledAnchor>
       <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
-      <StyledAnchor href="/#faqs">FAQs</StyledAnchor>
+      <StyledAnchor href="#faqs">FAQs</StyledAnchor>
       {!isLoggedIn ? (
         <GoogleLogin
           className="google-login"

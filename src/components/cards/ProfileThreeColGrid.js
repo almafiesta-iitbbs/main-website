@@ -68,7 +68,7 @@ export default ({
           icon: WhassIcon,
         },
         {
-          url: "tel:919863373310",
+          url: "tel:+919863373310",
           icon: PhoneIcon,
         },
       ],
@@ -87,7 +87,7 @@ export default ({
           icon: WhassIcon,
         },
         {
-          url: "https://github.com",
+          url: "tel:+917606088720",
           icon: PhoneIcon,
         },
       ],
@@ -106,7 +106,7 @@ export default ({
           icon: WhassIcon,
         },
         {
-          url: "https://github.com",
+          url: "tel:+917023178941",
           icon: PhoneIcon,
         },
       ],
@@ -115,7 +115,7 @@ export default ({
 }) => {
   return (
     <Container style={{ top: "-10rem" }}>
-      <a id="contact" />
+      <a id="contact" style={{width: "100%"}}/>
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

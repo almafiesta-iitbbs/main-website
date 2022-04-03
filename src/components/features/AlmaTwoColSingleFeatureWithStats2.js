@@ -80,9 +80,9 @@ export default ({
 
   return (
     <Container>
-      <a id="about" />
+      <a id="about" style={{ width: "100%" }} />
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
-        <ImageColumn  className="Main2" css={imageContainerCss}>
+        <ImageColumn className="Main2" css={imageContainerCss}>
           <StyledResponsiveVideoEmbed
             url={watchVideoYoutubeUrl}
             tw="w-full"
@@ -98,7 +98,14 @@ export default ({
             <Description style={{ textAlign: "justify", paddingRight: "10px" }}>
               {description}
             </Description>
-            <Statistics  className="Main1" style={{display: "flex", justifyContent: "center", flexDirection: "row"}}>
+            <Statistics
+              className="Main1"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "row",
+              }}
+            >
               {statistics.map((statistic, index) => (
                 <Statistic key={index} style={{ textAlign: "center" }}>
                   <Value>

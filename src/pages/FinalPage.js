@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 // import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Hero from "components/hero/BackgroundAsImage";
+import Hero from "components/hero/BackgroundAsImageSmoothScroll";
 import AboutUs from "components/features/AlmaTwoColSingleFeatureWithStats2";
 import ContactUs from "components/cards/ProfileThreeColGrid";
 import FAQ from "components/faqs/SingleCol";

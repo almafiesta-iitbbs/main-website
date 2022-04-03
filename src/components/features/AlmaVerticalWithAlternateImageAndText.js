@@ -56,7 +56,7 @@ export default () => {
   const params = useParams();
   const history = useHistory();
 
-  const { email } = useContext(AppContext);
+  const { email, isLoggedIn } = useContext(AppContext);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -77,9 +77,6 @@ export default () => {
     case "literature":
       events = EventsDetails.literature;
       break;
-    case "food":
-      events = EventsDetails.food;
-      break;
     case "esports":
       events = EventsDetails.esports;
       break;
@@ -92,14 +89,22 @@ export default () => {
     case "filler":
       events = EventsDetails.filler;
       break;
+    case "fine_arts":
+      events = EventsDetails.fineArts;
+      break;
     default:
       events = null;
       break;
   }
 
   const registerForEvent = async (event) => {
-    if (!email) {
+    if (!isLoggedIn) {
       return toast(`Please Login to continue registration!`, {
+        autoClose: 2000,
+      });
+    }
+    if (!email) {
+      return toast(`There was an error while registration. Please try logging in again`, {
         autoClose: 2000,
       });
     }
@@ -147,7 +152,7 @@ export default () => {
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle style={{ textTransform: "capitalize" }}>
-            {params.type} Events
+            {String(params.type).split("_").join(" ")} Events
           </HeadingTitle>
           <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
@@ -162,7 +167,7 @@ export default () => {
                 <Description>{event.description}</Description>
                 <Link href={event.rulebook}>Event Rules</Link>
                 <br />
-                <Link href={event.url}>See Event Details</Link>
+                {/* <Link href={event.url}>See Event Details</Link> */}
                 <br />
                 <PrimaryButton
                   style={{ cursor: "pointer" }}

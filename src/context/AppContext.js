@@ -15,7 +15,7 @@ export const AppContext = createContext(defaultValue);
 
 export const AppContextProvider = (props) => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(window.localStorage.email ?? "");
   const [almaId, setAlmaId] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(window.localStorage.jwt === undefined ? false : true);
   return (

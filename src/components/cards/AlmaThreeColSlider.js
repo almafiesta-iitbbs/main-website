@@ -77,7 +77,7 @@ export default () => {
 
   return (
     <Container style={{ top: "-100px" }}>
-      <a id="events" />
+      <a id="events" style={{width: "100%"}}/>
       <Content>
         <HeadingWithControl>
           <Heading>Our Events</Heading>
@@ -120,7 +120,9 @@ export default () => {
               </TextInfo>
               <PrimaryButton
                 onClick={() => {
-                  history.push(`/events/${card.title.toLowerCase()}`);
+                  history.push(
+                    `/events/${card.title.toLowerCase().split(" ").join("_")}`
+                  );
                 }}
               >
                 Explore

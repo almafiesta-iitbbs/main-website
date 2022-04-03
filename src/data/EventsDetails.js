@@ -380,6 +380,17 @@ const EventsDetails = {
         subtitle: "Loachella, NYC",
       description: "To express his creativity, the canvas was never a limitation for an artist. Face painting is a way to show that there are no limits to creativity and imagination by using the face as a canvas. This Alma fiesta brings presents you with a face painting competition with lots of fun and color.",
       url: "https://timerse.com",
+      rulebook: "https://docs.google.com/document/d/1rqRBoNl7p-s_xjuAYMFhVcju6bhMEDVZERwIEdMXzeA/edit",
+    },
+
+    {
+      id: "offline-5",
+      imageSrc:
+        "https://images.unsplash.com/photo-1554881070-74595ca2b74c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        title: "Fashion Show",
+        subtitle: "",
+      description: "Discovering one’s identity is a continuous evolution, an attempt to strike a balance between self-exploration and finding one’s place within a community. One of the most exciting times in just about every college student’s life is participating in a grand fashion show. Team Alma brings you a highly anticipated set of fashion events that allow students to create a complete collection and send it down the runway.",
+      url: "https://timerse.com",
       rulebook: "",
     },
   ],

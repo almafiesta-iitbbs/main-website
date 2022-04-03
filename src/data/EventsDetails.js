@@ -293,7 +293,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1558742619-fd82741daa99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Valorant",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
@@ -305,7 +305,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1626240130051-68871c71de47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "BGMI",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
@@ -317,7 +317,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1569693728023-1cf87d751b7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "CODM",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
@@ -329,7 +329,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1518719028738-e7262020a932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Rocket League",
-      subtitle: "General art - Portrait making",
+      subtitle: "",
       description: "",
       url: "https://rzp.io/l/yZFTMI5Ql",
       rulebook:
@@ -419,7 +419,7 @@ const EventsDetails = {
       imageSrc:
         "https://images.unsplash.com/photo-1599249681041-8692a1080a8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
       title: "Short Film Making",
-      subtitle: "Fashion Show",
+      subtitle: "Cinematography",
       description:
         "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",

@@ -500,6 +500,86 @@ const EventsDetails = {
       // "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
   ],
+
+  social: [
+    {
+      id: "social-1",
+      imageSrc:
+        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      title: "Unexplored Odisha",
+      subtitle: "",
+      description:
+        <>
+        Odisha, a state with bountiful natural resources is also blessed with a rich heritage of ancient culture passed down from generations. The untapped potential of the state is huge. In order to promote and explore the glorious history and traditions of the state of Odisha, Alma Fiesta organized a series of events based on the theme of ‘Unexplored Odisha’ in the months of November and December 2021. The online events covered almost all the aspects of the Odia culture and appealed to people from across the state to come forward and express themselves to the world.
+        <br />
+        <b> The competitions organized under this event were:</b>
+        <ol type="1" >
+          <li>‘Dexterity - Tongue of Aesthetics’ - an art and craft competition</li>
+          <li>‘Souvenir de Bonhuer’ - a travel photography competition </li>
+          <li>‘Food-o-Shoot’ - a food photography competition</li>
+          <li>‘Saraca Asoca’ - a traditional attire fashion competition </li>
+          <li>The event was a grand success in exploring and celebrating Odisha!</li>
+        </ol>
+        </>,
+      url: "",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+    },
+    {
+      id: "social-2",
+      imageSrc:
+        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      title: "Children's Fest",
+      subtitle: "",
+      description:
+        <>
+        The future of the nation depends upon the crores of children who would determine the fate of the coming generations. Ensuring a safe and secure today for children across the country goes a long way in creating a prosperous future. Each year, Alma Fiesta works with various orphanages around Bhubaneswar city to conduct events that would bring forth their true potential and talent and this year is no different! Team Alma Fiesta 2022 would offer the orphans around the city a day where they would participate in different events, competitions, games, enjoy refreshments and at the end of the day would return with smiles all around and dreams that they would hope to achieve one day!
+        </>,
+      url: "",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+    },
+    {
+      id: "social-3",
+      imageSrc:
+        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      title: "Spardha - All India Aptitude-cum-Talent Search Exam",
+      subtitle: "",
+      description:
+        <>
+        Alma Fiesta under the ‘Prayatna’ initiative plans to conduct an All-India Aptitude-cum-Talent Search Exam ‘Spardha’. With an estimated 20+ cities across the country, the exam seeks to inculcate among students a sense of general awareness of their social responsibility. It aims toward rigorous testing of students in the areas of aptitude, technicality and awareness. With students across the country participating under the common umbrella of ‘Spardha’, it will be a great opportunity for them to gain a good deal of exposure and showcase their talent. They will compete among their peers from across the country, getting a sense of healthy competition required to excel and develop in their respective areas of interest.
+        </>,
+      url: "",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+    },
+    {
+      id: "social-4",
+      imageSrc:
+        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      title: "Events for Disabled",
+      subtitle: "",
+      description:
+        <>
+        True to the social theme of Alma Fiesta 2022, we would organise events, especially for the marginalised disabled people that would help them dream of a world where they are treated as equals and their talents and skills are respected. The events would help them identify their strengths and explore different facets of their personalities. The youth would be inspired to look up to the disabled in the creation of a just and perfect world!
+        <br />
+        <b> Part 1 - Competitions:</b>
+        <ol>
+          <li><b>1. Musavvir: the spirit of true feelings’ - Art Competition</b><br />Musavvir is an art competition to help the disabled evoke their critical faculties of minds with waves of intellectual simulations combined with craftsmanship to bring their original ideas to life. It is a contest for all the aesthetes and virtuosos out there to make a mark with their compositions.</li>
+          <li><b>2. ‘Udaan’ - a writing competition</b><br />Udaan is a writing competition where we invite you to tap into your inner space, tune in to the soft voice of the heart that never fails to guide and inspire and, express in words your experience related to the theme of this event.</li>
+          <li><b>3. ‘Hausla’ - an open stage event</b><br />Hausla is an open stage event that gives a platform to all the performers out there who love facing the lights among the cheering crowd. It is a perfect opportunity for you to share your talents and refine your skills. Team Alma wishes the disabled people make their voice heard; solo or in groups, in whatever style they choose: dance, mimicry, monologue, singing or any other form, you just come over the stage, hold the mic and let your talent shout!</li>
+        </ol>
+        <br />
+        <b> Part 2 - ‘Samvaad’ - a conference to combat disability challenges:</b>
+        <br />
+        The physical and mental challenges faced by disabled people from different walks of life can be better understood by those sharing similar situations in their lives. Thus, to promote a sense of security and equip the disabled community with the power to deal with these hardships, Alma Fiesta is organizing a conference for specially-abled people where people from different parts of the country would share their day-to-day experiences.
+        </>,
+      url: "",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+    }
+
+  ]
 };
 
 export default EventsDetails;

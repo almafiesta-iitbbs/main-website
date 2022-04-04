@@ -7,6 +7,7 @@ import LiteraturePhoto from "../images/final-main-page/events/mun-2.jpg";
 import ESportsPhoto from "../images/final-main-page/events/egames.jpg";
 import PhotographyPhoto from "../images/final-main-page/events/photography.jpg";
 import OfflinePhoto from "../images/final-main-page/events/offline.jpg";
+import SocialPhoto from "../images/final-main-page/events/social.jpg";
 
 const dance = (
   <div>
@@ -160,6 +161,20 @@ const offline = (
   </>
 );
 
+const social = (
+  <>
+    ‘Prayatna’ - the social campaign of Alma Fiesta.
+    <br />
+    <b>The event roster includes:</b>
+    <ul>
+      <ol>Unexplored Odisha</ol>
+      <ol>Children's Fest</ol>
+      <ol>Spardha- All India Aptitude-cum-Talent Search Exam</ol>
+      <ol>Events for Disabled</ol>
+    </ul>
+  </>
+);
+
 const genreDetails = [
   {
     imageSrc: MusicPhoto,
@@ -210,6 +225,11 @@ const genreDetails = [
     imageSrc: OfflinePhoto,
     title: "Offline",
     description: offline,
+  },
+  {
+    imageSrc: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    title: "Social Events",
+    description: social,
   },
 ];
 

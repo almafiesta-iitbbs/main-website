@@ -63,6 +63,7 @@ export default () => {
   }, []);
 
   let events = [];
+  console.log(params.type);
 
   switch (params.type) {
     case "dramatics":
@@ -94,6 +95,9 @@ export default () => {
       break;
     case "offline":
       events = EventsDetails.offline;
+      break;
+    case "social_events":
+      events = EventsDetails.social;
       break;
     default:
       events = null;
@@ -177,7 +181,7 @@ export default () => {
                 <br />
                 {/* <Link href={event.url}>See Event Details</Link> */}
                 <br />
-                {params.type !== "offline" && (
+                {params.type !== "offline" && params.type !== "social_events" && (
                   <PrimaryButton
                     style={{ cursor: "pointer" }}
                     onClick={() => {

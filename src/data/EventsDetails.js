@@ -504,8 +504,7 @@ const EventsDetails = {
   social: [
     {
       id: "social-1",
-      imageSrc:
-        "https://media.istockphoto.com/photos/stone-carving-of-the-vimana-or-shikara-of-lingaraja-temple-odisha-picture-id1355272854",
+      imageSrc:"https://static.toiimg.com/photo/65949146/odisha.jpg",
       title: "Unexplored Odisha",
       subtitle: "",
       description:

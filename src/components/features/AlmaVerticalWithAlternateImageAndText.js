@@ -96,7 +96,7 @@ export default () => {
     case "offline":
       events = EventsDetails.offline;
       break;
-    case "social_events":
+    case "social":
       events = EventsDetails.social;
       break;
     default:
@@ -181,7 +181,7 @@ export default () => {
                 <br />
                 {/* <Link href={event.url}>See Event Details</Link> */}
                 <br />
-                {params.type !== "offline" && params.type !== "social_events" && (
+                {params.type !== "offline" && params.type !== "social " && (
                   <PrimaryButton
                     style={{ cursor: "pointer" }}
                     onClick={() => {

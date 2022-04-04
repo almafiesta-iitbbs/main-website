@@ -115,7 +115,14 @@ export default ({
 }) => {
   return (
     <Container style={{ top: "-10rem" }}>
-      <a id="contact" style={{ width: "100%" }} />
+      <a
+        id="contact"
+        style={{
+          width: "100%",
+          position: "relative",
+          left: "-500px",
+        }}
+      />
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

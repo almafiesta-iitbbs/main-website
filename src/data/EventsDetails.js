@@ -557,7 +557,7 @@ const EventsDetails = {
       id: "social-4",
       imageSrc:
         "https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      title: "Events for Disabled",
+      title: "Events for Differently abled",
       subtitle: "",
       description:
         <>

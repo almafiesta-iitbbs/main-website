@@ -77,7 +77,14 @@ export default () => {
 
   return (
     <Container style={{ top: "-100px" }}>
-      <a id="events" style={{width: "100%"}}/>
+      <a
+        id="events"
+        style={{
+          width: "100%",
+          position: "relative",
+          left: "-500px",
+        }}
+      />
       <Content>
         <HeadingWithControl>
           <Heading>Our Events</Heading>

@@ -61,7 +61,14 @@ export default ({
       {/* <ContentWithPaddingXl
         style={{ paddingTop: "15 !important", paddingBottom: "15 !important" }}
       > */}
-      <a id="faqs" style={{ width: "100%" }} />
+      <a
+        id="faqs"
+        style={{
+          width: "100%",
+          position: "relative",
+          left: "-500px",
+        }}
+      />
 
       <Column>
         <HeaderContent>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -9,6 +9,7 @@ import {
 import StatsIllustrationSrc from "images/stats-illustration.svg";
 import CountUp from "react-countup";
 import ResponsiveVideoEmbed from "../../helpers/AlmaResponsiveVideoEmbed.js";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-10 md:py-20`;
@@ -77,10 +78,18 @@ export default ({
   ];
 
   if (!statistics) statistics = defaultStatistics;
+  const [viewPortEntered, setViewPortEntered] = useState(false);
 
   return (
     <Container>
-      <a id="about" style={{ width: "100%" }} />
+      <a
+        id="about"
+        style={{
+          width: "100%",
+          position: "relative",
+          left: "-500px",
+        }}
+      />
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn className="Main2" css={imageContainerCss}>
           <StyledResponsiveVideoEmbed
@@ -109,7 +118,30 @@ export default ({
               {statistics.map((statistic, index) => (
                 <Statistic key={index} style={{ textAlign: "center" }}>
                   <Value>
-                    <CountUp end={parseInt(statistic.value)} duration={2} />
+                    {/* <VisibilitySensor>
+                      <CountUp end={parseInt(statistic.value)} duration={2} />
+                    </VisibilitySensor> */}
+                    <CountUp
+                      start={viewPortEntered ? null : 0}
+                      duration={2}
+                      end={parseInt(statistic.value)}
+                    >
+                      {({ countUpRef }) => {
+                        return (
+                          <VisibilitySensor
+                            active={!viewPortEntered}
+                            onChange={(isVisible) => {
+                              if (isVisible) {
+                                setViewPortEntered(true);
+                              }
+                            }}
+                            delayedCall
+                          >
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        );
+                      }}
+                    </CountUp>
                     {statistic.unit}+
                   </Value>
                   <Key>{statistic.key}</Key>

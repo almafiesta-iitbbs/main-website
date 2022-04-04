@@ -174,18 +174,18 @@ const EventsDetails = {
         "https://drive.google.com/file/d/1OLviMnh3m1wGDb_ld3iuqDN_Tpmvq6yn/view?usp=sharing",
     },
 
-    // {
-    //   id: "literary-3",
-    //   imageSrc:
-    //     "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    //   title: "Online MUN",
-    //   subtitle: "",
-    //   description:
-    //     "National Level Online MUN having single committee will be organized. ",
-    //   url: "https://rzp.io/l/FyXtUKoaGn",
-    //   rulebook:
-    //     "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
-    // },
+    {
+      id: "literary-3",
+      imageSrc:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Online MUN",
+      subtitle: "",
+      description:
+        "National Level Online MUN having multiple committees will be organized.  ",
+      url: "https://rzp.io/l/FyXtUKoaGn",
+      rulebook:
+        "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
+    },
 
     {
       id: "literary-4",
@@ -387,7 +387,7 @@ const EventsDetails = {
       description:
         "To express his creativity, the canvas was never a limitation for an artist. Face painting is a way to show that there are no limits to creativity and imagination by using the face as a canvas. This Alma fiesta brings presents you with a face painting competition with lots of fun and color.",
       url: "",
-      rulebook: ""
+      rulebook: "",
       // rulebook: "https://docs.google.com/document/d/1rqRBoNl7p-s_xjuAYMFhVcju6bhMEDVZERwIEdMXzeA/edit",
     },
 
@@ -399,6 +399,21 @@ const EventsDetails = {
       subtitle: "",
       description:
         "Discovering one’s identity is a continuous evolution, an attempt to strike a balance between self-exploration and finding one’s place within a community. One of the most exciting times in just about every college student’s life is participating in a grand fashion show. Team Alma brings you a highly anticipated set of fashion events that allow students to create a complete collection and send it down the runway.",
+      url: "",
+      rulebook: "",
+    },
+
+    {
+      id: "offline-6",
+      imageSrc:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Offline MUN",
+      subtitle: "",
+      description:
+        "Offline MUN for IIT Bhubaneswar students having single committee will be organized. ",
+      // url: "https://rzp.io/l/FyXtUKoaGn",
+      // rulebook:
+      // "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
       url: "",
       rulebook: "",
     },
@@ -442,8 +457,8 @@ const EventsDetails = {
       description:
         "Pixel Lens is a Photography competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
-        // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
     },
 
     {
@@ -455,8 +470,8 @@ const EventsDetails = {
       description:
         "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
-        // "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -468,8 +483,8 @@ const EventsDetails = {
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
-        // "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
 
     {
@@ -481,8 +496,8 @@ const EventsDetails = {
       description:
         "Ad making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. Basic editing, including colour enhancement, the use of filters, and cropping is acceptable, provided any such editing does not affect the authenticity and/or genuineness. ",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: ""
-        // "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook: "",
+      // "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
     },
   ],
 };

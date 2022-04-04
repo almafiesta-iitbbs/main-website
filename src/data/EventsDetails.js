@@ -505,7 +505,7 @@ const EventsDetails = {
     {
       id: "social-1",
       imageSrc:
-        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "https://media.istockphoto.com/photos/stone-carving-of-the-vimana-or-shikara-of-lingaraja-temple-odisha-picture-id1355272854",
       title: "Unexplored Odisha",
       subtitle: "",
       description:
@@ -528,7 +528,7 @@ const EventsDetails = {
     {
       id: "social-2",
       imageSrc:
-        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "https://images.unsplash.com/photo-1577896852618-01da1dd79f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Children's Fest",
       subtitle: "",
       description:
@@ -542,7 +542,7 @@ const EventsDetails = {
     {
       id: "social-3",
       imageSrc:
-        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Spardha - All India Aptitude-cum-Talent Search Exam",
       subtitle: "",
       description:
@@ -556,18 +556,18 @@ const EventsDetails = {
     {
       id: "social-4",
       imageSrc:
-        "https://images.unsplash.com/photo-1533158307587-828f0a76ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Events for Disabled",
       subtitle: "",
       description:
         <>
-        True to the social theme of Alma Fiesta 2022, we would organise events, especially for the marginalised disabled people that would help them dream of a world where they are treated as equals and their talents and skills are respected. The events would help them identify their strengths and explore different facets of their personalities. The youth would be inspired to look up to the disabled in the creation of a just and perfect world!
+        True to the social theme of Alma Fiesta 2022, we would organise events, especially for the marginalised disabled people that would help them dream of a world where they are treated as equals and their talents and skills are respected. 
         <br />
         <b> Part 1 - Competitions:</b>
         <ol>
-          <li><b>1. Musavvir: the spirit of true feelings’ - Art Competition</b><br />Musavvir is an art competition to help the disabled evoke their critical faculties of minds with waves of intellectual simulations combined with craftsmanship to bring their original ideas to life. It is a contest for all the aesthetes and virtuosos out there to make a mark with their compositions.</li>
+          <li><b>1. Musavvir: the spirit of true feelings’ - Art Competition</b><br />Musavvir is an art competition to help the disabled evoke their critical faculties of minds with waves of intellectual simulations combined with craftsmanship to bring their original ideas to life.</li>
           <li><b>2. ‘Udaan’ - a writing competition</b><br />Udaan is a writing competition where we invite you to tap into your inner space, tune in to the soft voice of the heart that never fails to guide and inspire and, express in words your experience related to the theme of this event.</li>
-          <li><b>3. ‘Hausla’ - an open stage event</b><br />Hausla is an open stage event that gives a platform to all the performers out there who love facing the lights among the cheering crowd. It is a perfect opportunity for you to share your talents and refine your skills. Team Alma wishes the disabled people make their voice heard; solo or in groups, in whatever style they choose: dance, mimicry, monologue, singing or any other form, you just come over the stage, hold the mic and let your talent shout!</li>
+          <li><b>3. ‘Hausla’ - an open stage event</b><br /> Team Alma wishes the disabled people make their voice heard; solo or in groups, in whatever style they choose: dance, mimicry, monologue, singing or any other form, you just come over the stage, hold the mic and let your talent shout!</li>
         </ol>
         <br />
         <b> Part 2 - ‘Samvaad’ - a conference to combat disability challenges:</b>

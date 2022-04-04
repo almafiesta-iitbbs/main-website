@@ -182,7 +182,7 @@ const EventsDetails = {
       subtitle: "",
       description:
         "National Level Online MUN having multiple committees will be organized.  ",
-      url: "https://rzp.io/l/FyXtUKoaGn",
+      url: "https://rzp.io/l/m6KM5Yg",
       rulebook:
         "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
     },

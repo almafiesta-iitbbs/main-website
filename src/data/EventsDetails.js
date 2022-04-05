@@ -361,7 +361,8 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1604153741124-8e0eb40964ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       title: "Kite flying",
       subtitle: "",
-      description: "",
+      description:
+        "Flying colourful kites with your buddies under the evening sun is an unbeatable experience. The joy of flying kites and cutting the strings of other kites is unmatched, and the air of celebration is euphoric. And here comes team Alma with amazing kite flying competition so embrace yourself.",
       url: "",
       rulebook: "",
     },
@@ -430,7 +431,6 @@ const EventsDetails = {
         "Alma Fiesta brings you the opportunity to express yourself in this instant language. Be it dress designing or ramp walking, “The Vogue Spectra” is a competition covering it all. Participate in this competition and get a chance to exhibit your fashion aesthetics to the world.",
       url: "https://rzp.io/l/dbd9PzNgY",
       rulebook: "",
-      // "https://drive.google.com/file/d/1cCckOX3XUCKYwhHmgGPxcpvw5DGVAx-8/view?usp=sharing",
     },
   ],
 
@@ -444,8 +444,7 @@ const EventsDetails = {
       description:
         "Picturesque is a Photography Journalism competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
-      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+      rulebook: "https://drive.google.com/file/d/1CYGoIulo__yRVRnZ9klJ10vf-HDnldRd/view?ts=624c521a",
     },
 
     {
@@ -457,8 +456,8 @@ const EventsDetails = {
       description:
         "Pixel Lens is a Photography competition with entries via Google Form. Basic editing, including colour enhancement, the use of filters, and cropping of the Photo(s) is acceptable, provided any such editing does not affect the authenticity and/or genuineness of the Photo(s).",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
-      // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
+      rulebook:
+        "https://drive.google.com/file/d/1vXkoXOdIwDvPL8RkdsXElvvuq9HKb16A/view?usp=sharing",
     },
 
     {
@@ -470,8 +469,8 @@ const EventsDetails = {
       description:
         "Short Film making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. This is a short film competition and hence only Short Films should be submitted NO DOCUMENTARIES. The entries can be short digital animation films too on the topic.",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
-      // "https://docs.google.com/document/d/1Ae3YSsROT1lKVXnNqIpEcVy7Hl7Ul9VY/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook:
+        "https://drive.google.com/file/d/1yC2PBuiUPBA0N1_2u47e4K4uyNdYEzRK/view?usp=sharing",
     },
 
     {
@@ -483,8 +482,8 @@ const EventsDetails = {
       description:
         "Each have a different view of ideal world so using cinematography and editing, make a trailer upto 2 minutes to show an ideal world",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
-      // "https://docs.google.com/document/d/1phu-3cvfgDhcjgmc9HXNsfyK27o6XIi7/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook:
+        "https://drive.google.com/file/d/1unMPkcmcKg-n86-VgJb9NnWFtuNWv3SC/view?usp=sharing",
     },
 
     {
@@ -496,30 +495,43 @@ const EventsDetails = {
       description:
         "Ad making competition is a cinematography competition wherein you can team up and submit your on our official website of Alma Fiesta. Basic editing, including colour enhancement, the use of filters, and cropping is acceptable, provided any such editing does not affect the authenticity and/or genuineness. ",
       url: "https://rzp.io/l/DHqbWi5sMn",
-      rulebook: "",
-      // "https://docs.google.com/document/d/1gzqXvZJoPrXJvIpH95Elus7gBRkz7HcD/edit?usp=sharing&ouid=109535712697901784077&rtpof=true&sd=true",
+      rulebook:
+        "https://drive.google.com/file/d/1lw_PItQTV4E7uB9aYICZeyWPGvQ9K4Of/view?usp=sharing",
     },
   ],
 
   social: [
     {
       id: "social-1",
-      imageSrc:"https://static.toiimg.com/photo/65949146/odisha.jpg",
+      imageSrc: "https://static.toiimg.com/photo/65949146/odisha.jpg",
       title: "Unexplored Odisha",
       subtitle: "",
-      description:
+      description: (
         <>
-        Odisha, a state with bountiful natural resources is also blessed with a rich heritage of ancient culture passed down from generations. The untapped potential of the state is huge. In order to promote and explore the glorious history and traditions of the state of Odisha, Alma Fiesta organized a series of events based on the theme of ‘Unexplored Odisha’ in the months of November and December 2021. The online events covered almost all the aspects of the Odia culture and appealed to people from across the state to come forward and express themselves to the world.
-        <br />
-        <b> The competitions organized under this event were:</b>
-        <ol type="1" >
-          <li>‘Dexterity - Tongue of Aesthetics’ - an art and craft competition</li>
-          <li>‘Souvenir de Bonhuer’ - a travel photography competition </li>
-          <li>‘Food-o-Shoot’ - a food photography competition</li>
-          <li>‘Saraca Asoca’ - a traditional attire fashion competition </li>
-          <li>The event was a grand success in exploring and celebrating Odisha!</li>
-        </ol>
-        </>,
+          Odisha, a state with bountiful natural resources is also blessed with
+          a rich heritage of ancient culture passed down from generations. The
+          untapped potential of the state is huge. In order to promote and
+          explore the glorious history and traditions of the state of Odisha,
+          Alma Fiesta organized a series of events based on the theme of
+          ‘Unexplored Odisha’ in the months of November and December 2021. The
+          online events covered almost all the aspects of the Odia culture and
+          appealed to people from across the state to come forward and express
+          themselves to the world.
+          <br />
+          <b> The competitions organized under this event were:</b>
+          <ol type="1">
+            <li>
+              ‘Dexterity - Tongue of Aesthetics’ - an art and craft competition
+            </li>
+            <li>‘Souvenir de Bonhuer’ - a travel photography competition </li>
+            <li>‘Food-o-Shoot’ - a food photography competition</li>
+            <li>‘Saraca Asoca’ - a traditional attire fashion competition </li>
+            <li>
+              The event was a grand success in exploring and celebrating Odisha!
+            </li>
+          </ol>
+        </>
+      ),
       url: "",
       rulebook: "",
       // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
@@ -530,10 +542,21 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1577896852618-01da1dd79f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Children's Fest",
       subtitle: "",
-      description:
+      description: (
         <>
-        The future of the nation depends upon the crores of children who would determine the fate of the coming generations. Ensuring a safe and secure today for children across the country goes a long way in creating a prosperous future. Each year, Alma Fiesta works with various orphanages around Bhubaneswar city to conduct events that would bring forth their true potential and talent and this year is no different! Team Alma Fiesta 2022 would offer the orphans around the city a day where they would participate in different events, competitions, games, enjoy refreshments and at the end of the day would return with smiles all around and dreams that they would hope to achieve one day!
-        </>,
+          The future of the nation depends upon the crores of children who would
+          determine the fate of the coming generations. Ensuring a safe and
+          secure today for children across the country goes a long way in
+          creating a prosperous future. Each year, Alma Fiesta works with
+          various orphanages around Bhubaneswar city to conduct events that
+          would bring forth their true potential and talent and this year is no
+          different! Team Alma Fiesta 2022 would offer the orphans around the
+          city a day where they would participate in different events,
+          competitions, games, enjoy refreshments and at the end of the day
+          would return with smiles all around and dreams that they would hope to
+          achieve one day!
+        </>
+      ),
       url: "",
       rulebook: "",
       // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
@@ -544,10 +567,21 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Spardha - All India Aptitude-cum-Talent Search Exam",
       subtitle: "",
-      description:
+      description: (
         <>
-        Alma Fiesta under the ‘Prayatna’ initiative plans to conduct an All-India Aptitude-cum-Talent Search Exam ‘Spardha’. With an estimated 20+ cities across the country, the exam seeks to inculcate among students a sense of general awareness of their social responsibility. It aims toward rigorous testing of students in the areas of aptitude, technicality and awareness. With students across the country participating under the common umbrella of ‘Spardha’, it will be a great opportunity for them to gain a good deal of exposure and showcase their talent. They will compete among their peers from across the country, getting a sense of healthy competition required to excel and develop in their respective areas of interest.
-        </>,
+          Alma Fiesta under the ‘Prayatna’ initiative plans to conduct an
+          All-India Aptitude-cum-Talent Search Exam ‘Spardha’. With an estimated
+          20+ cities across the country, the exam seeks to inculcate among
+          students a sense of general awareness of their social responsibility.
+          It aims toward rigorous testing of students in the areas of aptitude,
+          technicality and awareness. With students across the country
+          participating under the common umbrella of ‘Spardha’, it will be a
+          great opportunity for them to gain a good deal of exposure and
+          showcase their talent. They will compete among their peers from across
+          the country, getting a sense of healthy competition required to excel
+          and develop in their respective areas of interest.
+        </>
+      ),
       url: "",
       rulebook: "",
       // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
@@ -558,27 +592,58 @@ const EventsDetails = {
         "https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       title: "Events for Differently abled",
       subtitle: "",
-      description:
+      description: (
         <>
-        True to the social theme of Alma Fiesta 2022, we would organise events, especially for the marginalised disabled people that would help them dream of a world where they are treated as equals and their talents and skills are respected. 
-        <br />
-        <b> Part 1 - Competitions:</b>
-        <ol>
-          <li><b>1. Musavvir: the spirit of true feelings’ - Art Competition</b><br />Musavvir is an art competition to help the disabled evoke their critical faculties of minds with waves of intellectual simulations combined with craftsmanship to bring their original ideas to life.</li>
-          <li><b>2. ‘Udaan’ - a writing competition</b><br />Udaan is a writing competition where we invite you to tap into your inner space, tune in to the soft voice of the heart that never fails to guide and inspire and, express in words your experience related to the theme of this event.</li>
-          <li><b>3. ‘Hausla’ - an open stage event</b><br /> Team Alma wishes the disabled people make their voice heard; solo or in groups, in whatever style they choose: dance, mimicry, monologue, singing or any other form, you just come over the stage, hold the mic and let your talent shout!</li>
-        </ol>
-        <br />
-        <b> Part 2 - ‘Samvaad’ - a conference to combat disability challenges:</b>
-        <br />
-        The physical and mental challenges faced by disabled people from different walks of life can be better understood by those sharing similar situations in their lives. Thus, to promote a sense of security and equip the disabled community with the power to deal with these hardships, Alma Fiesta is organizing a conference for specially-abled people where people from different parts of the country would share their day-to-day experiences.
-        </>,
+          True to the social theme of Alma Fiesta 2022, we would organise
+          events, especially for the marginalised disabled people that would
+          help them dream of a world where they are treated as equals and their
+          talents and skills are respected.
+          <br />
+          <b> Part 1 - Competitions:</b>
+          <ol>
+            <li>
+              <b>1. Musavvir: the spirit of true feelings’ - Art Competition</b>
+              <br />
+              Musavvir is an art competition to help the disabled evoke their
+              critical faculties of minds with waves of intellectual simulations
+              combined with craftsmanship to bring their original ideas to life.
+            </li>
+            <li>
+              <b>2. ‘Udaan’ - a writing competition</b>
+              <br />
+              Udaan is a writing competition where we invite you to tap into
+              your inner space, tune in to the soft voice of the heart that
+              never fails to guide and inspire and, express in words your
+              experience related to the theme of this event.
+            </li>
+            <li>
+              <b>3. ‘Hausla’ - an open stage event</b>
+              <br /> Team Alma wishes the disabled people make their voice
+              heard; solo or in groups, in whatever style they choose: dance,
+              mimicry, monologue, singing or any other form, you just come over
+              the stage, hold the mic and let your talent shout!
+            </li>
+          </ol>
+          <br />
+          <b>
+            {" "}
+            Part 2 - ‘Samvaad’ - a conference to combat disability challenges:
+          </b>
+          <br />
+          The physical and mental challenges faced by disabled people from
+          different walks of life can be better understood by those sharing
+          similar situations in their lives. Thus, to promote a sense of
+          security and equip the disabled community with the power to deal with
+          these hardships, Alma Fiesta is organizing a conference for
+          specially-abled people where people from different parts of the
+          country would share their day-to-day experiences.
+        </>
+      ),
       url: "",
       rulebook: "",
       // "https://docs.google.com/document/d/1v0Y6kNo_YSr-DHCGtSr98CtWHgxEMPAjOG_6c81SpwE/edit?usp=sharing",
-    }
-
-  ]
+    },
+  ],
 };
 
 export default EventsDetails;

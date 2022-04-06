@@ -1,15 +1,15 @@
-import React, { useEffect, useContext } from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
-import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
-import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
-import { useParams, useHistory } from "react-router-dom";
-import EventsDetails from "../../data/EventsDetails.js";
-import axios from "axios";
-import { toast } from "react-toastify";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { AppContext } from "context/AppContext";
-import { REACT_APP_BASE_URL } from "./../../config";
+import React, { useEffect, useContext } from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import { ReactComponent as SvgDotPatternIcon } from '../../images/dot-pattern.svg';
+import { SectionHeading as HeadingTitle } from '../misc/Headings.js';
+import { useParams, useHistory } from 'react-router-dom';
+import EventsDetails from '../../data/EventsDetails.js';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
+import { AppContext } from 'context/AppContext';
+import { REACT_APP_BASE_URL } from './../../config';
 
 const ActionButton = tw(
   PrimaryButtonBase
@@ -27,7 +27,7 @@ const Content = tw.div`mt-16`;
 
 const Card = styled.div((props) => [
   tw`mt-24 md:flex justify-center items-center`,
-  props.reversed ? tw`flex-row-reverse` : "flex-row",
+  props.reversed ? tw`flex-row-reverse` : 'flex-row',
 ]);
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
@@ -66,37 +66,37 @@ export default () => {
   console.log(params.type);
 
   switch (params.type) {
-    case "dramatics":
+    case 'dramatics':
       events = EventsDetails.dramatics;
       break;
-    case "music":
+    case 'music':
       events = EventsDetails.music;
       break;
-    case "dance":
+    case 'dance':
       events = EventsDetails.dance;
       break;
-    case "literature":
+    case 'literature':
       events = EventsDetails.literature;
       break;
-    case "esports":
+    case 'esports':
       events = EventsDetails.esports;
       break;
-    case "photography":
+    case 'photography':
       events = EventsDetails.photography;
       break;
-    case "fashion":
+    case 'fashion':
       events = EventsDetails.fashion;
       break;
-    case "filler":
+    case 'filler':
       events = EventsDetails.filler;
       break;
-    case "fine_arts":
+    case 'fine_arts':
       events = EventsDetails.fineArts;
       break;
-    case "offline":
+    case 'offline':
       events = EventsDetails.offline;
       break;
-    case "social":
+    case 'social':
       events = EventsDetails.social;
       break;
     default:
@@ -118,16 +118,16 @@ export default () => {
         }
       );
     }
-    if (String(email).split("@")[1] === "iitbbs.ac.in") {
-      const token = window.localStorage.getItem("jwt");
+    if (String(email).split('@')[1] === 'iitbbs.ac.in') {
+      const token = window.localStorage.getItem('jwt');
       try {
         const registrationResponse = await axios.post(
           `${REACT_APP_BASE_URL}/api/v1/event/register/${event.id}`,
           {},
           {
             headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
               Authorization: `Bearer ${token}`,
             },
             withCredentials: true,
@@ -139,10 +139,10 @@ export default () => {
           });
         }
       } catch (e) {
-        if (String(e.response.data.error.statusCode).startsWith("4")) {
+        if (String(e.response.data.error.statusCode).startsWith('4')) {
           return toast.error(e.response.data.message);
         }
-        toast.error("There was some error! Please try again later");
+        toast.error('There was some error! Please try again later');
       }
     } else {
       toast(
@@ -161,8 +161,8 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle style={{ textTransform: "capitalize" }}>
-            {String(params.type).split("_").join(" ")} Events
+          <HeadingTitle style={{ textTransform: 'capitalize' }}>
+            {String(params.type).split('_').join(' ')} Events
           </HeadingTitle>
           <HeadingDescription></HeadingDescription>
         </HeadingInfoContainer>
@@ -175,20 +175,33 @@ export default () => {
                 <Subtitle>{event.subtitle}</Subtitle>
                 <Title>{event.title}</Title>
                 <Description>{event.description}</Description>
-                {event.rulebook !== "" && (
+                {event.rulebook !== '' && (
                   <Link href={event.rulebook}>Event Rules</Link>
                 )}
                 <br />
                 {/* <Link href={event.url}>See Event Details</Link> */}
                 <br />
-                {params.type !== "offline" && params.type !== "social" && (
-                  <PrimaryButton
-                    style={{ cursor: "pointer" }}
-                    onClick={() => {
-                      registerForEvent(event);
-                    }}
-                  >
-                    Register
+                {params.type !== 'offline' &&
+                  params.type !== 'social' /*||
+                  event.id === 'offline-1'*/ && (
+                    <PrimaryButton
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => {
+                        registerForEvent(event);
+                      }}
+                    >
+                      Register
+                    </PrimaryButton>
+                  )}
+                {event.id === 'offline-1' && (
+                  <PrimaryButton style={{ cursor: 'pointer' }}>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://forms.gle/Kup14F9KG1AJXFMGA"
+                    >
+                      Register
+                    </a>
                   </PrimaryButton>
                 )}
               </Details>

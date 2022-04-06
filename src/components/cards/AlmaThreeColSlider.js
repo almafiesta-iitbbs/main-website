@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { SectionHeading } from "components/misc/Headings";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
+import React, { useState } from 'react';
+import Slider from 'react-slick';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import { SectionHeading } from 'components/misc/Headings';
+import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons';
 
-import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chevron-left.svg";
-import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
-import { useHistory } from "react-router-dom";
+import { ReactComponent as ChevronLeftIcon } from 'feather-icons/dist/icons/chevron-left.svg';
+import { ReactComponent as ChevronRightIcon } from 'feather-icons/dist/icons/chevron-right.svg';
+import { useHistory } from 'react-router-dom';
 
-import genreDetails from "../../data/GenreDetails";
+import genreDetails from '../../data/GenreDetails';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
@@ -76,13 +76,13 @@ export default () => {
   const cards = genreDetails;
 
   return (
-    <Container style={{ top: "-100px" }}>
+    <Container style={{ top: '-100px' }}>
       <a
         id="events"
         style={{
-          width: "100%",
-          position: "relative",
-          left: "-500px",
+          width: '100%',
+          position: 'relative',
+          left: '-500px',
         }}
       />
       <Content>
@@ -125,19 +125,33 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton
-                onClick={() => {
-                  history.push(
-                    `/events/${card.title.toLowerCase().split(" ").join("_")}`
-                  );
-                }}
-              >
-                Explore
-              </PrimaryButton>
+              {card.title !== 'Food Fest' ? (
+                <PrimaryButton
+                  onClick={() => {
+                    history.push(
+                      `/events/${card.title.toLowerCase().split(' ').join('_')}`
+                    );
+                  }}
+                >
+                  Explore
+                </PrimaryButton>
+              ) : (
+                <PrimaryButton>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://forms.gle/Kup14F9KG1AJXFMGA"
+                  >
+                    Register
+                  </a>
+                </PrimaryButton>
+              )}
             </Card>
           ))}
         </CardSlider>
       </Content>
     </Container>
   );
+
+  // https://forms.gle/Kup14F9KG1AJXFMGA
 };

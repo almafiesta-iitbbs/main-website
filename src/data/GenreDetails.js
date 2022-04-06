@@ -1,18 +1,31 @@
-import DancePhoto from "../images/final-main-page/events/dance.jpg";
-import FashionPhoto from "../images/final-main-page/events/fashion.jpeg";
-import FineArtsPhoto from "../images/final-main-page/events/fine_arts.jpg";
-import DramaticsPhoto from "../images/final-main-page/events/drams-4.jpg";
-import MusicPhoto from "../images/final-main-page/events/music-61.jpg";
-import LiteraturePhoto from "../images/final-main-page/events/mun-2.jpg";
-import ESportsPhoto from "../images/final-main-page/events/egames.jpg";
-import PhotographyPhoto from "../images/final-main-page/events/photography.jpg";
-import OfflinePhoto from "../images/final-main-page/events/offline.jpg";
-import SocialPhoto from "../images/final-main-page/events/social.jpg";
+import DancePhoto from '../images/final-main-page/events/dance.jpg';
+import FashionPhoto from '../images/final-main-page/events/fashion.jpeg';
+import FineArtsPhoto from '../images/final-main-page/events/fine_arts.jpg';
+import DramaticsPhoto from '../images/final-main-page/events/drams-4.jpg';
+import MusicPhoto from '../images/final-main-page/events/music-61.jpg';
+import LiteraturePhoto from '../images/final-main-page/events/mun-2.jpg';
+import ESportsPhoto from '../images/final-main-page/events/egames.jpg';
+import PhotographyPhoto from '../images/final-main-page/events/photography.jpg';
+import OfflinePhoto from '../images/final-main-page/events/offline.jpg';
+import SocialPhoto from '../images/final-main-page/events/social.jpg';
+import FoodFestPhoto from '../images/final-main-page/events/FoodFest.jpg';
+
+const foodFest = (
+  <div>
+    Food forms an important part of any culture. Be it the people of our nation,
+    or beyond. The most important part of any culture is the food they serve.
+    So, in this iteration of IIT Bhubaneswar's Socio-Cultural fest Alma Fiesta,
+    we bring upon - food fest! This time, be ready to eat the most delicious and
+    mouth-watering dishes, served hot and fresh by the students of IIT
+    Bhubaneswar. Be ready to dive in the diversity of food offered by our own
+    batchmates!
+  </div>
+);
 
 const dance = (
   <div>
     "Dancing is surely the most basic and relevant of all forms of expression.
-    Nothing else can so effectively give outward form to an inner experience".{" "}
+    Nothing else can so effectively give outward form to an inner experience".{' '}
     <br />–<b>Lynan Watson</b>
     <br />
     <br />
@@ -177,43 +190,49 @@ const social = (
 
 const genreDetails = [
   {
+    imageSrc:
+      'https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    title: 'Food Fest',
+    description: foodFest,
+  },
+  {
     imageSrc: MusicPhoto,
-    title: "Music",
+    title: 'Music',
     description: music,
   },
   {
     imageSrc: DramaticsPhoto,
-    title: "Dramatics",
+    title: 'Dramatics',
     description: dramatics,
   },
   {
     imageSrc: DancePhoto,
-    title: "Dance",
+    title: 'Dance',
     description: dance,
   },
   {
     imageSrc: LiteraturePhoto,
-    title: "Literature",
+    title: 'Literature',
     description: literature,
   },
   {
     imageSrc: PhotographyPhoto,
-    title: "Photography",
+    title: 'Photography',
     description: photography,
   },
   {
     imageSrc: FineArtsPhoto,
-    title: "Fine Arts",
+    title: 'Fine Arts',
     description: finearts,
   },
   {
     imageSrc: ESportsPhoto,
-    title: "ESports",
+    title: 'ESports',
     description: gaming,
   },
   {
     imageSrc: FashionPhoto,
-    title: "Fashion",
+    title: 'Fashion',
     description: fashion,
   },
   // {
@@ -223,12 +242,13 @@ const genreDetails = [
   // },
   {
     imageSrc: OfflinePhoto,
-    title: "Offline",
+    title: 'Offline',
     description: offline,
   },
   {
-    imageSrc: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    title: "Social",
+    imageSrc:
+      'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+    title: 'Social',
     description: social,
   },
 ];

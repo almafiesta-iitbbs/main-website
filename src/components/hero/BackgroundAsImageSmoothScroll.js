@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import GoogleLogin from "react-google-login";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
-import { toast } from "react-toastify";
-import config from "../../config";
-import { AppContext } from "context/AppContext";
-import { REACT_APP_BASE_URL } from "../../config";
+import React, { useContext } from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import { css } from 'styled-components/macro'; //eslint-disable-line
+import GoogleLogin from 'react-google-login';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import config from '../../config';
+import { AppContext } from 'context/AppContext';
+import { REACT_APP_BASE_URL } from '../../config';
 
 import Header, {
   NavLink,
@@ -17,10 +17,10 @@ import Header, {
   LogoLink,
   NavToggle,
   DesktopNavLinks,
-} from "../headers/light.js";
-import ab_logo from "../../images/final/ab_logo.png";
-import Background from "../../images/final/pic08.jpg";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+} from '../headers/light.js';
+import ab_logo from '../../images/final/ab_logo.png';
+import Background from '../../images/final/pic08.jpg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const StyledAnchor = styled(AnchorLink)`
   ${tw`text-black text-lg my-2 lg:text-sm lg:mx-6 lg:my-0 lg:text-white
@@ -58,7 +58,7 @@ const Heading = styled.h1`
 const SlantedBackground = styled.span`
   ${tw`relative text-primary-500 px-4 -mx-4 py-2`}
   &::before {
-    content: "";
+    content: '';
     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
   }
 `;
@@ -79,14 +79,14 @@ export default () => {
       );
       if (loginResponse.status === 201) {
         toast(`Welcome to Alma Fiesta`, { autoClose: 2000 });
-        
-        window.localStorage.setItem("jwt", loginResponse.data.jwt);
-        window.localStorage.setItem("email", loginResponse.data.user.email);
 
-        history.push("/additional-info");
+        window.localStorage.setItem('jwt', loginResponse.data.jwt);
+        window.localStorage.setItem('email', loginResponse.data.user.email);
+
+        history.push('/additional-info');
       } else if (loginResponse.status === 200) {
-        window.localStorage.setItem("jwt", loginResponse.data.jwt);
-        window.localStorage.setItem("email", loginResponse.data.user.email);
+        window.localStorage.setItem('jwt', loginResponse.data.jwt);
+        window.localStorage.setItem('email', loginResponse.data.user.email);
 
         if (loginResponse.data.user.isRegistrationComplete) {
           setName(loginResponse.data.user.name);
@@ -94,26 +94,26 @@ export default () => {
           setIsLoggedIn(true);
           toast(`Logged in Successfully`, { autoClose: 2000 });
         } else {
-          history.push("/additional-info");
+          history.push('/additional-info');
         }
       }
     } catch (e) {
-      if (String(e.response.data.error.statusCode).startsWith("4")) {
+      if (String(e.response.data.error.statusCode).startsWith('4')) {
         return toast.error(e.response.data.message);
       }
-      toast.error("There was some error! Please try again later");
+      toast.error('There was some error! Please try again later');
     }
   };
 
   const onGoogleLoginFailure = async (res) => {
-    toast.error("There was some error! Please try again later");
+    toast.error('There was some error! Please try again later');
   };
 
   const navLinks = [
     <NavLinks key={1}>
       <StyledAnchor href="#about">About</StyledAnchor>
       <StyledAnchor href="#events">Events</StyledAnchor>
-      <NavLink href="/workshops">Wokshops @alienbrains</NavLink>
+      <NavLink href="/workshops">Workshops @alienbrains</NavLink>
       <StyledAnchor href="#contact">Contact</StyledAnchor>
       <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
@@ -134,7 +134,7 @@ export default () => {
           autoLoad={false}
           onSuccess={onGoogleLoginSuccess}
           onFailure={onGoogleLoginFailure}
-          cookiePolicy={"single_host_origin"}
+          cookiePolicy={'single_host_origin'}
           icon={false}
           padding={100}
         />
@@ -150,21 +150,21 @@ export default () => {
                 {},
                 {
                   headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json',
                     Authorization: `Bearer ${window.localStorage.getItem(
-                      "jwt"
+                      'jwt'
                     )}`,
                   },
                   withCredentials: true,
                 }
               );
-              toast("Logged out Successfully!");
+              toast('Logged out Successfully!');
             } catch (e) {
-              if (String(e.response.data.error.statusCode).startsWith("4")) {
+              if (String(e.response.data.error.statusCode).startsWith('4')) {
                 return toast.error(e.response.data.message);
               }
-              toast.error("There was some error! Please try again later");
+              toast.error('There was some error! Please try again later');
             }
           }}
         >
@@ -186,22 +186,22 @@ export default () => {
                 src={ab_logo}
                 alt="logo"
                 style={{
-                  display: "inline-block",
-                  width: "3rem",
-                  height: "3rem",
-                  paddingRight: "2%",
-                  paddingTop: "2%",
+                  display: 'inline-block',
+                  width: '3rem',
+                  height: '3rem',
+                  paddingRight: '2%',
+                  paddingTop: '2%',
                 }}
               />
-              <span style={{ fontSize: "2rem", fontFamily: "Montserrat" }}>
+              <span style={{ fontSize: '2rem', fontFamily: 'Montserrat' }}>
                 Alien Brains
               </span>
-              <span style={{ fontSize: "0.8rem", paddingLeft: "2%" }}>
+              <span style={{ fontSize: '0.8rem', paddingLeft: '2%' }}>
                 presents
               </span>
               <br />
               {/* <SlantedBackground style={{ marginTop: "5%" }}> */}
-              <span tw="text-primary-100" style={{ fontFamily: "AlmaFont" }}>
+              <span tw="text-primary-100" style={{ fontFamily: 'AlmaFont' }}>
                 Alma Fiesta 2022
               </span>
               {/* </SlantedBackground> */}

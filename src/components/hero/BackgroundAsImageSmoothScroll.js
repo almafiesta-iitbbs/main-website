@@ -113,11 +113,12 @@ export default () => {
     <NavLinks key={1}>
       <StyledAnchor href="#about">About</StyledAnchor>
       <StyledAnchor href="#events">Events</StyledAnchor>
-      <NavLink href="/workshops">Workshops @alienbrains</NavLink>
-      <StyledAnchor href="#contact">Contact</StyledAnchor>
+      <NavLink href="https://educations.alienbrains.in/iit_bhubaneswar">Workshops @alienbrains</NavLink>
+      <NavLink href="https://educations.alienbrains.in/300">Jobs @alienbrains</NavLink>
+      {/* <StyledAnchor href="#contact">Contact</StyledAnchor> */}
       <NavLink href="https://memories.almafiesta.com">Gallery</NavLink>
       <NavLink href="/team-page">Our Team</NavLink>
-      <StyledAnchor href="#faqs">FAQs</StyledAnchor>
+      {/* <StyledAnchor href="#faqs">FAQs</StyledAnchor> */}
       {!isLoggedIn ? (
         <GoogleLogin
           className="google-login"

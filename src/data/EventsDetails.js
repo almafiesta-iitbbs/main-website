@@ -174,18 +174,18 @@ const EventsDetails = {
         "https://drive.google.com/file/d/1OLviMnh3m1wGDb_ld3iuqDN_Tpmvq6yn/view?usp=sharing",
     },
 
-    // {
-    //   id: "literary-3",
-    //   imageSrc:
-    //     "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    //   title: "Online MUN",
-    //   subtitle: "",
-    //   description:
-    //     "National Level Online MUN having multiple committees will be organized.  ",
-    //   url: "https://rzp.io/l/m6KM5Yg",
-    //   rulebook:
-    //     "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
-    // },
+    {
+      id: "literary-3",
+      imageSrc:
+        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      title: "Online MUN",
+      subtitle: "",
+      description:
+        "National Level Online MUN having multiple committees will be organized.  ",
+      url: "https://rzp.io/l/m6KM5Yg",
+      rulebook:
+        "https://drive.google.com/file/d/17hytg9VzIAAU-8Lk8V2hSPxN7OhedLro/view?usp=sharing",
+    },
 
     {
       id: "literary-4",

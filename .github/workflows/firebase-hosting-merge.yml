@@ -7,12 +7,12 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - ci-cd
 env:
-  REACT_APP_PORT: '${{ secrets.REACT_APP_PORT }}'
-  REACT_APP_CLIENT_ID: '${{ secrets.REACT_APP_CLIENT_ID }}'
-  REACT_APP_BASE_URL: '${{ secrets.REACT_APP_BASE_URL }}'
 jobs:
   build_and_deploy:
     env:
+      REACT_APP_CLIENT_ID: '${{ secrets.REACT_APP_CLIENT_ID }}'
+      REACT_APP_PORT: '${{ secrets.REACT_APP_PORT }}'
+      REACT_APP_BASE_URL: '${{ secrets.REACT_APP_BASE_URL }}'
       CI: ""
     runs-on: ubuntu-latest
     steps:

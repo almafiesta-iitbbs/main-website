@@ -114,7 +114,7 @@ const literature = (
     <ul>
       <ol>Gone in 60 seconds</ol>
       <ol>Shipwrecked</ol>
-      <ol>Online MUN</ol>
+      {/* <ol>Online MUN</ol> */}
       <ol>Alt-End</ol>
       <ol>Kavya Path</ol>
     </ul>
